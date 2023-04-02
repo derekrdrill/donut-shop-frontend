@@ -19,7 +19,8 @@
     "jest": "jest",
     "jest:update": "jest -u",
     "lint": "eslint src",
-    "test": "jest lint"
+    "test": "jest lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "jest-css-modules": "^2.1.0",
