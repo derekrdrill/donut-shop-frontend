@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { Button, Grid, IconButton } from '@mui/material';
+import { Button, Grid, IconButton, Typography } from '@mui/material';
+import SVG from 'react-inlinesvg';
 
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
-import { HeaderRoot, HeaderLogo, HeaderTop, HeaderTopButton, HeaderMenuText } from './style';
+import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderTop, HeaderTopButton } from './style';
 
 import HeaderImage from './assets/images/donutsImg.png';
+import HeaderOrderSVG from './assets/icons/donutSVG.svg';
 
 const Header = () => (
   <HeaderRoot>
@@ -17,12 +19,22 @@ const Header = () => (
           <Grid item>
             <Grid container justifyContent='space-around' spacing={2}>
               <Grid item>
-                <HeaderTopButton variant='contained' size='small'>
+                <HeaderTopButton
+                  buttonColor='#6a017f'
+                  buttonHoverColor='#a501c6'
+                  size='small'
+                  variant='contained'
+                >
                   Join Rewards
                 </HeaderTopButton>
               </Grid>
               <Grid item>
-                <HeaderTopButton variant='outlined' size='small'>
+                <HeaderTopButton
+                  buttonColor='#6a017f'
+                  buttonHoverColor='#a501c6'
+                  size='small'
+                  variant='outlined'
+                >
                   Sign In
                 </HeaderTopButton>
               </Grid>
@@ -30,12 +42,12 @@ const Header = () => (
           </Grid>
           <Grid item>
             <IconButton>
-              <SearchIcon sx={{ color: '#32CD32' }} />
+              <SearchIcon sx={{ color: '#6a017f' }} />
             </IconButton>
           </Grid>
           <Grid item>
             <IconButton>
-              <ShoppingBagIcon sx={{ color: '#32CD32' }} />
+              <ShoppingBagIcon sx={{ color: '#6a017f' }} />
             </IconButton>
           </Grid>
         </Grid>
@@ -71,10 +83,15 @@ const Header = () => (
             </Grid>
           </Grid>
           <Grid item>
-            <Grid container sx={{ marginTop: 2.5 }}>
-              <Button variant='contained' color='info'>
-                Order now
-              </Button>
+            <Grid container sx={{ marginTop: 2 }}>
+              <HeaderTopButton
+                buttonColor='#f59180'
+                buttonHoverColor='#f2755f'
+                startIcon={<SVG fill='#FFFFFF' height={20} src={HeaderOrderSVG} width={20} />}
+                variant='contained'
+              >
+                Order Now
+              </HeaderTopButton>
             </Grid>
           </Grid>
         </Grid>
