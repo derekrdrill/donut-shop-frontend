@@ -5,14 +5,17 @@ module.exports = {
   devServer: {
     port: 5002,
   },
+  entry: './src/index.tsx',
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        test: /\.(ts|tsx)$/,
+        loader: 'ts-loader',
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -21,16 +24,18 @@ module.exports = {
       },
     ],
   },
+  mode: 'development',
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: path.resolve(__dirname, 'src', 'index.html'),
     }),
   ],
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
+  target: 'web',
 };

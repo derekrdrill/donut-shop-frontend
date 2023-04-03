@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App unit tests renders as expected 1`] = `
-<h1>
-  Retail Website Prototype!
-</h1>
-`;
+exports[`App unit tests renders as expected 1`] = `<Header />`;
