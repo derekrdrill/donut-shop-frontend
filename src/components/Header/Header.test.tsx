@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ShallowRenderer from 'react-test-renderer/shallow';
+import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
@@ -7,12 +7,11 @@ import Header from './Header';
 
 import { HeaderTopButton } from './style';
 
-const renderer = new ShallowRenderer();
+// const renderer = new ShallowRenderer();
 
 describe('Header unit tests', () => {
   it('renders as expected', () => {
-    renderer.render(<Header />);
-    const result = renderer.getRenderOutput();
+    const result = renderer.create(<Header />).toJSON();
     expect(result).toMatchSnapshot();
   });
 
