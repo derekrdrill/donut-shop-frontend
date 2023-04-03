@@ -27,16 +27,20 @@ export const HeaderMenuText = styled.h4({
   color: 'black',
 });
 
-export const HeaderTopButton = styled(Button)<{ variant: string }>(({ variant }) => ({
+export const HeaderTopButton = styled(Button)<{
+  buttonColor: string;
+  buttonHoverColor: string;
+  variant: string;
+}>(({ buttonColor, buttonHoverColor, variant }) => ({
   ':hover': {
-    backgroundColor: `#2bb12b !important`,
+    backgroundColor: `${buttonHoverColor} !important`,
     color: `${variant === 'outlined' ? '#FFFFFF' : 'inherit'} !important`,
   },
-  backgroundColor: `${variant === 'contained' ? '#32CD32' : 'inherit'} !important`,
-  borderColor: `${variant === 'outlined' ? '#32CD32' : 'inherit'} !important`,
+  backgroundColor: `${variant === 'contained' ? `${buttonColor}` : 'inherit'} !important`,
+  borderColor: `${variant === 'outlined' ? `${buttonColor}` : 'inherit'} !important`,
   borderRadius: '75px !important',
   boxShadow: 'none !important',
-  color: `${variant === 'outlined' ? '#32CD32' : 'inherit'} !important`,
+  color: `${variant === 'outlined' ? `${buttonColor}` : 'inherit'} !important`,
   fontFamily: `'Josefin Sans', sans-serif !important`,
   fontWeight: '600 !important',
   fontSize: '12px !important',
