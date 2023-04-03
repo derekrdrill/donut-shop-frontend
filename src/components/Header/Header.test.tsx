@@ -1,13 +1,11 @@
+import '@testing-library/jest-dom';
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
 
 import Header from './Header';
 
 import { HeaderTopButton } from './style';
-
-// const renderer = new ShallowRenderer();
 
 describe('Header unit tests', () => {
   it('renders as expected', () => {
@@ -16,14 +14,31 @@ describe('Header unit tests', () => {
   });
 
   it('renders HeaderTopButton styled component as outlined', async () => {
-    render(<HeaderTopButton data-testid='header-top-button' variant='outlined' />);
+    render(
+      <HeaderTopButton
+        data-testid='header-top-button'
+        buttonColor='#6a017f'
+        buttonHoverColor='#a501c6'
+        variant='outlined'
+      />,
+    );
+
     const headerTopButton = await screen.findAllByTestId('header-top-button');
-    expect(headerTopButton[0]).toHaveClass('sc-eDDNvR fNiBfK');
+    expect(headerTopButton[0]).toHaveClass('sc-eDDNvR beLhhV');
   });
 
   it('renders HeaderTopButton styled component as contained', async () => {
-    render(<HeaderTopButton data-testid='header-top-button' variant='contained' />);
+    render(
+      <HeaderTopButton
+        data-testid='header-top-button'
+        buttonColor='#6a017f'
+        buttonHoverColor='#a501c6'
+        variant='contained'
+      />,
+    );
+
     const headerTopButton = await screen.findAllByTestId('header-top-button');
-    expect(headerTopButton[0]).toHaveClass('sc-eDDNvR hhdhhd');
+
+    expect(headerTopButton[0]).toHaveClass('sc-eDDNvR cORaZW');
   });
 });
