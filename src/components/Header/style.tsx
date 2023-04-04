@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { AppBar, Button, Grid } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export const HeaderRoot = styled(AppBar)({
   backgroundColor: 'white !important',
@@ -50,3 +53,34 @@ export const HeaderTopButton = styled(Button)<{
   paddingRight: '20px !important',
   paddingTop: '6px !important',
 }));
+
+export const HeaderSearchIcon = styled(SearchIcon)({
+  ':hover': {
+    color: '#a501c6',
+    transform: 'scale(1.6)',
+  },
+  cursor: 'pointer',
+  marginTop: 7,
+  transition: 'all 5s ease-in-out',
+  transform: 'scale(1.4)',
+});
+
+export const HeaderBagIcon = styled(ShoppingBagIcon)({
+  ':hover': {
+    color: '#a501c6',
+    transform: 'scale(1.6)',
+  },
+  cursor: 'pointer',
+  marginTop: 7,
+  transition: 'all 5s ease-in-out',
+  transform: 'scale(1.4)',
+});
+
+export const HeaderMenuIcon = styled(MenuIcon)({
+  ':hover': {
+    color: '#a501c6',
+  },
+  color: '#6a017f',
+  cursor: 'pointer',
+  transform: 'scale(1.8)',
+});

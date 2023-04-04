@@ -1,12 +1,18 @@
 import * as React from 'react';
-import { Button, Grid, IconButton, Typography } from '@mui/material';
 import SVG from 'react-inlinesvg';
+import { Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-
-import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderTop, HeaderTopButton } from './style';
+import {
+  HeaderBagIcon,
+  HeaderLogo,
+  HeaderMenuIcon,
+  HeaderMenuText,
+  HeaderRoot,
+  HeaderSearchIcon,
+  HeaderTop,
+  HeaderTopButton,
+} from './style';
 
 import HeaderImage from './assets/images/donutsImg.png';
 import HeaderOrderSVG from './assets/icons/donutSVG.svg';
@@ -16,11 +22,11 @@ const Header = () => (
     <HeaderTop
       container
       justifyContent='space-around'
-      sx={{ paddingLeft: { xs: '10px', sm: '20px' }, paddingRight: { xs: '10px', sm: '20px' } }}
+      sx={{ paddingLeft: { xs: '15px', sm: '20px' }, paddingRight: { xs: '15px', sm: '20px' } }}
     >
       <Grid item xs={4} lg={1} xl={2} sx={{ paddingTop: '40px' }}>
         <Grid container display={{ lg: 'none' }}>
-          <MenuIcon color='secondary' height={100} width={100} />
+          <HeaderMenuIcon />
         </Grid>
       </Grid>
       <Grid item xs={4} lg={1} xl={2}>
@@ -48,7 +54,7 @@ const Header = () => (
         <Grid
           container
           justifyContent='flex-end'
-          spacing={1}
+          spacing={3}
           sx={{ paddingTop: { xs: '30px', lg: '0px' } }}
         >
           <Grid item display={{ xs: 'none', lg: 'inline-flex' }}>
@@ -76,14 +82,10 @@ const Header = () => (
             </Grid>
           </Grid>
           <Grid item>
-            <IconButton>
-              <SearchIcon sx={{ color: '#6a017f' }} />
-            </IconButton>
+            <HeaderSearchIcon sx={{ color: '#6a017f' }} />
           </Grid>
           <Grid item>
-            <IconButton>
-              <ShoppingBagIcon sx={{ color: '#6a017f' }} />
-            </IconButton>
+            <HeaderBagIcon sx={{ color: '#6a017f' }} />
           </Grid>
         </Grid>
       </Grid>
@@ -91,7 +93,7 @@ const Header = () => (
     </HeaderTop>
     <Grid
       container
-      sx={{ paddingLeft: { xs: '10px', sm: '20px' }, paddingRight: { xs: '10px', sm: '20px' } }}
+      sx={{ paddingLeft: { xs: '15px', sm: '20px' }, paddingRight: { xs: '15px', sm: '20px' } }}
     >
       <Grid item xs={12}>
         <Grid container justifyContent={{ xs: 'space-around', lg: 'space-between' }}>
