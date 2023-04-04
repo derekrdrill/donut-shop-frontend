@@ -5,19 +5,97 @@ exports[`App unit tests renders as expected 1`] = `
   className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-beqWaB ivvMqr mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
 >
   <div
-    className="MuiGrid-root MuiGrid-container sc-gueYoa snezX css-11j0bs5-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container sc-gueYoa eDKnWb css-o9z1kh-MuiGrid-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-xl-2 css-19ckni6-MuiGrid-root"
-    />
-    <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-xl-8 css-q45rv-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-1 MuiGrid-grid-xl-2 css-2kga1j-MuiGrid-root"
     >
       <div
-        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-x7kx7a-MuiGrid-root"
+        className="MuiGrid-root MuiGrid-container css-wado3p-MuiGrid-root"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeMedium css-kw0y8f-MuiSvgIcon-root"
+          data-testid="MenuIcon"
+          focusable="false"
+          height={100}
+          viewBox="0 0 24 24"
+          width={100}
+        >
+          <path
+            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-1 MuiGrid-grid-xl-2 css-1e0qk4k-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container css-wado3p-MuiGrid-root"
       >
         <div
-          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+          >
+            <img
+              className="sc-dmqHEX bWStsy"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+          >
+            <button
+              buttonColor="#f2755f"
+              buttonHoverColor="#f59180"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-eDDNvR kzXaCT css-sghohy-MuiButtonBase-root-MuiButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <span
+                className="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+              />
+              Order Now
+              <span
+                className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-10 MuiGrid-grid-xl-8 css-ytozq0-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-tlmavk-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item css-zgfqgc-MuiGrid-root"
         >
           <div
             className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-96gxtk-MuiGrid-root"
@@ -159,23 +237,20 @@ exports[`App unit tests renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-xl-2 css-19ckni6-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-1 MuiGrid-grid-xl-2 css-1j87gx2-MuiGrid-root"
     />
   </div>
   <div
-    className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container css-d67mon-MuiGrid-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-xl-2 css-19ckni6-MuiGrid-root"
-    />
-    <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-xl-8 css-q45rv-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
     >
       <div
-        className="MuiGrid-root MuiGrid-container css-1xzqqmo-MuiGrid-root"
+        className="MuiGrid-root MuiGrid-container css-1gk8ux-MuiGrid-root"
       >
         <div
-          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+          className="MuiGrid-root MuiGrid-item css-zgfqgc-MuiGrid-root"
         >
           <img
             className="sc-dmqHEX bWStsy"
@@ -235,15 +310,15 @@ exports[`App unit tests renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+          className="MuiGrid-root MuiGrid-item css-17maom6-MuiGrid-root"
         >
           <div
             className="MuiGrid-root MuiGrid-container css-e2ivvl-MuiGrid-root"
           >
             <button
-              buttonColor="#f59180"
-              buttonHoverColor="#f2755f"
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-eDDNvR fntLdX css-sghohy-MuiButtonBase-root-MuiButton-root"
+              buttonColor="#f2755f"
+              buttonHoverColor="#f59180"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-eDDNvR kzXaCT css-sghohy-MuiButtonBase-root-MuiButton-root"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
