@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Button, Grid, IconButton, Typography } from '@mui/material';
 import SVG from 'react-inlinesvg';
+import MenuIcon from '@mui/icons-material/Menu';
 
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
@@ -12,11 +13,45 @@ import HeaderOrderSVG from './assets/icons/donutSVG.svg';
 
 const Header = () => (
   <HeaderRoot>
-    <HeaderTop container justifyContent='space-around'>
-      <Grid item xs={1} xl={2} />
-      <Grid item xs={10} xl={8}>
-        <Grid container justifyContent='flex-end' spacing={1}>
-          <Grid item>
+    <HeaderTop
+      container
+      justifyContent='space-around'
+      sx={{ paddingLeft: { xs: '10px', sm: '20px' }, paddingRight: { xs: '10px', sm: '20px' } }}
+    >
+      <Grid item xs={4} lg={1} xl={2} sx={{ paddingTop: '40px' }}>
+        <Grid container display={{ lg: 'none' }}>
+          <MenuIcon color='secondary' height={100} width={100} />
+        </Grid>
+      </Grid>
+      <Grid item xs={4} lg={1} xl={2}>
+        <Grid container display={{ lg: 'none' }}>
+          <Grid item xs={12}>
+            <Grid container justifyContent='center'>
+              <HeaderLogo src={HeaderImage} />
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container justifyContent='center'>
+              <HeaderTopButton
+                buttonColor='#f2755f'
+                buttonHoverColor='#f59180'
+                startIcon={<SVG fill='#FFFFFF' height={20} src={HeaderOrderSVG} width={20} />}
+                variant='contained'
+              >
+                Order Now
+              </HeaderTopButton>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={4} lg={10} xl={8}>
+        <Grid
+          container
+          justifyContent='flex-end'
+          spacing={1}
+          sx={{ paddingTop: { xs: '30px', lg: '0px' } }}
+        >
+          <Grid item display={{ xs: 'none', lg: 'inline-flex' }}>
             <Grid container justifyContent='space-around' spacing={2}>
               <Grid item>
                 <HeaderTopButton
@@ -52,13 +87,15 @@ const Header = () => (
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={1} xl={2} />
+      <Grid item md={1} xl={2} display={{ xs: 'none', lg: 'inline-block' }} />
     </HeaderTop>
-    <Grid container>
-      <Grid item xs={1} xl={2} />
-      <Grid item xs={10} xl={8}>
-        <Grid container justifyContent='space-between'>
-          <Grid item>
+    <Grid
+      container
+      sx={{ paddingLeft: { xs: '10px', sm: '20px' }, paddingRight: { xs: '10px', sm: '20px' } }}
+    >
+      <Grid item xs={12}>
+        <Grid container justifyContent={{ xs: 'space-around', lg: 'space-between' }}>
+          <Grid item display={{ xs: 'none', lg: 'inline-flex' }}>
             <HeaderLogo src={HeaderImage} />
           </Grid>
           <Grid item>
@@ -82,11 +119,11 @@ const Header = () => (
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
+          <Grid item display={{ xs: 'none', lg: 'inline-block' }}>
             <Grid container sx={{ marginTop: 2 }}>
               <HeaderTopButton
-                buttonColor='#f59180'
-                buttonHoverColor='#f2755f'
+                buttonColor='#f2755f'
+                buttonHoverColor='#f59180'
                 startIcon={<SVG fill='#FFFFFF' height={20} src={HeaderOrderSVG} width={20} />}
                 variant='contained'
               >

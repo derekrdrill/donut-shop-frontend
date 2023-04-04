@@ -9,7 +9,7 @@ export const HeaderRoot = styled(AppBar)({
 
 export const HeaderTop = styled(Grid)({
   borderBottom: '1px solid #DFDFDF',
-  padding: '10px 0',
+  padding: '5px 0',
 });
 
 export const HeaderLogo = styled.img({
