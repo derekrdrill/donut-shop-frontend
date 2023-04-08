@@ -2,30 +2,14 @@
 
 exports[`Header unit tests renders as expected 1`] = `
 <header
-  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-beqWaB ivvMqr mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-gueYoa ccpVvj mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
 >
   <div
-    className="MuiGrid-root MuiGrid-container sc-gueYoa eDKnWb css-eqlkfr-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container sc-dmqHEX eTaKUK css-eqlkfr-MuiGrid-root"
   >
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-1 MuiGrid-grid-xl-2 css-2kga1j-MuiGrid-root"
-    >
-      <div
-        className="MuiGrid-root MuiGrid-container css-wado3p-MuiGrid-root"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-iAEyYk inBptY css-i4bv87-MuiSvgIcon-root"
-          data-testid="MenuIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-          />
-        </svg>
-      </div>
-    </div>
+    />
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-1 MuiGrid-grid-xl-2 css-1e0qk4k-MuiGrid-root"
     >
@@ -39,7 +23,7 @@ exports[`Header unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
           >
             <img
-              className="sc-dmqHEX bWStsy"
+              className="sc-hLseeU gDmAXl"
               src={
                 {
                   "process": [Function],
@@ -55,9 +39,7 @@ exports[`Header unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
           >
             <button
-              buttonColor="#f2755f"
-              buttonHoverColor="#f59180"
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-eDDNvR kzXaCT css-sghohy-MuiButtonBase-root-MuiButton-root"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB cIWvBF css-sghohy-MuiButtonBase-root-MuiButton-root"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -102,9 +84,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <button
-                buttonColor="#6a017f"
-                buttonHoverColor="#a501c6"
-                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall sc-eDDNvR cORaZW css-11qr2p8-MuiButtonBase-root-MuiButton-root"
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB eEtcVx css-sghohy-MuiButtonBase-root-MuiButton-root"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -131,9 +111,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <button
-                buttonColor="#6a017f"
-                buttonHoverColor="#a501c6"
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall sc-eDDNvR beLhhV css-1k23hlb-MuiButtonBase-root-MuiButton-root"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium sc-beqWaB kNuXFO css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -207,7 +185,7 @@ exports[`Header unit tests renders as expected 1`] = `
           className="MuiGrid-root MuiGrid-item css-zgfqgc-MuiGrid-root"
         >
           <img
-            className="sc-dmqHEX bWStsy"
+            className="sc-hLseeU gDmAXl"
             src={
               {
                 "process": [Function],
@@ -225,7 +203,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-hLseeU dqdUXb"
+                className="sc-eDDNvR kHjirK"
                 color="textPrimary"
               >
                 MENU
@@ -235,7 +213,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-hLseeU dqdUXb"
+                className="sc-eDDNvR kHjirK"
                 color="textPrimary"
               >
                 REWARDS
@@ -245,17 +223,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-hLseeU dqdUXb"
-                color="textPrimary"
-              >
-                FUNDRAISING
-              </h4>
-            </div>
-            <div
-              className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
-            >
-              <h4
-                className="sc-hLseeU dqdUXb"
+                className="sc-eDDNvR kHjirK"
                 color="textPrimary"
               >
                 RETAIL
@@ -270,9 +238,7 @@ exports[`Header unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-container css-e2ivvl-MuiGrid-root"
           >
             <button
-              buttonColor="#f2755f"
-              buttonHoverColor="#f59180"
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-eDDNvR kzXaCT css-sghohy-MuiButtonBase-root-MuiButton-root"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB jIWNKs css-sghohy-MuiButtonBase-root-MuiButton-root"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}

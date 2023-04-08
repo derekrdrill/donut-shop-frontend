@@ -3,12 +3,11 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import Header from './Header';
+import ActionButton from './ActionButton';
 
-
-describe('Header unit tests', () => {
+describe('ActionButton unit tests', () => {
   it('renders as expected', () => {
-    const result = renderer.create(<Header />).toJSON();
+    const result = renderer.create(<ActionButton />).toJSON();
     expect(result).toMatchSnapshot();
   });
 });
