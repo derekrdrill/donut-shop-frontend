@@ -33,8 +33,8 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.join(__dirname, '/public'),
+    filename: 'bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
