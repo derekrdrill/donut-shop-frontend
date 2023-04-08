@@ -204,30 +204,30 @@ exports[`App unit tests renders as expected 1`] = `
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <h4
-                  className="sc-eDDNvR kHjirK"
+                  className="sc-eDDNvR gAGpwS"
                   color="textPrimary"
                 >
-                  MENU
+                  Menu
                 </h4>
               </div>
               <div
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <h4
-                  className="sc-eDDNvR kHjirK"
+                  className="sc-eDDNvR gAGpwS"
                   color="textPrimary"
                 >
-                  REWARDS
+                  Reward
                 </h4>
               </div>
               <div
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <h4
-                  className="sc-eDDNvR kHjirK"
+                  className="sc-eDDNvR gAGpwS"
                   color="textPrimary"
                 >
-                  RETAIL
+                  Retail
                 </h4>
               </div>
             </div>
@@ -289,34 +289,34 @@ exports[`App unit tests renders as expected 1`] = `
     className="MuiGrid-root sc-qRumB eERfiS css-1ii0ocg-MuiGrid-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-container css-18p4n9n-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-container css-1jzi3sl-MuiGrid-root"
     >
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
-        <h3
-          className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+        <h1
+          className="sc-jsMahE kQgTBx"
         >
           Menu
-        </h3>
+        </h1>
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
-        <h3
-          className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+        <h1
+          className="sc-jsMahE kQgTBx"
         >
           Rewards
-        </h3>
+        </h1>
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
-        <h3
-          className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+        <h1
+          className="sc-jsMahE kQgTBx"
         >
           Retail
-        </h3>
+        </h1>
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
