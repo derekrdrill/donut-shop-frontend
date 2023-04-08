@@ -203,30 +203,30 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-eDDNvR kHjirK"
+                className="sc-eDDNvR gAGpwS"
                 color="textPrimary"
               >
-                MENU
+                Menu
               </h4>
             </div>
             <div
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-eDDNvR kHjirK"
+                className="sc-eDDNvR gAGpwS"
                 color="textPrimary"
               >
-                REWARDS
+                Reward
               </h4>
             </div>
             <div
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-eDDNvR kHjirK"
+                className="sc-eDDNvR gAGpwS"
                 color="textPrimary"
               >
-                RETAIL
+                Retail
               </h4>
             </div>
           </div>

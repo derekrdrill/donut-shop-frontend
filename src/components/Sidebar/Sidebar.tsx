@@ -4,6 +4,8 @@ import { Grid, Typography } from '@mui/material';
 
 import ActionButton from '../ActionButton/ActionButton';
 
+import { SidebarMenuText } from './style';
+
 interface SidebarProps {
   isSidebarOpen: boolean;
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -12,15 +14,15 @@ interface SidebarProps {
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
   return (
     <SidebarRoot display={{ xs: 'block', lg: 'none' }} $isSidebarOpen={isSidebarOpen}>
-      <Grid container rowSpacing={5}>
+      <Grid container rowSpacing={2}>
         <Grid item xs={12}>
-          <Typography variant='h3'>Menu</Typography>
+          <SidebarMenuText>Menu</SidebarMenuText>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant='h3'>Rewards</Typography>
+          <SidebarMenuText>Rewards</SidebarMenuText>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant='h3'>Retail</Typography>
+          <SidebarMenuText>Retail</SidebarMenuText>
         </Grid>
         <Grid item xs={12}>
           <Grid container rowSpacing={2}>
