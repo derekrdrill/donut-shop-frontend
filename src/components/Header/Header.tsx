@@ -104,13 +104,13 @@ const Header = () => (
               sx={{ marginTop: 1.5 }}
             >
               <Grid item>
-                <HeaderMenuText color='textPrimary'>MENU</HeaderMenuText>
+                <HeaderMenuText color='textPrimary'>Menu</HeaderMenuText>
               </Grid>
               <Grid item>
-                <HeaderMenuText color='textPrimary'>REWARDS</HeaderMenuText>
+                <HeaderMenuText color='textPrimary'>Reward</HeaderMenuText>
               </Grid>
               <Grid item>
-                <HeaderMenuText color='textPrimary'>RETAIL</HeaderMenuText>
+                <HeaderMenuText color='textPrimary'>Retail</HeaderMenuText>
               </Grid>
             </Grid>
           </Grid>

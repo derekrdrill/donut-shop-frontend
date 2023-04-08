@@ -13,3 +13,22 @@ export const SidebarRoot = styled(Grid)<{ $isSidebarOpen: boolean }>(({ $isSideb
   width: 400,
   zIndex: 3,
 }));
+
+export const SidebarMenuText = styled.h1({
+  ':hover': {
+    backgroundPositionX: '0%',
+    backgroundSize: '100% 0.1em',
+  },
+  backgroundImage: 'linear-gradient(#212121, #212121)',
+  backgroundPositionX: '100%',
+  backgroundPositionY: '100%',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: '0% 0.1em',
+  color: 'black',
+  cursor: 'pointer',
+  fontFamily: `'Josefin Sans', sans-serif !important`,
+  fontWeight: '600 !important',
+  textDecoration: 'none',
+  textTransform: 'uppercase',
+  transition: 'background-size 0.2s ease-in-out',
+});
