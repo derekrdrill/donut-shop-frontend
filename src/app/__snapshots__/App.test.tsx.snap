@@ -286,7 +286,7 @@ exports[`App unit tests renders as expected 1`] = `
     />
   </div>,
   <div
-    className="MuiGrid-root sc-jsMahE jBVVOT css-1ii0ocg-MuiGrid-root"
+    className="MuiGrid-root sc-jsMahE eOALFa css-1ii0ocg-MuiGrid-root"
   >
     <div
       className="MuiGrid-root MuiGrid-container css-1jzi3sl-MuiGrid-root"
