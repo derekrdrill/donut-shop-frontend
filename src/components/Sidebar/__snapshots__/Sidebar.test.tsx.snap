@@ -2,7 +2,7 @@
 
 exports[`Sidebar unit tests renders as expected 1`] = `
 <div
-  className="MuiGrid-root sc-beqWaB cnSQiM css-1ii0ocg-MuiGrid-root"
+  className="MuiGrid-root sc-beqWaB bPrEOu css-1ii0ocg-MuiGrid-root"
 >
   <div
     className="MuiGrid-root MuiGrid-container css-1jzi3sl-MuiGrid-root"
