@@ -3,10 +3,11 @@ import { Grid, Typography } from '@mui/material';
 
 import ActionButton from '../../components/ActionButton/ActionButton';
 
+import { HomepageImage, HomepageRoot, HomepageText, HomePageTextSpan } from './style';
+
 import homepageCoffee from './assets/images/homepageCoffee.png';
 import homepageDonut from './assets/images/homepageDonut.png';
 
-import { HomepageImage, HomepageRoot, HomepageText, HomePageTextSpan } from './style';
 
 const Homepage = () => (
   <HomepageRoot container rowSpacing={6}>
