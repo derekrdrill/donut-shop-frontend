@@ -8,7 +8,7 @@ interface OverlayProps extends GridProps {
 }
 
 const Overlay = ({ isOverlayVisbile }: OverlayProps) => (
-  <OverlayRoot display={isOverlayVisbile ? 'block' : 'none'} />
+  <OverlayRoot display={{ xs: isOverlayVisbile ? 'block' : 'none', lg: 'none' }} />
 );
 
 export default Overlay;
