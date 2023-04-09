@@ -35,7 +35,7 @@ export const MenuIconContainer = styled(Grid)<{
   },
   cursor: 'pointer',
   left: 20,
-  position: 'absolute',
+  position: 'fixed',
   top: 40,
   transition: 'all 150ms linear',
   width: '58px !important',
