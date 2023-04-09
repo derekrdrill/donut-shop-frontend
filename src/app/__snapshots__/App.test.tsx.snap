@@ -3,7 +3,7 @@
 exports[`App unit tests renders as expected 1`] = `
 [
   <div
-    className="MuiGrid-root sc-jsMahE FGsuj css-1apvdhs-MuiGrid-root"
+    className="MuiGrid-root sc-jsMahE FGsuj css-oc3ze6-MuiGrid-root"
   />,
   <header
     className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-dmqHEX jnZMdu mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
