@@ -3,10 +3,10 @@
 exports[`App unit tests renders as expected 1`] = `
 [
   <header
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-gueYoa ccpVvj mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-dmqHEX jnZMdu mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-container sc-dmqHEX eTaKUK css-eqlkfr-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-container sc-hLseeU kGuGLp css-eqlkfr-MuiGrid-root"
     >
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-1 MuiGrid-grid-xl-2 css-2kga1j-MuiGrid-root"
@@ -24,7 +24,7 @@ exports[`App unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
             >
               <img
-                className="sc-hLseeU gDmAXl"
+                className="sc-eDDNvR bwghac"
                 src={
                   {
                     "process": [Function],
@@ -40,7 +40,7 @@ exports[`App unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
             >
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB cIWvBF css-sghohy-MuiButtonBase-root-MuiButton-root"
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gueYoa hWAJkX css-sghohy-MuiButtonBase-root-MuiButton-root"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -85,7 +85,7 @@ exports[`App unit tests renders as expected 1`] = `
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB eEtcVx css-sghohy-MuiButtonBase-root-MuiButton-root"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gueYoa khSlVf css-sghohy-MuiButtonBase-root-MuiButton-root"
                   disabled={false}
                   onBlur={[Function]}
                   onContextMenu={[Function]}
@@ -112,7 +112,7 @@ exports[`App unit tests renders as expected 1`] = `
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium sc-beqWaB kNuXFO css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium sc-gueYoa epcazY css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
                   disabled={false}
                   onBlur={[Function]}
                   onContextMenu={[Function]}
@@ -142,7 +142,7 @@ exports[`App unit tests renders as expected 1`] = `
           >
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-jTrPJq jqZkPV css-kinq8d-MuiSvgIcon-root"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-gLDzan kvppww css-kinq8d-MuiSvgIcon-root"
               data-testid="SearchIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -157,7 +157,7 @@ exports[`App unit tests renders as expected 1`] = `
           >
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-gLDzan kvppww css-kinq8d-MuiSvgIcon-root"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-iAEyYk jpuBIk css-kinq8d-MuiSvgIcon-root"
               data-testid="ShoppingBagIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -186,7 +186,7 @@ exports[`App unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-item css-zgfqgc-MuiGrid-root"
           >
             <img
-              className="sc-hLseeU gDmAXl"
+              className="sc-eDDNvR bwghac"
               src={
                 {
                   "process": [Function],
@@ -204,7 +204,7 @@ exports[`App unit tests renders as expected 1`] = `
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <h4
-                  className="sc-eDDNvR gAGpwS"
+                  className="sc-jTrPJq blOOZa"
                   color="textPrimary"
                 >
                   Menu
@@ -214,7 +214,7 @@ exports[`App unit tests renders as expected 1`] = `
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <h4
-                  className="sc-eDDNvR gAGpwS"
+                  className="sc-jTrPJq blOOZa"
                   color="textPrimary"
                 >
                   Reward
@@ -224,7 +224,7 @@ exports[`App unit tests renders as expected 1`] = `
                 className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
               >
                 <h4
-                  className="sc-eDDNvR gAGpwS"
+                  className="sc-jTrPJq blOOZa"
                   color="textPrimary"
                 >
                   Retail
@@ -239,7 +239,7 @@ exports[`App unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-container css-e2ivvl-MuiGrid-root"
             >
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB jIWNKs css-sghohy-MuiButtonBase-root-MuiButton-root"
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gueYoa eaqirC css-sghohy-MuiButtonBase-root-MuiButton-root"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -272,21 +272,21 @@ exports[`App unit tests renders as expected 1`] = `
   </header>,
   ";",
   <div
-    className="MuiGrid-root MuiGrid-container sc-iAEyYk lnctpP css-1l77w8w-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container sc-fsQiph cXtihR css-1l77w8w-MuiGrid-root"
     onClick={[Function]}
   >
     <div
-      className="MuiGrid-root MuiGrid-item sc-fsQiph dPHGee menu-icon-line-top css-13i4rnv-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item sc-qRumB kAYbqO menu-icon-line-top css-13i4rnv-MuiGrid-root"
     />
     <div
-      className="MuiGrid-root MuiGrid-item sc-fsQiph dPHGee menu-icon-line-middle css-13i4rnv-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item sc-qRumB kAYbqO menu-icon-line-middle css-13i4rnv-MuiGrid-root"
     />
     <div
-      className="MuiGrid-root MuiGrid-item sc-fsQiph gnXnHH menu-icon-line-bottom css-13i4rnv-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item sc-qRumB eODmhD menu-icon-line-bottom css-13i4rnv-MuiGrid-root"
     />
   </div>,
   <div
-    className="MuiGrid-root sc-qRumB eERfiS css-1ii0ocg-MuiGrid-root"
+    className="MuiGrid-root sc-jsMahE jBVVOT css-1ii0ocg-MuiGrid-root"
   >
     <div
       className="MuiGrid-root MuiGrid-container css-1jzi3sl-MuiGrid-root"
@@ -295,7 +295,7 @@ exports[`App unit tests renders as expected 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <h1
-          className="sc-jsMahE kQgTBx"
+          className="sc-kFuwaP goIBAT"
         >
           Menu
         </h1>
@@ -304,7 +304,7 @@ exports[`App unit tests renders as expected 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <h1
-          className="sc-jsMahE kQgTBx"
+          className="sc-kFuwaP goIBAT"
         >
           Rewards
         </h1>
@@ -313,7 +313,7 @@ exports[`App unit tests renders as expected 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <h1
-          className="sc-jsMahE kQgTBx"
+          className="sc-kFuwaP goIBAT"
         >
           Retail
         </h1>
@@ -328,7 +328,7 @@ exports[`App unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
           >
             <button
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB iSwvnH css-sghohy-MuiButtonBase-root-MuiButton-root"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gueYoa hqPguN css-sghohy-MuiButtonBase-root-MuiButton-root"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -355,7 +355,7 @@ exports[`App unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
           >
             <button
-              className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium sc-beqWaB iTzwqY css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+              className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium sc-gueYoa bpCHHm css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -378,6 +378,271 @@ exports[`App unit tests renders as expected 1`] = `
               />
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="MuiGrid-root MuiGrid-container sc-beqWaB fzBpTE css-11lq3yg-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container sc-irTswW dOVuqj css-1ha5ulo-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1w0ke5t-MuiGrid-root"
+          >
+            <img
+              className="sc-csCMJt bfWcUW"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-17t7739-MuiGrid-root"
+            >
+              <h1
+                className="sc-fbJfA cdDaaO"
+              >
+                <span
+                  className="sc-brKeYL fOGWM"
+                >
+                  Nuthouse 
+                </span>
+                <span
+                  className="sc-brKeYL hXDqjW"
+                >
+                  Rewards
+                </span>
+              </h1>
+              <h1
+                className="sc-fbJfA EaWhR"
+              >
+                Earn shit for buyin' shit
+              </h1>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1w0ke5t-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-16g5rpk-MuiGrid-root"
+            >
+              <img
+                className="sc-csCMJt cgOSDz"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+          />
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1ha5ulo-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-waxx4-MuiGrid-root"
+                >
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    💵
+                  </h3>
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    💳
+                  </h3>
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    📱
+                  </h3>
+                  <h1
+                    className="sc-fbJfA flglkS"
+                  >
+                    Earn Points However You Pay
+                  </h1>
+                  <div
+                    className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                  >
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                    />
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+                    >
+                      <h1
+                        className="sc-fbJfA cZIHxR"
+                      >
+                        Order ahead in the app or use Nuthouse Rewards ID in-store to earn 2 points per $1 spent
+                      </h1>
+                    </div>
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-waxx4-MuiGrid-root"
+                >
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    🍩
+                  </h3>
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    ☕️
+                  </h3>
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    🥐
+                  </h3>
+                  <h1
+                    className="sc-fbJfA flglkS"
+                  >
+                    Convert points into tasty treats
+                  </h1>
+                  <div
+                    className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                  >
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                    />
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+                    >
+                      <h1
+                        className="sc-fbJfA cZIHxR"
+                      >
+                        Rewards start at just 150 points - only $15 spent!
+                      </h1>
+                    </div>
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-waxx4-MuiGrid-root"
+                >
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    🚀
+                  </h3>
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    ⚡️
+                  </h3>
+                  <h3
+                    className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+                  >
+                    🔥
+                  </h3>
+                  <h1
+                    className="sc-fbJfA flglkS"
+                  >
+                    Get super boosted long-term
+                  </h1>
+                  <div
+                    className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                  >
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                    />
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+                    >
+                      <h1
+                        className="sc-fbJfA cZIHxR"
+                      >
+                        12 visits in a calendar month earns 12 points per dollar!
+                      </h1>
+                    </div>
+                    <div
+                      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gueYoa cOPCje css-sghohy-MuiButtonBase-root-MuiButton-root"
+            disabled={false}
+            onBlur={[Function]}
+            onContextMenu={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            Join Rewards
+            <span
+              className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
         </div>
       </div>
     </div>

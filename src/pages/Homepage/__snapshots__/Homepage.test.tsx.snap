@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage unit tests renders as expected 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container sc-gueYoa gROcOv css-1ha5ulo-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1w0ke5t-MuiGrid-root"
+      >
+        <img
+          className="sc-dmqHEX jnMgDH"
+          src={
+            {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-17t7739-MuiGrid-root"
+        >
+          <h1
+            className="sc-hLseeU fJCyCt"
+          >
+            <span
+              className="sc-eDDNvR iBNKLE"
+            >
+              Nuthouse 
+            </span>
+            <span
+              className="sc-eDDNvR dAeCEO"
+            >
+              Rewards
+            </span>
+          </h1>
+          <h1
+            className="sc-hLseeU jqJLJW"
+          >
+            Earn shit for buyin' shit
+          </h1>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1w0ke5t-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-16g5rpk-MuiGrid-root"
+        >
+          <img
+            className="sc-dmqHEX cGAoBu"
+            src={
+              {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+      />
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-1ha5ulo-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-waxx4-MuiGrid-root"
+            >
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                💵
+              </h3>
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                💳
+              </h3>
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                📱
+              </h3>
+              <h1
+                className="sc-hLseeU jVkhgN"
+              >
+                Earn Points However You Pay
+              </h1>
+              <div
+                className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                />
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+                >
+                  <h1
+                    className="sc-hLseeU eLHrxq"
+                  >
+                    Order ahead in the app or use Nuthouse Rewards ID in-store to earn 2 points per $1 spent
+                  </h1>
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-waxx4-MuiGrid-root"
+            >
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                🍩
+              </h3>
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                ☕️
+              </h3>
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                🥐
+              </h3>
+              <h1
+                className="sc-hLseeU jVkhgN"
+              >
+                Convert points into tasty treats
+              </h1>
+              <div
+                className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                />
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+                >
+                  <h1
+                    className="sc-hLseeU eLHrxq"
+                  >
+                    Rewards start at just 150 points - only $15 spent!
+                  </h1>
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-waxx4-MuiGrid-root"
+            >
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                🚀
+              </h3>
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                ⚡️
+              </h3>
+              <h3
+                className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+              >
+                🔥
+              </h3>
+              <h1
+                className="sc-hLseeU jVkhgN"
+              >
+                Get super boosted long-term
+              </h1>
+              <div
+                className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                />
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
+                >
+                  <h1
+                    className="sc-hLseeU eLHrxq"
+                  >
+                    12 visits in a calendar month earns 12 points per dollar!
+                  </h1>
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-beqWaB bhquSQ css-sghohy-MuiButtonBase-root-MuiButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Join Rewards
+      </button>
+    </div>
+  </div>
+</div>
+`;

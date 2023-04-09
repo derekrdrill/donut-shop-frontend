@@ -19,13 +19,13 @@ describe('MenuIcon unit tests', () => {
     render(<MenuIconContainer data-testid='menu-icon-container' $isMenuIconActive />);
 
     const menuIconContainer = await screen.findAllByTestId('menu-icon-container');
-    expect(menuIconContainer[0]).toHaveClass('sc-beqWaB imYeHn');
+    expect(menuIconContainer[0]).toHaveClass('sc-beqWaB gGWkHm');
   });
 
   it('renders MenuIconContainer styled component (not active)', async () => {
     render(<MenuIconContainer data-testid='menu-icon-container' $isMenuIconActive={false} />);
 
     const menuIconContainer = await screen.findAllByTestId('menu-icon-container');
-    expect(menuIconContainer[0]).toHaveClass('sc-beqWaB kWPVtv');
+    expect(menuIconContainer[0]).toHaveClass('sc-beqWaB bgqTUy');
   });
 });
