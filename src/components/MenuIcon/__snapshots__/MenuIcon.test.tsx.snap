@@ -2,7 +2,7 @@
 
 exports[`MenuIcon unit tests renders as expected 1`] = `
 <div
-  className="MuiGrid-root MuiGrid-container sc-beqWaB bgqTUy css-1l77w8w-MuiGrid-root"
+  className="MuiGrid-root MuiGrid-container sc-beqWaB dqjznT css-1l77w8w-MuiGrid-root"
   onClick={[Function]}
 >
   <div
