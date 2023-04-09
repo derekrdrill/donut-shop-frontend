@@ -6,7 +6,7 @@ export const SidebarRoot = styled(Grid)<{ $isSidebarOpen: boolean }>(({ $isSideb
   bottom: 0,
   left: 0,
   padding: '150px 200px 10px 30px',
-  position: 'absolute',
+  position: 'fixed',
   top: 0,
   transform: $isSidebarOpen ? 'none' : 'translateX(-100%)',
   transition: 'transform 500ms ease-in',
