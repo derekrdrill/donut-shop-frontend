@@ -2,16 +2,18 @@ import styled from 'styled-components';
 import { Grid } from '@mui/material';
 
 export const SidebarRoot = styled(Grid)<{ $isSidebarOpen: boolean }>(({ $isSidebarOpen }) => ({
-  backgroundColor: 'gainsboro',
+  backgroundColor: '#f5f5f5',
   bottom: 0,
+  height: '100%',
   left: 0,
+  minHeight: '100%',
   padding: '150px 200px 10px 30px',
   position: 'fixed',
   top: 0,
   transform: $isSidebarOpen ? 'none' : 'translateX(-100%)',
   transition: 'transform 500ms ease-in',
   width: 400,
-  zIndex: 3,
+  zIndex: 4,
 }));
 
 export const SidebarMenuText = styled.h1({
