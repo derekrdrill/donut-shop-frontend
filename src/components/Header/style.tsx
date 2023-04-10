@@ -7,7 +7,7 @@ export const HeaderRoot = styled(AppBar)({
   backgroundColor: 'white !important',
   borderBottom: '1px solid #DFDFDF',
   boxShadow: 'none !important',
-  zIndex: '2 !important',
+  zIndex: '3 !important',
 });
 
 export const HeaderTop = styled(Grid)({

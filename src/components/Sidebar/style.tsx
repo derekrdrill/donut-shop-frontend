@@ -13,7 +13,7 @@ export const SidebarRoot = styled(Grid)<{ $isSidebarOpen: boolean }>(({ $isSideb
   transform: $isSidebarOpen ? 'none' : 'translateX(-100%)',
   transition: 'transform 500ms ease-in',
   width: 400,
-  zIndex: 4,
+  zIndex: 5,
 }));
 
 export const SidebarMenuText = styled.h1({

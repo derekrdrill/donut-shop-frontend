@@ -3,10 +3,10 @@
 exports[`App unit tests renders as expected 1`] = `
 [
   <div
-    className="MuiGrid-root sc-jsMahE FGsuj css-oc3ze6-MuiGrid-root"
+    className="MuiGrid-root sc-jsMahE bQWxIJ css-1br5gpf-MuiGrid-root"
   />,
   <header
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-dmqHEX jnZMdu mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-dmqHEX bWCOUz mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
   >
     <div
       className="MuiGrid-root MuiGrid-container sc-hLseeU kGuGLp css-eqlkfr-MuiGrid-root"
@@ -209,6 +209,7 @@ exports[`App unit tests renders as expected 1`] = `
                 <h4
                   className="sc-jTrPJq blOOZa"
                   color="textPrimary"
+                  onClick={[Function]}
                 >
                   Menu
                 </h4>
@@ -275,7 +276,7 @@ exports[`App unit tests renders as expected 1`] = `
   </header>,
   ";",
   <div
-    className="MuiGrid-root MuiGrid-container sc-fsQiph iRZtrs css-1l77w8w-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container sc-fsQiph chFYzH css-1l77w8w-MuiGrid-root"
     onClick={[Function]}
   >
     <div
@@ -289,7 +290,369 @@ exports[`App unit tests renders as expected 1`] = `
     />
   </div>,
   <div
-    className="MuiGrid-root sc-kFuwaP cxNNHe css-1ii0ocg-MuiGrid-root"
+    className="MuiGrid-root sc-kFuwaP hQVemc css-1r9h9rv-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container sc-fGFwAa fvhLOL css-1lym95h-MuiGrid-root"
+              onClick={[Function]}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Coffee, Tea & More
+              </h6>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container sc-fGFwAa gPLMTV css-1lym95h-MuiGrid-root"
+              onClick={[Function]}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Doughnuts
+              </h6>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container sc-fGFwAa fvhLOL css-1lym95h-MuiGrid-root"
+              onClick={[Function]}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Bagels, Muffins & More
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container sc-ieZDjg jeqOTR css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Chocolate
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Glazed
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Powdered
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Strawberry sprinkles
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Chocolate frosting
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Chocolate w/ sprinkles
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Jelly Filled
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-blLsxD bfIcPX css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <img
+                    className="sc-fmSAUk lfSFaw"
+                    src={
+                      {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                  >
+                    Boston Cream
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="MuiGrid-root sc-irTswW hYBvRF css-1ii0ocg-MuiGrid-root"
   >
     <div
       className="MuiGrid-root MuiGrid-container css-1jzi3sl-MuiGrid-root"
@@ -298,7 +661,7 @@ exports[`App unit tests renders as expected 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <h1
-          className="sc-irTswW KMqGh"
+          className="sc-csCMJt fJzAVp"
         >
           Menu
         </h1>
@@ -307,7 +670,7 @@ exports[`App unit tests renders as expected 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <h1
-          className="sc-irTswW KMqGh"
+          className="sc-csCMJt fJzAVp"
         >
           Rewards
         </h1>
@@ -316,7 +679,7 @@ exports[`App unit tests renders as expected 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <h1
-          className="sc-irTswW KMqGh"
+          className="sc-csCMJt fJzAVp"
         >
           Retail
         </h1>
@@ -389,7 +752,7 @@ exports[`App unit tests renders as expected 1`] = `
     className="MuiGrid-root MuiGrid-container sc-beqWaB fzBpTE css-11lq3yg-MuiGrid-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-container sc-csCMJt eeCbvH css-1ha5ulo-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-container sc-fbJfA copeCS css-1ha5ulo-MuiGrid-root"
     >
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -401,7 +764,7 @@ exports[`App unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1w0ke5t-MuiGrid-root"
           >
             <img
-              className="sc-fbJfA jIHtnT"
+              className="sc-brKeYL kZZlsl"
               src={
                 {
                   "process": [Function],
@@ -416,21 +779,21 @@ exports[`App unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-container css-17t7739-MuiGrid-root"
             >
               <h1
-                className="sc-brKeYL etcwaQ"
+                className="sc-ktEKTO eTZitV"
               >
                 <span
-                  className="sc-ktEKTO eSubzJ"
+                  className="sc-hAtEyd cjmMQa"
                 >
                   Nuthouse 
                 </span>
                 <span
-                  className="sc-ktEKTO eyueaL"
+                  className="sc-hAtEyd gVRwpE"
                 >
                   Rewards
                 </span>
               </h1>
               <h1
-                className="sc-brKeYL ieHmHb"
+                className="sc-ktEKTO cAZlye"
               >
                 Earn shit for buyin' shit
               </h1>
@@ -443,7 +806,7 @@ exports[`App unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-container css-16g5rpk-MuiGrid-root"
             >
               <img
-                className="sc-fbJfA kdQvqe"
+                className="sc-brKeYL iiOKjI"
                 src={
                   {
                     "process": [Function],
@@ -491,7 +854,7 @@ exports[`App unit tests renders as expected 1`] = `
                     📱
                   </h3>
                   <h1
-                    className="sc-brKeYL hAFHkU"
+                    className="sc-ktEKTO ibCtDZ"
                   >
                     Earn Points However You Pay
                   </h1>
@@ -505,7 +868,7 @@ exports[`App unit tests renders as expected 1`] = `
                       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
                     >
                       <h1
-                        className="sc-brKeYL bSGYvH"
+                        className="sc-ktEKTO bMgpQm"
                       >
                         Order ahead in the app or use Nuthouse Rewards ID in-store to earn 2 points per $1 spent
                       </h1>
@@ -538,7 +901,7 @@ exports[`App unit tests renders as expected 1`] = `
                     🥐
                   </h3>
                   <h1
-                    className="sc-brKeYL hAFHkU"
+                    className="sc-ktEKTO ibCtDZ"
                   >
                     Convert points into tasty treats
                   </h1>
@@ -552,7 +915,7 @@ exports[`App unit tests renders as expected 1`] = `
                       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
                     >
                       <h1
-                        className="sc-brKeYL bSGYvH"
+                        className="sc-ktEKTO bMgpQm"
                       >
                         Rewards start at just 150 points - only $15 spent!
                       </h1>
@@ -585,7 +948,7 @@ exports[`App unit tests renders as expected 1`] = `
                     🔥
                   </h3>
                   <h1
-                    className="sc-brKeYL hAFHkU"
+                    className="sc-ktEKTO ibCtDZ"
                   >
                     Get super boosted long-term
                   </h1>
@@ -599,7 +962,7 @@ exports[`App unit tests renders as expected 1`] = `
                       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root"
                     >
                       <h1
-                        className="sc-brKeYL bSGYvH"
+                        className="sc-ktEKTO bMgpQm"
                       >
                         12 visits in a calendar month earns 12 points per dollar!
                       </h1>
