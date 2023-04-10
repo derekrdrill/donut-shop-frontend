@@ -16,7 +16,12 @@ import {
 import HeaderImage from './assets/images/donutsImg.png';
 import HeaderOrderSVG from './assets/icons/donutSVG.svg';
 
-const Header = () => (
+interface HeaderProps {
+  isQuickMenuOpen: boolean;
+  setIsQuickMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Header = ({ isQuickMenuOpen, setIsQuickMenuOpen }: HeaderProps) => (
   <HeaderRoot>
     <HeaderTop
       container
@@ -104,7 +109,15 @@ const Header = () => (
               sx={{ marginTop: 1.5 }}
             >
               <Grid item>
-                <HeaderMenuText color='textPrimary'>Menu</HeaderMenuText>
+                <HeaderMenuText
+                  color='textPrimary'
+                  onClick={
+                    /* istanbul ignore next */
+                    () => setIsQuickMenuOpen(!isQuickMenuOpen)
+                  }
+                >
+                  Menu
+                </HeaderMenuText>
               </Grid>
               <Grid item>
                 <HeaderMenuText color='textPrimary'>Reward</HeaderMenuText>

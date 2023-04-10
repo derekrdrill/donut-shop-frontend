@@ -39,7 +39,7 @@ export const MenuIconContainer = styled(Grid)<{
   top: 40,
   transition: 'all 150ms linear',
   width: '58px !important',
-  zIndex: 5,
+  zIndex: 6,
 }));
 
 export const MenuIconLine = styled(Grid)<{

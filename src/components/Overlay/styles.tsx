@@ -11,5 +11,4 @@ export const OverlayRoot = styled(Grid)({
   position: 'fixed',
   top: 0,
   width: '100%',
-  zIndex: 3,
 });
