@@ -1,3 +1,10 @@
+const mockedUsedNavigate = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => mockedUsedNavigate,
+}));
+
 import '@testing-library/jest-dom';
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
@@ -19,13 +26,13 @@ describe('Sidebar unit tests', () => {
     render(<SidebarRoot data-testid='menu-icon-container' $isSidebarOpen />);
 
     const sidebarRoot = await screen.findAllByTestId('menu-icon-container');
-    expect(sidebarRoot[0]).toHaveClass('sc-beqWaB kaCrXv');
+    expect(sidebarRoot[0]).toHaveClass('sc-gueYoa eNbQMd');
   });
 
   it('renders SidebarRoot styled component (not open)', async () => {
     render(<SidebarRoot data-testid='menu-icon-container' $isSidebarOpen={false} />);
 
     const sidebarRoot = await screen.findAllByTestId('menu-icon-container');
-    expect(sidebarRoot[0]).toHaveClass('sc-beqWaB hhndMn');
+    expect(sidebarRoot[0]).toHaveClass('sc-gueYoa gGODpB');
   });
 });
