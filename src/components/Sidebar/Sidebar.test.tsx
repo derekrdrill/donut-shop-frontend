@@ -19,13 +19,13 @@ describe('Sidebar unit tests', () => {
     render(<SidebarRoot data-testid='menu-icon-container' $isSidebarOpen />);
 
     const sidebarRoot = await screen.findAllByTestId('menu-icon-container');
-    expect(sidebarRoot[0]).toHaveClass('sc-beqWaB lgMqsW');
+    expect(sidebarRoot[0]).toHaveClass('sc-beqWaB kaCrXv');
   });
 
   it('renders SidebarRoot styled component (not open)', async () => {
     render(<SidebarRoot data-testid='menu-icon-container' $isSidebarOpen={false} />);
 
     const sidebarRoot = await screen.findAllByTestId('menu-icon-container');
-    expect(sidebarRoot[0]).toHaveClass('sc-beqWaB bPrEOu');
+    expect(sidebarRoot[0]).toHaveClass('sc-beqWaB hhndMn');
   });
 });
