@@ -6,7 +6,7 @@ import coldDrinks from '../../../../assets/images/coffeeAndTea/icedCoffee.png';
 import muffins from '../../../../assets/images/bread/blueberryMuffin.png';
 import toast from '../../../../assets/images/bread/avocadoToast.png';
 
-interface FullMenuCategory {
+export interface FullMenuCategory {
   key: string;
   name: string;
   image: string;
