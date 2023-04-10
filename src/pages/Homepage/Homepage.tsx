@@ -22,9 +22,12 @@ const Homepage = () => (
               <HomePageTextSpan $fontColor='#f2755f'>Nuthouse </HomePageTextSpan>
               <HomePageTextSpan $fontColor='#6a017f'>Rewards</HomePageTextSpan>
             </HomepageText>
-            <HomepageText $fontColor='#404040' $fontSize={45}>
-              Earn shit for buyin' shit
+            <HomepageText $fontColor='#404040' $fontSize={35}>
+              Don't fumble the bag 💰 Get what's yours 😤
             </HomepageText>
+            {/* <HomepageText $fontColor='#404040' $fontSize={45}>
+              Get what's yours 😤
+            </HomepageText> */}
           </Grid>
         </Grid>
         <Grid item xs={2} display={{ xs: 'none', md: 'block' }}>

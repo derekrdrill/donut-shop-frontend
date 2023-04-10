@@ -1,11 +1,11 @@
-import avocadoToast from '../images/bread/avocadoToast.png';
-import blueberryMuffin from '../images/bread/blueberryMuffin.png';
-import chocolateMuffin from '../images/bread/chocolateMuffin.png';
-import croissant from '../images/bread/croissant.png';
-import everythingBagel from '../images/bread/everythingBagel.png';
-import plainBagel from '../images/bread/plainBagel.png';
-import poppyBagel from '../images/bread/poppyBagel.png';
-import raisinBagel from '../images/bread/raisinBagel.png';
+import avocadoToast from '../../../../assets/images/bread/avocadoToast.png';
+import blueberryMuffin from '../../../../assets/images/bread/blueberryMuffin.png';
+import chocolateMuffin from '../../../../assets/images/bread/chocolateMuffin.png';
+import croissant from '../../../../assets/images/bread/croissant.png';
+import everythingBagel from '../../../../assets/images/bread/everythingBagel.png';
+import plainBagel from '../../../../assets/images/bread/plainBagel.png';
+import poppyBagel from '../../../../assets/images/bread/poppyBagel.png';
+import raisinBagel from '../../../../assets/images/bread/raisinBagel.png';
 
 interface Bread {
   key: string;

@@ -1,11 +1,11 @@
-import bostonCreamDonut from '../images/donuts/bostonCreamDonut.png';
-import chocolateDonut from '../images/donuts/chocolateDonut.png';
-import chocolateFrostingDonut from '../images/donuts/chocolateFrostingDonut.png';
-import chocolateFrostingSprinklesDonut from '../images/donuts/chocolateFrostingSprinklesDonut.png';
-import glazedDonut from '../images/donuts/glazedDonut.png';
-import jellyFilledDonut from '../images/donuts/jellyFilledDonut.png';
-import powderedDonut from '../images/donuts/powderedDonut.png';
-import sprinkleDonut from '../images/donuts/sprinkleDonut.png';
+import bostonCreamDonut from '../../../../assets/images/donuts/bostonCreamDonut.png';
+import chocolateDonut from '../../../../assets/images/donuts/chocolateDonut.png';
+import chocolateFrostingDonut from '../../../../assets/images/donuts/chocolateFrostingDonut.png';
+import chocolateFrostingSprinklesDonut from '../../../../assets/images/donuts/chocolateFrostingSprinklesDonut.png';
+import glazedDonut from '../../../../assets/images/donuts/glazedDonut.png';
+import jellyFilledDonut from '../../../../assets/images/donuts/jellyFilledDonut.png';
+import powderedDonut from '../../../../assets/images/donuts/powderedDonut.png';
+import sprinkleDonut from '../../../../assets/images/donuts/sprinkleDonut.png';
 
 interface Donut {
   key: string;

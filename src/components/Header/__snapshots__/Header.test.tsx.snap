@@ -24,6 +24,7 @@ exports[`Header unit tests renders as expected 1`] = `
           >
             <img
               className="sc-hLseeU gDmAXl"
+              onClick={[Function]}
               src={
                 {
                   "process": [Function],
@@ -186,6 +187,7 @@ exports[`Header unit tests renders as expected 1`] = `
         >
           <img
             className="sc-hLseeU gDmAXl"
+            onClick={[Function]}
             src={
               {
                 "process": [Function],
@@ -200,7 +202,18 @@ exports[`Header unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-container css-19s77ke-MuiGrid-root"
           >
             <div
-              className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+              className="MuiGrid-root MuiGrid-item css-162za67-MuiGrid-root"
+            >
+              <h4
+                className="sc-eDDNvR gAGpwS"
+                color="textPrimary"
+                onClick={[Function]}
+              >
+                Menu
+              </h4>
+            </div>
+            <div
+              className="MuiGrid-root MuiGrid-item css-oszuia-MuiGrid-root"
             >
               <h4
                 className="sc-eDDNvR gAGpwS"
