@@ -17,7 +17,7 @@ const FullMenu = () => (
         </Typography>
       </Grid>
       {FULL_MENU_CATEGORIES.map(menuCategory => (
-        <FullMenuItem item xs={6} md={4} xl={3}>
+        <FullMenuItem key={menuCategory.key} item xs={6} md={4} xl={3}>
           <FullMenuItemContainer container>
             <Grid item xs={12}>
               <Grid container justifyContent='center'>
