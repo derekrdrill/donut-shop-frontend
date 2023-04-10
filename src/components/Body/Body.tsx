@@ -1,11 +1,13 @@
 import * as React from 'react';
 
-import { GridProps, ThemeProvider } from '@mui/material';
+import { GridProps } from '@mui/material';
 
 import { BodyRoot } from './style';
 
-const Body = ({ children }: GridProps) => {
-  return <BodyRoot container>{children}</BodyRoot>;
-};
+const Body = ({ children }: GridProps) => (
+  <BodyRoot container sx={{ left: 0, position: 'relative', top: { xs: 175, lg: 120 } }}>
+    {children}
+  </BodyRoot>
+);
 
 export default Body;

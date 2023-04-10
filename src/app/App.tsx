@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Body from '../components/Body/Body';
 import Header from '../components/Header/Header';
@@ -7,29 +8,48 @@ import Overlay from '../components/Overlay/Overlay';
 import QuickMenu from '../components/QuickMenu/QuickMenu';
 import Sidebar from '../components/Sidebar/Sidebar';
 
-import Homepage from '../pages/Homepage/Homepage';
-import QuickMenuPage from '../pages/Menu/QuickMenu/QuickMenuPage';
+import QuickMenuPage from '../pages/Menu/components/QuickMenu/QuickMenuPage';
 
 import { GlobalStyle } from './style';
+
+import routes from '../routes/routes';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState<boolean>(false);
   const [isQuickMenuOpen, setIsQuickMenuOpen] = React.useState<boolean>(false);
 
   return (
-    <>
-      <GlobalStyle $isSidebarOpen={isSidebarOpen} />
-      <Overlay isSidebarOpen={isSidebarOpen} isQuickViewOpen={isQuickMenuOpen} />
-      <Header isQuickMenuOpen={isQuickMenuOpen} setIsQuickMenuOpen={setIsQuickMenuOpen} />;
-      <MenuIcon isMenuIconActive={isSidebarOpen} setIsMenuIconActive={setIsSidebarOpen} />
-      <QuickMenu isQuickMenuOpen={isQuickMenuOpen}>
-        <QuickMenuPage />
-      </QuickMenu>
-      <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
-      <Body>
-        <Homepage />
-      </Body>
-    </>
+    <React.StrictMode>
+      <Router>
+        <Routes>
+          {routes.map(route => (
+            <Route
+              key={route.key}
+              path={route.path}
+              element={
+                <React.Suspense>
+                  <GlobalStyle $isSidebarOpen={isSidebarOpen} />
+                  <Overlay isSidebarOpen={isSidebarOpen} isQuickViewOpen={isQuickMenuOpen} />
+                  <Header
+                    isQuickMenuOpen={isQuickMenuOpen}
+                    setIsQuickMenuOpen={setIsQuickMenuOpen}
+                  />
+                  <MenuIcon
+                    isMenuIconActive={isSidebarOpen}
+                    setIsMenuIconActive={setIsSidebarOpen}
+                  />
+                  <QuickMenu isQuickMenuOpen={isQuickMenuOpen}>
+                    <QuickMenuPage />
+                  </QuickMenu>
+                  <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+                  <Body>{route.element}</Body>
+                </React.Suspense>
+              }
+            />
+          ))}
+        </Routes>
+      </Router>
+    </React.StrictMode>
   );
 };
 
