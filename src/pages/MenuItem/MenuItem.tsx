@@ -36,6 +36,10 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
     setSelectedSize(newSelectedSize);
   };
 
+  React.useEffect(() => {
+    setMenuItemData(fullMenu.filter(menuItem => menuItem.key === menuItemID)[0]);
+  }, [menuItemID]);
+
   return (
     <Grid container>
       <Grid item xs={12} lg={7}>
