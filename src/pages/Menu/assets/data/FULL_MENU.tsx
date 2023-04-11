@@ -29,6 +29,8 @@ export interface FullMenuItem {
   image: string;
   category: string;
   subCategory: string;
+  soda?: boolean;
+  bottled?: boolean;
 }
 
 const FULL_MENU: FullMenuItem[] = [
@@ -172,6 +174,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: icedTea,
     category: 'drink',
     subCategory: 'coldDrinks',
+    soda: true,
   },
   {
     key: 'cocaCola',
@@ -179,14 +182,23 @@ const FULL_MENU: FullMenuItem[] = [
     image: cocaCola,
     category: 'drink',
     subCategory: 'coldDrinks',
+    soda: true,
   },
-  { key: 'sprite', name: 'Sprite', image: sprite, category: 'drink', subCategory: 'coldDrinks' },
+  {
+    key: 'sprite',
+    name: 'Sprite',
+    image: sprite,
+    category: 'drink',
+    subCategory: 'coldDrinks',
+    soda: true,
+  },
   {
     key: 'waterBottle',
     name: 'Water Bottle',
     image: waterBottle,
     category: 'drink',
     subCategory: 'coldDrinks',
+    bottled: true,
   },
 ];
 
