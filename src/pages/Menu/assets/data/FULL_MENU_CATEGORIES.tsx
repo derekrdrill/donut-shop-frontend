@@ -1,10 +1,10 @@
-import bagels from '../../../../assets/images/bread/plainBagel.png';
-import croissants from '../../../../assets/images/bread/croissant.png';
-import donuts from '../../../../assets/images/donuts/chocolateFrostingDonut.png';
-import hotDrinks from '../../../../assets/images/coffeeAndTea/hotLatte.png';
-import coldDrinks from '../../../../assets/images/coffeeAndTea/icedCoffee.png';
-import muffins from '../../../../assets/images/bread/blueberryMuffin.png';
-import toast from '../../../../assets/images/bread/avocadoToast.png';
+import bagels from '../images/bread/plainBagel.png';
+import croissants from '../images/bread/croissant.png';
+import donuts from '../images/donuts/chocolateFrostingDonut.png';
+import hotDrinks from '../images/coffeeAndTea/hotLatte.png';
+import coldDrinks from '../images/coffeeAndTea/icedCoffee.png';
+import muffins from '../images/bread/blueberryMuffin.png';
+import toast from '../images/bread/avocadoToast.png';
 
 export interface FullMenuCategory {
   key: string;

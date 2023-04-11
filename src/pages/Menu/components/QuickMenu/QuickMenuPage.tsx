@@ -5,17 +5,26 @@ import QuickMenuItems from './components/QuickMenuItems';
 
 import { QuickMenuTabContainer } from './style';
 
-import { BREAD } from './assets/data/BREAD';
-import { COFFEE_AND_TEA } from './assets/data/COFFEE_AND_TEA';
-import { DONUTS } from './assets/data/DONUTS';
+import { FullMenuItem } from '../../assets/data/FULL_MENU';
+
+import FULL_MENU from '../../assets/data/FULL_MENU';
 
 export const getQuickMenuData = (quickMenuView: string) =>
-  quickMenuView === 'coffee' ? COFFEE_AND_TEA : quickMenuView === 'donuts' ? DONUTS : BREAD;
+  quickMenuView === 'coffee'
+    ? FULL_MENU.filter(menuItem => menuItem.category === 'drink')
+    : quickMenuView === 'donuts'
+    ? FULL_MENU.filter(menuItem => menuItem.category === 'donuts')
+    : FULL_MENU.filter(menuItem => menuItem.category === 'bread');
 
-const QuickMenuPage = () => {
+interface QuickMenuPageProps {
+  setIsQuickMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const QuickMenuPage = ({ setIsQuickMenuOpen }: QuickMenuPageProps) => {
   const [quickMenuView, setQuickMenuView] = React.useState<string>('donuts');
-  const [quickMenuData, setQuickMenuData] =
-    React.useState<Array<{ key: string; name: string; image: string }>>(COFFEE_AND_TEA);
+  const [quickMenuData, setQuickMenuData] = React.useState<FullMenuItem[]>(
+    FULL_MENU.filter(menuItem => menuItem.category === 'drink'),
+  );
 
   React.useEffect(() => {
     setQuickMenuData(getQuickMenuData(quickMenuView));
@@ -67,7 +76,7 @@ const QuickMenuPage = () => {
         </Grid>
       </Grid>
       <Grid item xs={12}>
-        <QuickMenuItems quickMenuData={quickMenuData} />
+        <QuickMenuItems quickMenuData={quickMenuData} setIsQuickMenuOpen={setIsQuickMenuOpen} />
       </Grid>
     </Grid>
   );
