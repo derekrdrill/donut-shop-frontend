@@ -62,6 +62,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -99,6 +100,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -136,6 +138,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -173,6 +176,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -210,6 +214,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -247,6 +252,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -284,6 +290,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
@@ -321,6 +328,7 @@ exports[`QuickMenuPage unit tests renders as expected 1`] = `
       </div>
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
