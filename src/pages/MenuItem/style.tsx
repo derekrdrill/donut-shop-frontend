@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Grid, ToggleButton, Typography } from '@mui/material';
+import { Button, Grid, ToggleButton, Typography } from '@mui/material';
+import ActionButton from '../../components/ActionButton/ActionButton';
 
 export const MenuItemImage = styled.img<{ height: number; width: number }>(({ height, width }) => ({
   height: height,
@@ -27,4 +28,8 @@ export const MenuItemDetailText = styled(Typography)<{
 
 export const MenuItemToggleButton = styled(ToggleButton)({
   width: 75,
+});
+
+export const MenuItemOrderButton = styled(ActionButton)({
+  borderRadius: '20px !important',
 });
