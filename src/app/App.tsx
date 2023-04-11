@@ -39,7 +39,7 @@ const App = () => {
                     setIsMenuIconActive={setIsSidebarOpen}
                   />
                   <QuickMenu isQuickMenuOpen={isQuickMenuOpen}>
-                    <QuickMenuPage />
+                    <QuickMenuPage setIsQuickMenuOpen={setIsQuickMenuOpen} />
                   </QuickMenu>
                   <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
                   <Body>{route.element}</Body>

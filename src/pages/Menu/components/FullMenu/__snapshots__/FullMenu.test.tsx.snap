@@ -111,7 +111,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
       <h4
         className="MuiTypography-root MuiTypography-h4 css-149xwtl-MuiTypography-root"
       >
-        Full menu
+        Full Menu
       </h4>
     </div>
     <div
@@ -119,6 +119,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -152,6 +153,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -185,6 +187,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -218,6 +221,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -251,6 +255,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -284,6 +289,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -317,6 +323,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
     >
       <div
         className="MuiGrid-root MuiGrid-container sc-gLDzan kAAEIz css-11lq3yg-MuiGrid-root"
+        onClick={[Function]}
       >
         <div
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"

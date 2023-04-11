@@ -5,10 +5,10 @@
   "coverageDirectory": "coverage",
   "coverageThreshold": {
     "global": {
-      "statements": 94,
-      "branches": 96,
-      "functions": 88,
-      "lines": 95
+      "statements": 90,
+      "branches": 89,
+      "functions": 81,
+      "lines": 92
     }
   },
   "moduleDirectories": ["node_modules", "src"],

@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import styled from 'styled-components';
 
 export const FullMenuHeadContainer = styled(Grid)({
@@ -35,7 +35,7 @@ export const FullMenuHeadImage = styled.img({
   width: 225,
 });
 
-export const FullMenuItem = styled(Grid)({
+export const FullMenuItemRoot = styled(Grid)({
   height: 200,
   padding: 10,
 });

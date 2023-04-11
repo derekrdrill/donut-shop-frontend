@@ -7,22 +7,15 @@ import '@testing-library/jest-dom';
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 
-import QuickMenuItems from './QuickMenuItems';
+import FullMenuBody from './FullMenuBody';
 
-const quickMenuData = [
-  {
-    key: 'coffee',
-    name: 'Coffee',
-    image: 'coffee.png',
-    category: 'hotDrinks',
-    subCategory: 'coffee',
-  },
-];
+import FULL_MENU from '../../../assets/data/FULL_MENU';
+import FULL_MENU_CATEGORIES from '../../../assets/data/FULL_MENU_CATEGORIES';
 
-describe('QuickMenuItems unit tests', () => {
+describe('FullMenuBody unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
-      .create(<QuickMenuItems quickMenuData={quickMenuData} setIsQuickMenuOpen={jest.fn()} />)
+      .create(<FullMenuBody fullMenuCategories={FULL_MENU_CATEGORIES} fullMenu={FULL_MENU} />)
       .toJSON();
     expect(result).toMatchSnapshot();
   });

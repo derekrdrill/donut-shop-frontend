@@ -1,22 +1,31 @@
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => jest.fn(),
+}));
+
 import '@testing-library/jest-dom';
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 
 import QuickMenuPage, { getQuickMenuData } from './QuickMenuPage';
 
-import { BREAD } from './assets/data/BREAD';
-import { COFFEE_AND_TEA } from './assets/data/COFFEE_AND_TEA';
-import { DONUTS } from './assets/data/DONUTS';
+import FULL_MENU from '../../assets/data/FULL_MENU';
 
 describe('QuickMenuPage unit tests', () => {
   it('renders as expected', () => {
-    const result = renderer.create(<QuickMenuPage />).toJSON();
+    const result = renderer.create(<QuickMenuPage setIsQuickMenuOpen={jest.fn()} />).toJSON();
     expect(result).toMatchSnapshot();
   });
 
   it('renders getQuickMenuData correctly', () => {
-    expect(getQuickMenuData('coffee')).toEqual(COFFEE_AND_TEA);
-    expect(getQuickMenuData('donuts')).toEqual(DONUTS);
-    expect(getQuickMenuData('bread')).toEqual(BREAD);
+    expect(getQuickMenuData('coffee')).toEqual(
+      FULL_MENU.filter(menuItem => menuItem.category === 'drink'),
+    );
+    expect(getQuickMenuData('donuts')).toEqual(
+      FULL_MENU.filter(menuItem => menuItem.category === 'donuts'),
+    );
+    expect(getQuickMenuData('bread')).toEqual(
+      FULL_MENU.filter(menuItem => menuItem.category === 'bread'),
+    );
   });
 });
