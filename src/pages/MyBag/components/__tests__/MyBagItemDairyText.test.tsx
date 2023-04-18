@@ -3,13 +3,13 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MyBagItemSugarText from './MyBagItemSugarText';
+import MyBagItemDairyText from '../MyBagItemDairyText';
 
-describe('MyBagItemSugarText unit tests', () => {
+describe('MyBagItemDairyText unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
       .create(
-        <MyBagItemSugarText
+        <MyBagItemDairyText
           myBagItem={{
             orderID: '1',
             menuItemID: 'icedCoffee',
@@ -21,7 +21,7 @@ describe('MyBagItemSugarText unit tests', () => {
             flavor: null,
             sugar: false,
             size: 'md',
-            ice: null,
+            ice: 'normal',
             creamCheese: null,
             butter: null,
             bottled: false,
@@ -34,9 +34,9 @@ describe('MyBagItemSugarText unit tests', () => {
     expect(result).toMatchSnapshot();
   });
 
-  it('renders MyBagItemSugarText correctly (ice-text)', async () => {
+  it('renders MyBagItemDairyText correctly (dairy-text)', async () => {
     render(
-      <MyBagItemSugarText
+      <MyBagItemDairyText
         myBagItem={{
           orderID: '1',
           menuItemID: 'icedCoffee',
@@ -45,10 +45,10 @@ describe('MyBagItemSugarText unit tests', () => {
           subCategory: 'coldDrinks',
           quantity: 3,
           dairy: 'halfAndHalf',
-          flavor: 'frenchVanilla',
-          sugar: true,
+          flavor: null,
+          sugar: false,
           size: 'md',
-          ice: 'light',
+          ice: 'normal',
           creamCheese: null,
           butter: null,
           bottled: false,
@@ -58,9 +58,9 @@ describe('MyBagItemSugarText unit tests', () => {
       />,
     );
 
-    const menuItemIceText = await screen.findAllByTestId('sugar-text');
+    const menuItemButterText = await screen.findAllByTestId('dairy-text');
 
-    expect(menuItemIceText[0]).toHaveClass('MuiTypography-root');
-    expect(menuItemIceText[0]).toHaveTextContent('SUGAR');
+    expect(menuItemButterText[0]).toHaveClass('MuiTypography-root');
+    expect(menuItemButterText[0]).toHaveTextContent('HALF AND HALF');
   });
 });

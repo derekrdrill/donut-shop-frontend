@@ -8,10 +8,10 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import FullMenuBody from './FullMenuBody';
+import FullMenuBody from '../FullMenuBody';
 
-import FULL_MENU from '../../../assets/data/FULL_MENU';
-import FULL_MENU_CATEGORIES from '../../../assets/data/FULL_MENU_CATEGORIES';
+import FULL_MENU from '../../../../assets/data/FULL_MENU';
+import FULL_MENU_CATEGORIES from '../../../../assets/data/FULL_MENU_CATEGORIES';
 
 describe('FullMenuBody unit tests', () => {
   it('renders as expected', () => {

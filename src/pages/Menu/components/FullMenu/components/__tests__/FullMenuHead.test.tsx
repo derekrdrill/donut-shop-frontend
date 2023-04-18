@@ -3,9 +3,9 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import FullMenuHead from './FullMenuHead';
+import FullMenuHead from '../FullMenuHead';
 
-import { FullMenuText } from '../style';
+import { FullMenuText } from '../../style';
 
 describe('FullMenuHead unit tests', () => {
   it('renders as expected', () => {
