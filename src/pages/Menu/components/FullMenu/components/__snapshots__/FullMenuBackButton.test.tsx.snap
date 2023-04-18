@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullMenuHead unit tests renders as expected 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+  data-testid="full-menu-back-button"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    data-testid="selected-category"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 MuiGrid-grid-lg-2 css-57ri8o-MuiGrid-root"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium css-1d3f8j8-MuiButtonBase-root-MuiButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="KeyboardDoubleArrowLeftIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.59 18 19 16.59 14.42 12 19 7.41 17.59 6l-6 6z"
+            />
+            <path
+              d="m11 18 1.41-1.41L7.83 12l4.58-4.59L11 6l-6 6z"
+            />
+          </svg>
+        </span>
+        Go Back
+      </button>
+    </div>
+  </div>
+</div>
+`;

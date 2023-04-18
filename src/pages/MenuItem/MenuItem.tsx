@@ -1,17 +1,26 @@
 import * as React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button, Grid, ToggleButtonGroup } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
+import GlobalContext from '../../context/GlobalContext';
+
 import MenuItemCounter from './components/MenuItemCounter';
-import MenuItemSelect from './components/MenuItemSelect';
+import MenuItemSizeToggle from './components/MenuItemSizeToggle';
+import MenuItemFlavorSelect from './components/MenuItemFlavorSelect';
+import MenuItemDairySelect from './components/MenuItemDairySelect';
+import MenuItemIceSelect from './components/MenuItemIceSelect';
+import MenuItemSugarSelect from './components/MenuItemSugarSelect';
+import MenuItemCreamCheeseSelect from './components/MenuItemCreamCheeseSelect';
+import MenuItemButterSelect from './components/MenuItemButterSelect';
+
+import { addToMyBag } from './actions/MenuItemActions';
 
 import {
   MenuItemImage,
   MenuItemDetailContainer,
   MenuItemOrderButton,
   MenuItemDetailText,
-  MenuItemToggleButton,
 } from './style';
 
 import { FullMenuItem } from '../Menu/assets/data/FULL_MENU';
@@ -23,6 +32,11 @@ interface MenuItemProps {
 const MenuItem = ({ fullMenu }: MenuItemProps) => {
   const navigate = useNavigate();
   const { menuItemID } = useParams();
+
+  const {
+    state: { myBag },
+    dispatch,
+  } = React.useContext(GlobalContext);
 
   const [menuItemData, setMenuItemData] = React.useState<FullMenuItem>(
     fullMenu.filter(menuItem => menuItem.key === menuItemID)[0],
@@ -43,7 +57,17 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
 
   React.useEffect(() => {
     setMenuItemData(fullMenu.filter(menuItem => menuItem.key === menuItemID)[0]);
+    setSelectedCount(1);
+    setSelectedDairy('');
+    setSelectedFlavor('');
+    setSelectedIce('normal');
+    setSelectedSize('md');
+    setSelectedSugar('');
+    setSelectedCreamCheese('');
+    setSelectedButter('');
   }, [menuItemID]);
+
+  console.log(myBag);
 
   return (
     <Grid container>
@@ -80,116 +104,41 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
           </Grid>
           <Grid item xs={12} sm={6} lg={12}>
             <Grid container spacing={2}>
-              {menuItemData.category === 'drink' && !menuItemData.bottled && (
-                <Grid item xs={12}>
-                  <ToggleButtonGroup
-                    color='secondary'
-                    value={selectedSize}
-                    exclusive
-                    onChange={handleChange}
-                  >
-                    <MenuItemToggleButton value='sm'>SM</MenuItemToggleButton>
-                    <MenuItemToggleButton value='md'>MD</MenuItemToggleButton>
-                    <MenuItemToggleButton value='lg'>LG</MenuItemToggleButton>
-                    <MenuItemToggleButton value='xl'>XL</MenuItemToggleButton>
-                  </ToggleButtonGroup>
-                </Grid>
-              )}
-              {menuItemData.category === 'drink' && !menuItemData.soda && !menuItemData.bottled && (
-                <Grid item xs={12} md={6} lg={4}>
-                  <MenuItemSelect
-                    placeholderText='Select your dairy'
-                    selectData={[
-                      { value: 'cream', text: 'Cream' },
-                      { value: 'halfAndHalf', text: 'Half and Half' },
-                      { value: 'milk', text: 'Milk' },
-                      { value: 'almondMilk', text: 'Almond Milk' },
-                      { value: 'oatMilk', text: 'Oat Milk' },
-                    ]}
-                    setValue={setSelectedDairy}
-                    title='Dairy'
-                    value={selectedDairy}
-                  />
-                </Grid>
-              )}
-              {menuItemData.category === 'drink' &&
-                menuItemData.key !== 'hotTea' &&
-                !menuItemData.soda &&
-                !menuItemData.bottled && (
-                  <Grid item xs={12} md={6} lg={4}>
-                    <MenuItemSelect
-                      placeholderText='Select your flavor'
-                      selectData={[
-                        { value: 'frenchVanilla', text: 'French Vanilla' },
-                        { value: 'hazlenut', text: 'Hazlenut' },
-                        { value: 'mocha', text: 'Mocha' },
-                      ]}
-                      setValue={setSelectedFlavor}
-                      title='Flavor'
-                      value={selectedFlavor}
-                    />
-                  </Grid>
-                )}
-              {menuItemData.subCategory === 'coldDrinks' && !menuItemData.bottled && (
-                <Grid item xs={12} md={6} lg={4}>
-                  <MenuItemSelect
-                    placeholderText='Select your ice amount'
-                    selectData={[
-                      { value: 'light', text: 'Light' },
-                      { value: 'normal', text: 'Normal' },
-                      { value: 'extra', text: 'Extra' },
-                    ]}
-                    setValue={setSelectedIce}
-                    title='Ice Amount'
-                    value={selectedIce}
-                  />
-                </Grid>
-              )}
-              {menuItemData.category === 'drink' && !menuItemData.soda && !menuItemData.bottled && (
-                <Grid item xs={12} md={6} lg={4}>
-                  <MenuItemSelect
-                    placeholderText='Would you like sugar?'
-                    selectData={[
-                      { value: 'yes', text: 'Yes' },
-                      { value: 'no', text: 'No' },
-                    ]}
-                    setValue={setSelectedSugar}
-                    title='Sugar'
-                    value={selectedSugar}
-                  />
-                </Grid>
-              )}
-              {menuItemData.subCategory === 'bagels' && (
-                <Grid item xs={12} md={6} lg={4}>
-                  <MenuItemSelect
-                    placeholderText='Select your cream cheese'
-                    selectData={[
-                      { value: 'regular', text: 'Regular' },
-                      { value: 'chiveAndOnion', text: 'Chive and Onion' },
-                      { value: 'gardenVeggie', text: 'Garden Veggie' },
-                      { value: 'vegan', text: 'Vegan Butter' },
-                    ]}
-                    setValue={setSelectedCreamCheese}
-                    title='Cream Cheese'
-                    value={selectedCreamCheese}
-                  />
-                </Grid>
-              )}
-              {menuItemData.category === 'bread' && menuItemData.key !== 'avocadoToast' && (
-                <Grid item xs={12} md={6} lg={4}>
-                  <MenuItemSelect
-                    placeholderText='Select your butter'
-                    selectData={[
-                      { value: 'regular', text: 'Regular' },
-                      { value: 'garlic', text: 'Garlic Butter' },
-                      { value: 'vegan', text: 'Vegan Butter' },
-                    ]}
-                    setValue={setSelectedButter}
-                    title='Butter'
-                    value={selectedButter}
-                  />
-                </Grid>
-              )}
+              <MenuItemSizeToggle
+                menuItemData={menuItemData}
+                selectedSize={selectedSize}
+                setSelectedSize={setSelectedSize}
+              />
+              <MenuItemDairySelect
+                menuItemData={menuItemData}
+                selectedDairy={selectedDairy}
+                setSelectedDairy={setSelectedDairy}
+              />
+              <MenuItemFlavorSelect
+                menuItemData={menuItemData}
+                selectedFlavor={selectedFlavor}
+                setSelectedFlavor={setSelectedFlavor}
+              />
+              <MenuItemIceSelect
+                menuItemData={menuItemData}
+                selectedIce={selectedIce}
+                setSelectedIce={setSelectedIce}
+              />
+              <MenuItemSugarSelect
+                menuItemData={menuItemData}
+                selectedSugar={selectedSugar}
+                setSelectedSugar={setSelectedSugar}
+              />
+              <MenuItemCreamCheeseSelect
+                menuItemData={menuItemData}
+                selectedCreamCheese={selectedCreamCheese}
+                setSelectedCreamCheese={setSelectedCreamCheese}
+              />
+              <MenuItemButterSelect
+                menuItemData={menuItemData}
+                selectedButter={selectedButter}
+                setSelectedButter={setSelectedButter}
+              />
               <Grid item xs={12}>
                 <Grid container>
                   <Grid item xs={12} md={6} lg={4}>
@@ -203,7 +152,31 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
                   buttonHoverColor='#f59180'
                   fullWidth
                   marginTop={50}
-                  // startIcon={<SVG fill='#FFFFFF' height={20} src={HeaderOrderSVG} width={20} />}
+                  onClick={
+                    /* istanbul ignore next */
+                    () =>
+                      dispatch(
+                        addToMyBag(
+                          menuItemID,
+                          selectedCount,
+                          selectedDairy,
+                          selectedFlavor,
+                          selectedSugar,
+                          selectedSize,
+                          selectedIce,
+                          selectedCreamCheese,
+                          selectedButter,
+                          myBag,
+                          menuItemData.name,
+                          menuItemData.category,
+                          menuItemData.bottled ?? false,
+                          menuItemData.soda ?? false,
+                          menuItemData.subCategory,
+                          menuItemData.image,
+                          `${new Date().getTime()}-${menuItemID}`,
+                        ),
+                      )
+                  }
                   size='large'
                   variant='contained'
                 >

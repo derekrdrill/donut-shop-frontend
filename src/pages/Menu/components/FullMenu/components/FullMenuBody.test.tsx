@@ -6,6 +6,7 @@ jest.mock('react-router-dom', () => ({
 import '@testing-library/jest-dom';
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
 
 import FullMenuBody from './FullMenuBody';
 
@@ -18,5 +19,22 @@ describe('FullMenuBody unit tests', () => {
       .create(<FullMenuBody fullMenuCategories={FULL_MENU_CATEGORIES} fullMenu={FULL_MENU} />)
       .toJSON();
     expect(result).toMatchSnapshot();
+  });
+
+  it('renders FullMenuBody when category is selected', async () => {
+    render(<FullMenuBody fullMenuCategories={FULL_MENU_CATEGORIES} fullMenu={FULL_MENU} />);
+
+    jest
+      .spyOn(React, 'useState')
+      .mockImplementationOnce(() => [[], () => null])
+      .mockImplementationOnce(() => [[], () => null])
+      .mockImplementationOnce(() => [[], () => null])
+      .mockImplementationOnce(() => ['hotDrinks', () => null]);
+
+    const fullMenuBody = await screen.findAllByTestId('full-menu');
+
+    console.log(fullMenuBody[0]);
+
+    // expect(fullMenuBody[0]).toHaveClass('selected-category');
   });
 });

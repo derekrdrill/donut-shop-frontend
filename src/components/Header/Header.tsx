@@ -6,15 +6,9 @@ import { Grid } from '@mui/material';
 import { NavigateFunction } from 'react-router-dom';
 
 import ActionButton from '../ActionButton/ActionButton';
+import MyBagIcon from '../../pages/MyBag/components/MyBagIcon';
 
-import {
-  HeaderBagIcon,
-  HeaderLogo,
-  HeaderMenuText,
-  HeaderRoot,
-  HeaderSearchIcon,
-  HeaderTop,
-} from './style';
+import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderSearchIcon, HeaderTop } from './style';
 
 import HeaderImage from './assets/images/donutsImg.png';
 import HeaderOrderSVG from './assets/icons/donutSVG.svg';
@@ -106,7 +100,7 @@ const Header = ({ isQuickMenuOpen, setIsQuickMenuOpen }: HeaderProps) => {
               <HeaderSearchIcon sx={{ color: '#6a017f' }} />
             </Grid>
             <Grid item>
-              <HeaderBagIcon sx={{ color: '#6a017f' }} />
+              <MyBagIcon color={'#6a017f'} />
             </Grid>
           </Grid>
         </Grid>

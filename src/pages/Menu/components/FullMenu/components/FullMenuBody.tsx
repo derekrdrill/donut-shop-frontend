@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Button, Grid, Typography } from '@mui/material';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
+import FullMenuBackButton from './FullMenuBackButton';
+
 import {
   FullMenuContainer,
   FullMenuItemRoot,
@@ -42,31 +44,16 @@ const FullMenuBody = ({ fullMenuCategories, fullMenu }: FullMenuBodyProps) => {
   }, [selectedCategory]);
 
   return (
-    <FullMenuContainer container rowGap={3}>
+    <FullMenuContainer data-testid='full-menu' container rowGap={3}>
       <Grid item xs={12}>
         <Typography textAlign='center' variant='h4'>
           {selectedCategoryName ?? 'Full Menu'}
         </Typography>
-        {selectedCategory && (
-          <Grid container>
-            <Grid item xs={12} md={3} lg={2}>
-              <Button
-                color='secondary'
-                onClick={
-                  /* istanbul ignore next */
-                  () => {
-                    setSelectedCategory(null);
-                    setSelectedCategoryName(null);
-                  }
-                }
-                startIcon={<KeyboardDoubleArrowLeftIcon />}
-                variant='text'
-              >
-                Go Back
-              </Button>
-            </Grid>
-          </Grid>
-        )}
+        <FullMenuBackButton
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          setSelectedCategoryName={setSelectedCategoryName}
+        />
       </Grid>
       {fullMenuData.map(menuItem => (
         <FullMenuItemRoot key={menuItem.key} item xs={6} md={4} xl={3}>
