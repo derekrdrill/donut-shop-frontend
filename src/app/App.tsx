@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import GlobalProvider from '../context/GlobalProvider';
+
 import Body from '../components/Body/Body';
 import Header from '../components/Header/Header';
 import MenuIcon from '../components/MenuIcon/MenuIcon';
@@ -28,21 +30,23 @@ const App = () => {
               path={route.path}
               element={
                 <React.Suspense>
-                  <GlobalStyle $isSidebarOpen={isSidebarOpen} />
-                  <Overlay isSidebarOpen={isSidebarOpen} isQuickViewOpen={isQuickMenuOpen} />
-                  <Header
-                    isQuickMenuOpen={isQuickMenuOpen}
-                    setIsQuickMenuOpen={setIsQuickMenuOpen}
-                  />
-                  <MenuIcon
-                    isMenuIconActive={isSidebarOpen}
-                    setIsMenuIconActive={setIsSidebarOpen}
-                  />
-                  <QuickMenu isQuickMenuOpen={isQuickMenuOpen}>
-                    <QuickMenuPage setIsQuickMenuOpen={setIsQuickMenuOpen} />
-                  </QuickMenu>
-                  <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
-                  <Body>{route.element}</Body>
+                  <GlobalProvider>
+                    <GlobalStyle $isSidebarOpen={isSidebarOpen} />
+                    <Overlay isSidebarOpen={isSidebarOpen} isQuickViewOpen={isQuickMenuOpen} />
+                    <Header
+                      isQuickMenuOpen={isQuickMenuOpen}
+                      setIsQuickMenuOpen={setIsQuickMenuOpen}
+                    />
+                    <MenuIcon
+                      isMenuIconActive={isSidebarOpen}
+                      setIsMenuIconActive={setIsSidebarOpen}
+                    />
+                    <QuickMenu isQuickMenuOpen={isQuickMenuOpen}>
+                      <QuickMenuPage setIsQuickMenuOpen={setIsQuickMenuOpen} />
+                    </QuickMenu>
+                    <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+                    <Body>{route.element}</Body>
+                  </GlobalProvider>
                 </React.Suspense>
               }
             />

@@ -54,15 +54,5 @@ export const HeaderSearchIcon = styled(SearchIcon)({
   transform: 'scale(1.4)',
 });
 
-export const HeaderBagIcon = styled(ShoppingBagIcon)({
-  ':hover': {
-    color: '#a501c6',
-    transform: 'scale(1.6)',
-  },
-  cursor: 'pointer',
-  marginTop: 7,
-  transition: 'all 5s ease-in-out',
-  transform: 'scale(1.4)',
-});
 
 
