@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItemSizeToggle unit tests renders as expected 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-13i4rnv-MuiGrid-root"
+  data-testid="size-toggle"
+>
+  <div
+    className="MuiToggleButtonGroup-root css-1gjgmky-MuiToggleButtonGroup-root"
+    role="group"
+  >
+    <button
+      aria-pressed={false}
+      className="MuiButtonBase-root MuiToggleButton-root MuiToggleButton-sizeMedium MuiToggleButton-secondary sc-eDDNvR iWGnQD MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal css-ovja5t-MuiButtonBase-root-MuiToggleButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+      value="sm"
+    >
+      SM
+    </button>
+    <button
+      aria-pressed={true}
+      className="MuiButtonBase-root MuiToggleButton-root Mui-selected MuiToggleButton-sizeMedium MuiToggleButton-secondary sc-eDDNvR iWGnQD MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal css-ovja5t-MuiButtonBase-root-MuiToggleButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+      value="md"
+    >
+      MD
+    </button>
+    <button
+      aria-pressed={false}
+      className="MuiButtonBase-root MuiToggleButton-root MuiToggleButton-sizeMedium MuiToggleButton-secondary sc-eDDNvR iWGnQD MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal css-ovja5t-MuiButtonBase-root-MuiToggleButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+      value="lg"
+    >
+      LG
+    </button>
+    <button
+      aria-pressed={false}
+      className="MuiButtonBase-root MuiToggleButton-root MuiToggleButton-sizeMedium MuiToggleButton-secondary sc-eDDNvR iWGnQD MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal css-ovja5t-MuiButtonBase-root-MuiToggleButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+      value="xl"
+    >
+      XL
+    </button>
+  </div>
+</div>
+`;

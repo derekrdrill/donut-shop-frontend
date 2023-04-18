@@ -104,6 +104,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
   </div>,
   <div
     className="MuiGrid-root MuiGrid-container sc-dmqHEX hMzWU css-851zx1-MuiGrid-root"
+    data-testid="full-menu"
   >
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
@@ -113,6 +114,10 @@ exports[`FullMenu unit tests renders as expected 1`] = `
       >
         Full Menu
       </h4>
+      <div
+        className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        data-testid="full-menu-back-button"
+      />
     </div>
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-4 MuiGrid-grid-xl-3 sc-jTrPJq dulzkK css-9vv5x2-MuiGrid-root"

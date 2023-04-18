@@ -197,6 +197,7 @@ exports[`FullMenu unit tests renders as expected 1`] = `
               className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth sc-beqWaB fKdhAl css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
               disabled={false}
               onBlur={[Function]}
+              onClick={[Function]}
               onContextMenu={[Function]}
               onDragLeave={[Function]}
               onFocus={[Function]}
