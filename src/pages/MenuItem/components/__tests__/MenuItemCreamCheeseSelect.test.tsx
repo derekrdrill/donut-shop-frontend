@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MenuItemCreamCheeseSelect from './MenuItemCreamCheeseSelect';
+import MenuItemCreamCheeseSelect from '../MenuItemCreamCheeseSelect';
 
 describe('MenuItemCreamCheeseSelect unit tests', () => {
   it('renders as expected', () => {

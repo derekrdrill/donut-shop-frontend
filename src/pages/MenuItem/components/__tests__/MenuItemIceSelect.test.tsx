@@ -3,13 +3,13 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MenuItemSugarSelect from './MenuItemSugarSelect';
+import MenuItemIceSelect from '../MenuItemIceSelect';
 
-describe('MenuItemSugarSelect unit tests', () => {
+describe('MenuItemIceSelect unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
       .create(
-        <MenuItemSugarSelect
+        <MenuItemIceSelect
           menuItemData={{
             key: 'icedCoffee',
             name: 'Iced Coffee',
@@ -19,17 +19,17 @@ describe('MenuItemSugarSelect unit tests', () => {
             soda: false,
             bottled: false,
           }}
-          selectedSugar='yes'
-          setSelectedSugar={jest.fn()}
+          selectedIce='Extra'
+          setSelectedIce={jest.fn()}
         />,
       )
       .toJSON();
     expect(result).toMatchSnapshot();
   });
 
-  it('renders MenuItemSugarSelect correctly (sugar-select)', async () => {
+  it('renders MenuItemIceSelect correctly (ice-select)', async () => {
     render(
-      <MenuItemSugarSelect
+      <MenuItemIceSelect
         menuItemData={{
           key: 'icedCoffee',
           name: 'Iced Coffee',
@@ -39,12 +39,12 @@ describe('MenuItemSugarSelect unit tests', () => {
           soda: false,
           bottled: false,
         }}
-        selectedSugar='yes'
-        setSelectedSugar={jest.fn()}
+        selectedIce='Extra'
+        setSelectedIce={jest.fn()}
       />,
     );
 
-    const menuItemIceSelect = await screen.findAllByTestId('sugar-select');
+    const menuItemIceSelect = await screen.findAllByTestId('ice-select');
 
     expect(menuItemIceSelect[0]).toHaveClass('MuiGrid-root');
   });

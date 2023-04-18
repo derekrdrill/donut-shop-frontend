@@ -3,13 +3,13 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MyBagItemDairyText from './MyBagItemDairyText';
+import MyBagItemFlavorText from '../MyBagItemFlavorText';
 
 describe('MyBagItemDairyText unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
       .create(
-        <MyBagItemDairyText
+        <MyBagItemFlavorText
           myBagItem={{
             orderID: '1',
             menuItemID: 'icedCoffee',
@@ -34,9 +34,9 @@ describe('MyBagItemDairyText unit tests', () => {
     expect(result).toMatchSnapshot();
   });
 
-  it('renders MyBagItemDairyText correctly (dairy-text)', async () => {
+  it('renders MyBagItemFlavorText correctly (flavor-text)', async () => {
     render(
-      <MyBagItemDairyText
+      <MyBagItemFlavorText
         myBagItem={{
           orderID: '1',
           menuItemID: 'icedCoffee',
@@ -45,7 +45,7 @@ describe('MyBagItemDairyText unit tests', () => {
           subCategory: 'coldDrinks',
           quantity: 3,
           dairy: 'halfAndHalf',
-          flavor: null,
+          flavor: 'frenchVanilla',
           sugar: false,
           size: 'md',
           ice: 'normal',
@@ -58,9 +58,9 @@ describe('MyBagItemDairyText unit tests', () => {
       />,
     );
 
-    const menuItemButterText = await screen.findAllByTestId('dairy-text');
+    const menuItemFlavorText = await screen.findAllByTestId('flavor-text');
 
-    expect(menuItemButterText[0]).toHaveClass('MuiTypography-root');
-    expect(menuItemButterText[0]).toHaveTextContent('HALF AND HALF');
+    expect(menuItemFlavorText[0]).toHaveClass('MuiTypography-root');
+    expect(menuItemFlavorText[0]).toHaveTextContent('FRENCH VANILLA');
   });
 });

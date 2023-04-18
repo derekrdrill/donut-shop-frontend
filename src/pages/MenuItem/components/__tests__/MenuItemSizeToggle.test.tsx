@@ -3,13 +3,13 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MenuItemFlavorSelect from './MenuItemFlavorSelect';
+import MenuItemSizeToggle from '../MenuItemSizeToggle';
 
-describe('MenuItemFlavorSelect unit tests', () => {
+describe('MenuItemSizeToggle unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
       .create(
-        <MenuItemFlavorSelect
+        <MenuItemSizeToggle
           menuItemData={{
             key: 'icedCoffee',
             name: 'Iced Coffee',
@@ -19,17 +19,17 @@ describe('MenuItemFlavorSelect unit tests', () => {
             soda: false,
             bottled: false,
           }}
-          selectedFlavor='Hazelnut'
-          setSelectedFlavor={jest.fn()}
+          selectedSize='md'
+          setSelectedSize={jest.fn()}
         />,
       )
       .toJSON();
     expect(result).toMatchSnapshot();
   });
 
-  it('renders MenuItemFlavorSelect correctly (flavor-select)', async () => {
+  it('renders MenuItemSizeToggle correctly (size-toggle)', async () => {
     render(
-      <MenuItemFlavorSelect
+      <MenuItemSizeToggle
         menuItemData={{
           key: 'icedCoffee',
           name: 'Iced Coffee',
@@ -39,13 +39,13 @@ describe('MenuItemFlavorSelect unit tests', () => {
           soda: false,
           bottled: false,
         }}
-        selectedFlavor='Hazelnut'
-        setSelectedFlavor={jest.fn()}
+        selectedSize='md'
+        setSelectedSize={jest.fn()}
       />,
     );
 
-    const menuItemFlavorSelect = await screen.findAllByTestId('flavor-select');
+    const menuItemSizeToggle = await screen.findAllByTestId('size-toggle');
 
-    expect(menuItemFlavorSelect[0]).toHaveClass('MuiGrid-root');
+    expect(menuItemSizeToggle[0]).toHaveClass('MuiGrid-root');
   });
 });

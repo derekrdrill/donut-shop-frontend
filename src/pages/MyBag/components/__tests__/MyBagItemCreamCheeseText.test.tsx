@@ -3,19 +3,19 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MyBagItemButterText from './MyBagItemButterText';
+import MyBagItemCreamCheeseText from '../MyBagItemCreamCheeseText';
 
-describe('MyBagItemButterText unit tests', () => {
+describe('MyBagItemCreamCheeseText unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
       .create(
-        <MyBagItemButterText
+        <MyBagItemCreamCheeseText
           myBagItem={{
             orderID: '1',
-            menuItemID: 'chocolateMuffin',
-            name: 'Chocolate Muffin',
+            menuItemID: 'plainBagel',
+            name: 'Plain Bagel',
             category: 'bread',
-            subCategory: 'muffins',
+            subCategory: 'bagels',
             quantity: 3,
             dairy: null,
             flavor: null,
@@ -26,7 +26,7 @@ describe('MyBagItemButterText unit tests', () => {
             butter: null,
             bottled: false,
             soda: false,
-            menuItemImage: 'chocolateMuffin.png',
+            menuItemImage: 'plainBagel.png',
           }}
         />,
       )
@@ -34,33 +34,33 @@ describe('MyBagItemButterText unit tests', () => {
     expect(result).toMatchSnapshot();
   });
 
-  it('renders MyBagItemButterText correctly (butter-text)', async () => {
+  it('renders MyBagItemCreamCheeseText correctly (cream-cheese-text)', async () => {
     render(
-      <MyBagItemButterText
+      <MyBagItemCreamCheeseText
         myBagItem={{
           orderID: '1',
-          menuItemID: 'chocolateMuffin',
-          name: 'Chocolate Muffin',
+          menuItemID: 'plainBagel',
+          name: 'Plain Bagel',
           category: 'bread',
-          subCategory: 'muffins',
+          subCategory: 'bagels',
           quantity: 3,
           dairy: null,
           flavor: null,
           sugar: false,
           size: 'md',
           ice: 'normal',
-          creamCheese: null,
-          butter: 'regular',
+          creamCheese: 'Regular',
+          butter: null,
           bottled: false,
           soda: false,
-          menuItemImage: 'chocolateMuffin.png',
+          menuItemImage: 'plainBagel.png',
         }}
       />,
     );
 
-    const menuItemButterText = await screen.findAllByTestId('butter-text');
+    const menuItemButterText = await screen.findAllByTestId('cream-cheese-text');
 
     expect(menuItemButterText[0]).toHaveClass('MuiTypography-root');
-    expect(menuItemButterText[0]).toHaveTextContent('REGULAR BUTTER');
+    expect(menuItemButterText[0]).toHaveTextContent('REGULAR CREAM CHEESE');
   });
 });

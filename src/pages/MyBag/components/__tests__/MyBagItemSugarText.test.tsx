@@ -3,13 +3,13 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MyBagItemFlavorText from './MyBagItemFlavorText';
+import MyBagItemSugarText from '../MyBagItemSugarText';
 
-describe('MyBagItemDairyText unit tests', () => {
+describe('MyBagItemSugarText unit tests', () => {
   it('renders as expected', () => {
     const result = renderer
       .create(
-        <MyBagItemFlavorText
+        <MyBagItemSugarText
           myBagItem={{
             orderID: '1',
             menuItemID: 'icedCoffee',
@@ -21,7 +21,7 @@ describe('MyBagItemDairyText unit tests', () => {
             flavor: null,
             sugar: false,
             size: 'md',
-            ice: 'normal',
+            ice: null,
             creamCheese: null,
             butter: null,
             bottled: false,
@@ -34,9 +34,9 @@ describe('MyBagItemDairyText unit tests', () => {
     expect(result).toMatchSnapshot();
   });
 
-  it('renders MyBagItemFlavorText correctly (flavor-text)', async () => {
+  it('renders MyBagItemSugarText correctly (ice-text)', async () => {
     render(
-      <MyBagItemFlavorText
+      <MyBagItemSugarText
         myBagItem={{
           orderID: '1',
           menuItemID: 'icedCoffee',
@@ -46,9 +46,9 @@ describe('MyBagItemDairyText unit tests', () => {
           quantity: 3,
           dairy: 'halfAndHalf',
           flavor: 'frenchVanilla',
-          sugar: false,
+          sugar: true,
           size: 'md',
-          ice: 'normal',
+          ice: 'light',
           creamCheese: null,
           butter: null,
           bottled: false,
@@ -58,9 +58,9 @@ describe('MyBagItemDairyText unit tests', () => {
       />,
     );
 
-    const menuItemFlavorText = await screen.findAllByTestId('flavor-text');
+    const menuItemIceText = await screen.findAllByTestId('sugar-text');
 
-    expect(menuItemFlavorText[0]).toHaveClass('MuiTypography-root');
-    expect(menuItemFlavorText[0]).toHaveTextContent('FRENCH VANILLA');
+    expect(menuItemIceText[0]).toHaveClass('MuiTypography-root');
+    expect(menuItemIceText[0]).toHaveTextContent('SUGAR');
   });
 });

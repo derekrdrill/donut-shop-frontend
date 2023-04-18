@@ -11,7 +11,7 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 
-import MyBagIcon, { getMyBagQuantity } from './MyBagIcon';
+import MyBagIcon, { getMyBagQuantity } from '../MyBagIcon';
 
 describe('MyBag unit tests', () => {
   const myBag = [
