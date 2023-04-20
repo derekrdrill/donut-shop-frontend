@@ -10,7 +10,7 @@ import Overlay from '../components/Overlay/Overlay';
 import QuickMenu from '../components/QuickMenu/QuickMenu';
 import Sidebar from '../components/Sidebar/Sidebar';
 
-import QuickMenuPage from '../pages/Menu/components/QuickMenu/QuickMenuPage';
+import QuickMenuPage from '../views/Menu/components/QuickMenu/QuickMenuPage';
 
 import { GlobalStyle } from './style';
 
