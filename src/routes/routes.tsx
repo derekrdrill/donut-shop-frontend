@@ -26,7 +26,7 @@ const routes: Routes[] = [
   },
   {
     key: 3,
-    path: '/menu/:menuCategory/:menuItemID',
+    path: '/menu/:menuCategory/:menuItemID/:orderID?',
     element: <MenuItem fullMenu={FULL_MENU} />,
   },
   {

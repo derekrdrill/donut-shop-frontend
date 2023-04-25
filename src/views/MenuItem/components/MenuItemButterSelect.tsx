@@ -31,7 +31,7 @@ const MenuItemButterSelect = ({
       />
     </Grid>
   ) : (
-    <React.Fragment data-testid='no-butter-select' />
+    <React.Fragment />
   );
 
 export default MenuItemButterSelect;

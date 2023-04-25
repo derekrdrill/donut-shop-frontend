@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import GlobalProvider from '../context/GlobalProvider';
 
+import Alert from '../components/Alert/Alert';
 import Body from '../components/Body/Body';
 import Header from '../components/Header/Header';
 import MenuIcon from '../components/MenuIcon/MenuIcon';
+import Modal from '../components/Modal/Modal';
 import Overlay from '../components/Overlay/Overlay';
 import QuickMenu from '../components/QuickMenu/QuickMenu';
 import Sidebar from '../components/Sidebar/Sidebar';
@@ -45,6 +47,8 @@ const App = () => {
                       <QuickMenuPage setIsQuickMenuOpen={setIsQuickMenuOpen} />
                     </QuickMenu>
                     <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+                    <Alert />
+                    <Modal />
                     <Body>{route.element}</Body>
                   </GlobalProvider>
                 </React.Suspense>

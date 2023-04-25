@@ -15,6 +15,9 @@ import {
 import { FullMenuCategory } from '../../../assets/data/FULL_MENU_CATEGORIES';
 import { FullMenuItem } from '../../../assets/data/FULL_MENU';
 
+export const setFullMenuDataHelper = (menuData: FullMenuItem[], selectedCategory: string) =>
+  menuData.filter(menuItem => menuItem.subCategory === selectedCategory);
+
 interface FullMenuBodyProps {
   fullMenuCategories: FullMenuCategory[];
   fullMenu: FullMenuItem[];
@@ -37,9 +40,7 @@ const FullMenuBody = ({ fullMenuCategories, fullMenu }: FullMenuBodyProps) => {
     if (!selectedCategory) {
       setFullMenuData(fullMenuCategoriesClone);
     } else {
-      setFullMenuData(
-        fullMenuDataClone.filter(menuItem => menuItem.subCategory === selectedCategory),
-      );
+      setFullMenuData(setFullMenuDataHelper(fullMenuDataClone, selectedCategory));
     }
   }, [selectedCategory]);
 

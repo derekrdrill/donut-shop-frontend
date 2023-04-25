@@ -14,7 +14,8 @@ import MenuItemSugarSelect from './components/MenuItemSugarSelect';
 import MenuItemCreamCheeseSelect from './components/MenuItemCreamCheeseSelect';
 import MenuItemButterSelect from './components/MenuItemButterSelect';
 
-import { addToMyBag } from './actions/MenuItemActions';
+import { setMyBagHelper, updateCurrentMyBag } from './actions/MenuItemActions';
+import { setAlertItem } from '../../components/Alert/actions/AlertActions';
 
 import {
   MenuItemImage,
@@ -25,13 +26,16 @@ import {
 
 import { FullMenuItem } from '../Menu/assets/data/FULL_MENU';
 
+export const getSugarString = (sugar: boolean) => (sugar ? 'yes' : 'no');
+export const getSubmitButtonString = (orderID: string | null) =>
+  orderID ? 'Update My Bag' : 'Add to My Bag';
 interface MenuItemProps {
   fullMenu: FullMenuItem[];
 }
 
 const MenuItem = ({ fullMenu }: MenuItemProps) => {
   const navigate = useNavigate();
-  const { menuItemID } = useParams();
+  const { menuItemID, orderID } = useParams();
 
   const {
     state: { myBag },
@@ -67,7 +71,22 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
     setSelectedButter('');
   }, [menuItemID]);
 
-  console.log(myBag);
+  React.useEffect(() => {
+    if (orderID) {
+      const { butter, creamCheese, dairy, flavor, ice, quantity, size, sugar } = myBag.filter(
+        myBagItem => myBagItem.orderID === orderID,
+      )[0];
+
+      setSelectedCount(quantity);
+      setSelectedDairy(dairy);
+      setSelectedFlavor(flavor);
+      setSelectedIce(ice);
+      setSelectedSize(size);
+      setSelectedSugar(getSugarString(sugar));
+      setSelectedCreamCheese(creamCheese);
+      setSelectedButter(butter);
+    }
+  }, [orderID]);
 
   return (
     <Grid container>
@@ -98,7 +117,7 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
             </Grid>
             <Grid item xs={12}>
               <MenuItemDetailText color='#272020' variant='h2'>
-                {`${menuItemData.name}${menuItemData.category === 'donuts' ? ' Donut' : ''}`}
+                {menuItemData.name}
               </MenuItemDetailText>
             </Grid>
           </Grid>
@@ -154,33 +173,69 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
                   marginTop={50}
                   onClick={
                     /* istanbul ignore next */
-                    () =>
-                      dispatch(
-                        addToMyBag(
-                          menuItemID,
-                          selectedCount,
-                          selectedDairy,
-                          selectedFlavor,
-                          selectedSugar,
-                          selectedSize,
-                          selectedIce,
-                          selectedCreamCheese,
-                          selectedButter,
-                          myBag,
-                          menuItemData.name,
-                          menuItemData.category,
-                          menuItemData.bottled ?? false,
-                          menuItemData.soda ?? false,
-                          menuItemData.subCategory,
-                          menuItemData.image,
-                          `${new Date().getTime()}-${menuItemID}`,
-                        ),
-                      )
+                    async () => {
+                      if (orderID) {
+                        dispatch(
+                          await updateCurrentMyBag(
+                            selectedCount,
+                            selectedDairy,
+                            selectedFlavor,
+                            selectedSugar,
+                            selectedSize,
+                            selectedIce,
+                            selectedCreamCheese,
+                            selectedButter,
+                            myBag,
+                            orderID,
+                          ),
+                        );
+
+                        dispatch(
+                          await setAlertItem(
+                            `${menuItemData.name} item has been updated`,
+                            true,
+                            'success',
+                          ),
+                        );
+                      } else {
+                        dispatch(
+                          await setMyBagHelper(
+                            menuItemID,
+                            selectedCount,
+                            selectedDairy,
+                            selectedFlavor,
+                            selectedSugar,
+                            selectedSize,
+                            selectedIce,
+                            selectedCreamCheese,
+                            selectedButter,
+                            myBag,
+                            menuItemData.name,
+                            menuItemData.category,
+                            menuItemData.bottled ?? false,
+                            menuItemData.soda ?? false,
+                            menuItemData.subCategory,
+                            menuItemData.image,
+                            `${new Date().getTime()}-${menuItemID}`,
+                          ),
+                        );
+
+                        dispatch(
+                          await setAlertItem(
+                            `${selectedCount} ${menuItemData.name}${
+                              selectedCount > 1 ? 's' : ''
+                            } added to bag`,
+                            true,
+                            'success',
+                          ),
+                        );
+                      }
+                    }
                   }
                   size='large'
                   variant='contained'
                 >
-                  Add to Cart
+                  {getSubmitButtonString(orderID)}
                 </MenuItemOrderButton>
               </Grid>
             </Grid>

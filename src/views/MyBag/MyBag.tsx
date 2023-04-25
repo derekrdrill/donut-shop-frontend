@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { IconButton, Grid, Typography } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import EditIcon from '@mui/icons-material/Edit';
 
 import GlobalContext from '../../context/GlobalContext';
 
@@ -11,6 +13,9 @@ import MyBagItemFlavorText from './components/MyBagItemFlavorText';
 import MyBagItemIceText from './components/MyBagItemIceText';
 import MyBagItemSugarText from './components/MyBagItemSugarText';
 
+import { setModalItem } from '../../components/Modal/actions/ModalActions';
+import { deleteFromMyBag } from './actions/MyBagActions';
+
 import {
   MyBagItemContainer,
   MyBagItemImage,
@@ -19,10 +24,11 @@ import {
   MyBagMainCard,
 } from './style';
 
-interface MyBagProps {}
+const MyBag = () => {
+  const navigate = useNavigate();
 
-const MyBag = (props: MyBagProps) => {
   const {
+    dispatch,
     state: { myBag },
   } = React.useContext(GlobalContext);
 
@@ -60,7 +66,40 @@ const MyBag = (props: MyBagProps) => {
                 </Grid>
                 <Grid item xs={2}>
                   <Grid container justifyContent='center'>
-                    <IconButton>
+                    <IconButton
+                      onClick={
+                        /* istanbul ignore next */
+                        () =>
+                          navigate(
+                            `/menu/${myBagItem.category}/${myBagItem.menuItemID}/${myBagItem.orderID}`,
+                          )
+                      }
+                    >
+                      <EditIcon color='info' />
+                    </IconButton>
+                    <IconButton
+                      onClick={
+                        /* istanbul ignore next */
+                        () =>
+                          dispatch(
+                            setModalItem(
+                              () => {
+                                dispatch(deleteFromMyBag(myBagItem.orderID, myBag));
+                                dispatch(setModalItem(null, false, null, null));
+                              },
+                              true,
+                              <Typography variant='h6'>{`Are you sure you want to delete ${
+                                myBagItem.quantity
+                              } ${myBagItem.name}${
+                                myBagItem.quantity > 1 ? `s` : ``
+                              }?`}</Typography>,
+                              'Delete item',
+                              'error',
+                              'Yes, Delete',
+                            ),
+                          )
+                      }
+                    >
                       <DeleteForeverIcon color='error' />
                     </IconButton>
                   </Grid>

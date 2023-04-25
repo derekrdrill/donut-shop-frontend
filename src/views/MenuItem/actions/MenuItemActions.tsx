@@ -1,12 +1,12 @@
 import { GlobalReducerActionEnum } from '../../../context/GlobalReducer';
 import { MyBagItem } from '../../../context/types/MyBagItem';
 
-export interface AddToMyBagParams {
+export interface SetMyBagParams {
   type: GlobalReducerActionEnum.SET_MY_BAG;
   payload: { myBag: Array<MyBagItem> };
 }
 
-export const addToMyBag = (
+export const setMyBagHelper = async (
   menuItemID: string,
   quantity: number,
   dairy: string,
@@ -24,10 +24,10 @@ export const addToMyBag = (
   subCategory: string,
   menuItemImage: string,
   orderID: string,
-): AddToMyBagParams => ({
+): Promise<SetMyBagParams> => ({
   type: GlobalReducerActionEnum.SET_MY_BAG,
   payload: {
-    myBag: updateMyBagData(
+    myBag: addToMyBag(
       menuItemID,
       quantity,
       dairy,
@@ -49,7 +49,7 @@ export const addToMyBag = (
   },
 });
 
-export const updateMyBagData = (
+export const addToMyBag = (
   menuItemID: string,
   quantity: number,
   dairy: string | null,
@@ -118,3 +118,35 @@ export const updateMyBagData = (
 
   return myNewBag;
 };
+
+export const updateCurrentMyBag = async (
+  quantity: number,
+  dairy: string | null,
+  flavor: string | null,
+  sugar: string,
+  size: string,
+  ice: string,
+  creamCheese: string | null,
+  butter: string | null,
+  myBag: Array<MyBagItem>,
+  orderID: string,
+): Promise<SetMyBagParams> => ({
+  type: GlobalReducerActionEnum.SET_MY_BAG,
+  payload: {
+    myBag: myBag.map(myBagItem =>
+      myBagItem.orderID === orderID
+        ? {
+            ...myBagItem,
+            quantity: quantity,
+            dairy: dairy,
+            flavor: flavor,
+            sugar: sugar === 'yes',
+            size: size,
+            ice: ice,
+            creamCheese: creamCheese,
+            butter: butter,
+          }
+        : myBagItem,
+    ),
+  },
+});
