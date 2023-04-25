@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-const Home = React.lazy(() => import('../pages/Homepage/Homepage'));
-const Menu = React.lazy(() => import('../pages/Menu/components/FullMenu/FullMenu'));
-const MenuItem = React.lazy(() => import('../pages/MenuItem/MenuItem'));
-const MyBag = React.lazy(() => import('../pages/MyBag/MyBag'));
+const Home = React.lazy(() => import('../views/Homepage/Homepage'));
+const Menu = React.lazy(() => import('../views/Menu/components/FullMenu/FullMenu'));
+const MenuItem = React.lazy(() => import('../views/MenuItem/MenuItem'));
+const MyBag = React.lazy(() => import('../views/MyBag/MyBag'));
 
-import FULL_MENU from '../pages/Menu/assets/data/FULL_MENU';
+import FULL_MENU from '../views/Menu/assets/data/FULL_MENU';
 
 interface Routes {
   key: number;
@@ -26,7 +26,7 @@ const routes: Routes[] = [
   },
   {
     key: 3,
-    path: '/menu/:menuCategory/:menuItemID',
+    path: '/menu/:menuCategory/:menuItemID/:orderID?',
     element: <MenuItem fullMenu={FULL_MENU} />,
   },
   {

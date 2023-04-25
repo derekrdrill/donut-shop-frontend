@@ -1,3 +1,4 @@
+import * as React from 'react';
 import GlobalReducer from './GlobalReducer';
 import { GlobalReducerActionEnum } from './GlobalReducer';
 
@@ -125,57 +126,65 @@ describe('Global Reducer tests', () => {
       ],
     });
 
+    expect(
+      GlobalReducer(
+        {
+          alertItem: { alertMessage: '', alertSeverity: 'success', isAlertOpen: false },
+        },
+        {
+          type: GlobalReducerActionEnum.SET_ALERT_ITEM,
+          payload: {
+            alertItem: {
+              alertMessage: 'Alert Message',
+              alertSeverity: 'success',
+              isAlertOpen: true,
+            },
+          },
+        },
+      ),
+    ).toEqual({
+      alertItem: {
+        alertMessage: 'Alert Message',
+        alertSeverity: 'success',
+        isAlertOpen: true,
+      },
+    });
+
     // expect(
     //   GlobalReducer(
     //     {
-    //       myBag: [
-    //         {
-    //           menuItemID: 'hotCoffee',
-    //           quantity: 1,
-    //           dairy: '',
-    //           flavor: '',
-    //           sugar: true,
-    //           size: 'med',
-    //           ice: 'light',
-    //           creamCheese: '',
-    //           butter: '',
-    //           name: 'Hot Coffee',
-    //           orderID: `${new Date().getTime()}-menuItemID`,
-    //           category: 'drinks',
-    //           bottled: false,
-    //           soda: false,
-    //           subCategory: 'hotDrinks',
-    //           menuItemImage: 'test.png',
-    //         },
-    //       ],
+    //       modalItem: {
+    //         modalBody: null,
+    //         modalTitle: '',
+    //         handleSubmit: () => {},
+    //         submitButtonColor: 'primary',
+    //         submitButtonText: '',
+    //         isModalOpen: false,
+    //       },
     //     },
     //     {
-    //       type: 'SET_MY_BAG',
+    //       type: GlobalReducerActionEnum.SET_MODAL_ITEM,
     //       payload: {
-    //         myBag: {
-    //           menuItemID: 'hotCoffee',
-    //           quantity: 1,
-    //           dairy: null,
-    //           flavor: null,
-    //           sugar: 'yes',
-    //           size: 'med',
-    //           ice: 'light',
-    //           creamCheese: null,
-    //           butter: null,
-    //           name: 'Hot Coffee',
-    //           orderID: `${new Date().getTime()}-menuItemID`,
-    //           category: 'drinks',
-    //           bottled: false,
-    //           soda: false,
-    //           subCategory: 'hotDrinks',
-    //           menuItemImage: 'test.png',
+    //         modalItem: {
+    //           modalBody: null,
+    //           modalTitle: 'Modal Title',
+    //           handleSubmit: () => {},
+    //           submitButtonColor: 'primary',
+    //           submitButtonText: 'Continue',
+    //           isModalOpen: true,
     //         },
     //       },
     //     },
     //   ),
-    // ).toEqual({
-    //   alert: 'Test',
-    //   fadeOut: true,
+    // ).toBe({
+    //   modalItem: {
+    //     modalBody: null,
+    //     modalTitle: 'Modal Title',
+    //     handleSubmit: () => {},
+    //     submitButtonColor: 'primary',
+    //     submitButtonText: 'Continue',
+    //     isModalOpen: true,
+    //   },
     // });
   });
 });

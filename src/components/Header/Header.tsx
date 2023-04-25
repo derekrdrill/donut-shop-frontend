@@ -6,7 +6,7 @@ import { Grid } from '@mui/material';
 import { NavigateFunction } from 'react-router-dom';
 
 import ActionButton from '../ActionButton/ActionButton';
-import MyBagIcon from '../../pages/MyBag/components/MyBagIcon';
+import MyBagIcon from '../../views/MyBag/components/MyBagIcon';
 
 import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderSearchIcon, HeaderTop } from './style';
 
