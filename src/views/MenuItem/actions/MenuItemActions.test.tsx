@@ -1,4 +1,4 @@
-import { updateMyBagData } from './MenuItemActions';
+import { addToMyBag } from './MenuItemActions';
 
 describe('MenuItemActions tests', () => {
   const myBag = [
@@ -40,9 +40,9 @@ describe('MenuItemActions tests', () => {
     },
   ];
 
-  it('runs updateMyBagData correctly', () => {
+  it('runs addToMyBag correctly', () => {
     expect(
-      updateMyBagData(
+      addToMyBag(
         'hotCoffee',
         2,
         'cream',
@@ -101,9 +101,9 @@ describe('MenuItemActions tests', () => {
     ]);
   });
 
-  it('runs updateMyBagData correctly (2)', () => {
+  it('runs addToMyBag correctly (2)', () => {
     expect(
-      updateMyBagData(
+      addToMyBag(
         'hotCoffee',
         2,
         'cream',
