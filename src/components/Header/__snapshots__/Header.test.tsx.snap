@@ -2,10 +2,10 @@
 
 exports[`Header unit tests renders as expected 1`] = `
 <header
-  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-fsQiph hvVvQX mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed sc-jsMahE dJgdkS mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
 >
   <div
-    className="MuiGrid-root MuiGrid-container sc-qRumB evZxpS css-eqlkfr-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container sc-kFuwaP cprlVZ css-eqlkfr-MuiGrid-root"
   >
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-1 MuiGrid-grid-xl-2 css-2kga1j-MuiGrid-root"
@@ -23,7 +23,7 @@ exports[`Header unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
           >
             <img
-              className="sc-jsMahE kriTWv"
+              className="sc-irTswW ddJncj"
               onClick={[Function]}
               src={
                 {
@@ -142,7 +142,7 @@ exports[`Header unit tests renders as expected 1`] = `
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-irTswW fvIukW css-kinq8d-MuiSvgIcon-root"
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-fbJfA ealoin css-kinq8d-MuiSvgIcon-root"
             data-testid="SearchIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -160,7 +160,7 @@ exports[`Header unit tests renders as expected 1`] = `
             onClick={[Function]}
           >
             <div
-              className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+              className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 sc-fsQiph jlKuiZ css-1idn90j-MuiGrid-root"
             >
               <span
                 className="MuiBadge-root sc-hLseeU gHjxGw css-1c32n2y-MuiBadge-root"
@@ -171,7 +171,7 @@ exports[`Header unit tests renders as expected 1`] = `
               </span>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-dmqHEX fTASaP css-kinq8d-MuiSvgIcon-root"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-dmqHEX ItziR css-kinq8d-MuiSvgIcon-root"
                 data-testid="ShoppingBagIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -203,7 +203,7 @@ exports[`Header unit tests renders as expected 1`] = `
           className="MuiGrid-root MuiGrid-item css-zgfqgc-MuiGrid-root"
         >
           <img
-            className="sc-jsMahE kriTWv"
+            className="sc-irTswW ddJncj"
             onClick={[Function]}
             src={
               {
@@ -222,7 +222,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-162za67-MuiGrid-root"
             >
               <h4
-                className="sc-kFuwaP goIBAT"
+                className="sc-csCMJt fJzAVp"
                 color="textPrimary"
                 onClick={[Function]}
               >
@@ -233,7 +233,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-oszuia-MuiGrid-root"
             >
               <h4
-                className="sc-kFuwaP goIBAT"
+                className="sc-csCMJt fJzAVp"
                 color="textPrimary"
                 onClick={[Function]}
               >
@@ -244,7 +244,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-kFuwaP goIBAT"
+                className="sc-csCMJt fJzAVp"
                 color="textPrimary"
               >
                 Reward
@@ -254,7 +254,7 @@ exports[`Header unit tests renders as expected 1`] = `
               className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
             >
               <h4
-                className="sc-kFuwaP goIBAT"
+                className="sc-csCMJt fJzAVp"
                 color="textPrimary"
               >
                 Retail

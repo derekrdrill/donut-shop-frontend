@@ -1,6 +1,8 @@
 import { GlobalReducerActionEnum } from '../../../context/GlobalReducer';
 import { MyBagItem } from '../../../context/types/MyBagItem';
 
+import { getMenuItemExistingData } from '../utils/menuItem.util';
+
 export interface SetMyBagParams {
   type: GlobalReducerActionEnum.SET_MY_BAG;
   payload: { myBag: Array<MyBagItem> };

@@ -9,7 +9,7 @@ export interface SetAlertItemParams {
 export const setAlertItem = async (
   alertMessage: string,
   isAlertOpen: boolean,
-  alertSeverity?: 'success' | 'error',
+  alertSeverity?: 'success' | 'error' | 'warning',
 ): Promise<SetAlertItemParams> => ({
   type: GlobalReducerActionEnum.SET_ALERT_ITEM,
   payload: {

@@ -6,7 +6,7 @@ exports[`MyBag unit tests renders as expected 1`] = `
   onClick={[Function]}
 >
   <div
-    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 sc-iAEyYk bDdAOG css-1idn90j-MuiGrid-root"
   >
     <span
       className="MuiBadge-root sc-dmqHEX djqssH css-1c32n2y-MuiBadge-root"
@@ -17,7 +17,7 @@ exports[`MyBag unit tests renders as expected 1`] = `
     </span>
     <svg
       aria-hidden={true}
-      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-gueYoa gnrHmK css-t1n1uy-MuiSvgIcon-root"
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-gueYoa eACLnc css-t1n1uy-MuiSvgIcon-root"
       data-testid="ShoppingBagIcon"
       focusable="false"
       viewBox="0 0 24 24"

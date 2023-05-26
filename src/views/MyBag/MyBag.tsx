@@ -17,11 +17,12 @@ import { setModalItem } from '../../components/Modal/actions/ModalActions';
 import { deleteFromMyBag } from './actions/MyBagActions';
 
 import {
+  MyBagCard,
   MyBagItemContainer,
   MyBagItemImage,
   MyBagItemRow,
   MyBagRoot,
-  MyBagMainCard,
+  MyBagPaymentContainer,
 } from './style';
 
 const MyBag = () => {
@@ -32,6 +33,14 @@ const MyBag = () => {
     state: { myBag },
   } = React.useContext(GlobalContext);
 
+  const [ccNo, setCcNo] = React.useState('');
+
+  React.useEffect(() => {
+    if (myBag.length < 1) {
+      navigate('/');
+    }
+  }, [myBag]);
+
   return (
     <MyBagRoot container>
       <Grid item xs={12}>
@@ -40,7 +49,7 @@ const MyBag = () => {
         </Grid>
       </Grid>
       <Grid item xs={1} />
-      <MyBagMainCard item xs={6}>
+      <MyBagCard item xs={7} md={5}>
         <Typography variant='h6'>My bag</Typography>
         <Grid item container>
           <MyBagItemContainer item xs={12}>
@@ -109,7 +118,15 @@ const MyBag = () => {
             ))}
           </MyBagItemContainer>
         </Grid>
-      </MyBagMainCard>
+      </MyBagCard>
+      <MyBagCard item xs={7} sm={5}>
+        <Typography variant='h6'>Payment details</Typography>
+        <MyBagPaymentContainer>
+          <Grid container>
+            <Grid item xs={12}></Grid>
+          </Grid>
+        </MyBagPaymentContainer>
+      </MyBagCard>
     </MyBagRoot>
   );
 };

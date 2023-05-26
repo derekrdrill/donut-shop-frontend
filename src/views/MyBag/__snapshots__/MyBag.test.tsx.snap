@@ -21,7 +21,7 @@ exports[`MyBag unit tests renders as expected 1`] = `
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
   />
   <div
-    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 sc-hLseeU hRpmiI css-1osj8n2-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7 MuiGrid-grid-md-5 sc-hLseeU hWZUsq css-doz332-MuiGrid-root"
   >
     <h6
       className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
@@ -274,6 +274,26 @@ exports[`MyBag unit tests renders as expected 1`] = `
             className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
           />
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7 MuiGrid-grid-sm-5 sc-hLseeU hWZUsq css-pmp550-MuiGrid-root"
+  >
+    <h6
+      className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+    >
+      Payment details
+    </h6>
+    <div
+      className="MuiGrid-root sc-fsQiph dCoEro css-vj1n65-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+        />
       </div>
     </div>
   </div>

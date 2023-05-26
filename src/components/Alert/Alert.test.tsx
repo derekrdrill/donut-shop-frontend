@@ -18,7 +18,7 @@ describe('Alert unit tests', () => {
 
     const alertContainer = await screen.findAllByTestId('alert-container');
 
-    expect(alertContainer[0]).toHaveClass('sc-beqWaB jaMlOL');
+    expect(alertContainer[0]).toHaveClass('sc-beqWaB czspmq');
   });
 
   it('renders AlertContainer correctly (!isAlertHidden)', async () => {
@@ -26,6 +26,6 @@ describe('Alert unit tests', () => {
 
     const alertContainer = await screen.findAllByTestId('alert-container');
 
-    expect(alertContainer[0]).toHaveClass('sc-beqWaB hfEuEB');
+    expect(alertContainer[0]).toHaveClass('sc-beqWaB aIxVR');
   });
 });

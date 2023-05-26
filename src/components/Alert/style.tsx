@@ -1,11 +1,13 @@
 import styled from 'styled-components';
-import { Alert, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 
-export const AlertContainer = styled(Grid)<{ isAlertHidden?: boolean }>(({ isAlertHidden }) => ({
-  display: isAlertHidden ? 'none' : 'inline-block',
-  opacity: isAlertHidden ? 0 : 1,
-  position: 'absolute',
-  top: 125,
-  transition: 'all 500ms ease-in',
-  zIndex: 6,
-}));
+export const AlertContainer = styled(Grid)<{ isAlertHidden?: boolean; isAlertFading?: boolean }>(
+  ({ isAlertHidden, isAlertFading }) => ({
+    display: isAlertHidden && `none !important`,
+    opacity: isAlertHidden || isAlertFading ? 0 : 1,
+    position: 'fixed',
+    top: 125,
+    transition: 'all 350ms ease-in',
+    zIndex: 6,
+  }),
+);
