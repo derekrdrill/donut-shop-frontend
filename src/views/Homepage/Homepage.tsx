@@ -19,7 +19,7 @@ const Homepage = () => (
         <Grid item xs={12} md={8}>
           <Grid container justifyContent='center' rowGap={1}>
             <HomepageText $fontSize={50}>
-              <HomePageTextSpan $fontColor='#f2755f'>Nuthouse </HomePageTextSpan>
+              <HomePageTextSpan $fontColor='#f2755f'>Morning Dough </HomePageTextSpan>
               <HomePageTextSpan $fontColor='#6a017f'>Rewards</HomePageTextSpan>
             </HomepageText>
             <HomepageText $fontColor='#404040' $fontSize={35}>

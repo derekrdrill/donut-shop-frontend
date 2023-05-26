@@ -2,7 +2,8 @@
 
 exports[`Alert unit tests renders as expected 1`] = `
 <div
-  className="MuiGrid-root MuiGrid-container sc-beqWaB jaMlOL css-11lq3yg-MuiGrid-root"
+  className="MuiGrid-root MuiGrid-container sc-beqWaB czspmq css-11lq3yg-MuiGrid-root"
+  isAlertFading={false}
   isAlertHidden={true}
 >
   <div

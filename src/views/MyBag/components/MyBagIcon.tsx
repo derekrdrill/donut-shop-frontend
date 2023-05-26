@@ -4,12 +4,15 @@ import { Grid } from '@mui/material';
 
 import GlobalContext from '../../../context/GlobalContext';
 
-import { MyBagIconSVG, MyBagIconBadge } from '../style';
+import { setAlertItem } from '../../../components/Alert/actions/AlertActions';
+
+import { MyBagIconSVG, MyBagIconBadge, MyBagIconContainer } from '../style';
+
 import { MyBagItem } from '../../../context/types/MyBagItem';
 
-interface MyBagIconProps {
+type MyBagIconProps = {
   color: string;
-}
+};
 
 export const getMyBagQuantity = (myBag: Array<MyBagItem>) =>
   myBag.map(myBagItem => myBagItem.quantity).reduce((partialSum, a) => partialSum + a, 0);
@@ -18,6 +21,7 @@ const MyBagIcon = ({ color }: MyBagIconProps) => {
   const navigate = useNavigate();
 
   const {
+    dispatch,
     state: { myBag },
   } = React.useContext(GlobalContext);
 
@@ -26,13 +30,17 @@ const MyBagIcon = ({ color }: MyBagIconProps) => {
       container
       onClick={
         /* istanbul ignore next */
-        () => navigate('/myBag')
+        async () => {
+          myBag.length === 0
+            ? dispatch(await setAlertItem('No items in your bag', true, 'warning'))
+            : navigate('/myBag');
+        }
       }
     >
-      <Grid item xs={12}>
+      <MyBagIconContainer item xs={12}>
         <MyBagIconBadge badgeContent={getMyBagQuantity(myBag)} color='secondary' />
         <MyBagIconSVG sx={{ color: color }} />;
-      </Grid>
+      </MyBagIconContainer>
     </Grid>
   );
 };

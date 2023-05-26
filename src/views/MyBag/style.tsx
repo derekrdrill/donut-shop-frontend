@@ -7,13 +7,8 @@ export const MyBagRoot = styled(Grid)({
 });
 
 export const MyBagIconSVG = styled(ShoppingBagIcon)({
-  ':hover': {
-    color: '#a501c6',
-    transform: 'scale(1.6)',
-  },
-  cursor: 'pointer',
   marginTop: 7,
-  transition: 'all 5s ease-in-out',
+  transition: 'all 250ms linear',
   transform: 'scale(1.4)',
 });
 
@@ -26,9 +21,10 @@ export const MyBagIconBadge = styled(Badge)({
   },
 });
 
-export const MyBagMainCard = styled(Grid)({
+export const MyBagCard = styled(Grid)({
   border: '1px solid gainsboro',
   borderRadius: 5,
+  margin: '0px 10px !important',
   padding: 20,
 });
 
@@ -46,4 +42,23 @@ export const MyBagItemRow = styled(Grid)({
 export const MyBagItemImage = styled.img({
   height: 40,
   width: 40,
+});
+
+export const MyBagIconContainer = styled(Grid)({
+  ':hover': {
+    '.MuiSvgIcon-root': {
+      color: '#a501c6',
+      transform: 'scale(1.6)',
+    },
+    '.MuiBadge-root': {
+      transform: 'scale(1.2)',
+      zIndex: 4,
+    },
+  },
+  cursor: 'pointer',
+});
+
+export const MyBagPaymentContainer = styled(Grid)({
+  borderTop: '1px solid gainsboro',
+  padding: 15,
 });
