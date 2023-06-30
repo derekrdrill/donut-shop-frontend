@@ -1,6 +1,13 @@
 import { GlobalReducerActionEnum } from '../../../context/GlobalReducer';
 import { MyBagItem } from '../../../context/types/MyBagItem';
 
+import {
+  getIngredientString,
+  getUpdatedBag,
+  isIngredientExistingOrNull,
+  isSugarExistingOrNull,
+} from '../utils/menuItem.util';
+
 export interface SetMyBagParams {
   type: GlobalReducerActionEnum.SET_MY_BAG;
   payload: { myBag: Array<MyBagItem> };
@@ -71,13 +78,13 @@ export const addToMyBag = (
   const existingBagItem = myBag.find(
     myBagItem =>
       myBagItem.menuItemID === menuItemID &&
-      (myBagItem.dairy === dairy || !myBagItem.dairy) &&
-      (myBagItem.flavor === flavor || !myBagItem.flavor) &&
-      (myBagItem.sugar === (sugar === 'yes') || !myBagItem.sugar) &&
-      (myBagItem.size === size || !myBagItem.size) &&
-      (myBagItem.ice === ice || !myBagItem.ice) &&
-      (myBagItem.creamCheese === creamCheese || !myBagItem.creamCheese) &&
-      (myBagItem.butter === butter || !myBagItem.butter),
+      isIngredientExistingOrNull(myBagItem.dairy, dairy) &&
+      isIngredientExistingOrNull(myBagItem.flavor, flavor) &&
+      isSugarExistingOrNull(myBagItem.sugar, sugar) &&
+      isIngredientExistingOrNull(myBagItem.size, size) &&
+      isIngredientExistingOrNull(myBagItem.ice, ice) &&
+      isIngredientExistingOrNull(myBagItem.creamCheese, creamCheese) &&
+      isIngredientExistingOrNull(myBagItem.butter, butter),
   );
 
   let myNewBag;
@@ -97,13 +104,13 @@ export const addToMyBag = (
         {
           menuItemID: menuItemID,
           quantity: quantity,
-          dairy: dairy !== '' ? dairy : null,
-          flavor: flavor !== '' ? flavor : null,
+          dairy: getIngredientString(dairy),
+          flavor: getIngredientString(flavor),
           sugar: sugar === 'yes',
-          size: size !== '' ? size : null,
-          ice: ice !== '' ? ice : null,
-          creamCheese: creamCheese !== '' ? creamCheese : null,
-          butter: butter !== '' ? butter : null,
+          size: getIngredientString(size),
+          ice: getIngredientString(ice),
+          creamCheese: getIngredientString(creamCheese),
+          butter: getIngredientString(butter),
           name: name,
           orderID: orderID,
           category: category,
@@ -133,20 +140,32 @@ export const updateCurrentMyBag = async (
 ): Promise<SetMyBagParams> => ({
   type: GlobalReducerActionEnum.SET_MY_BAG,
   payload: {
-    myBag: myBag.map(myBagItem =>
-      myBagItem.orderID === orderID
-        ? {
-            ...myBagItem,
-            quantity: quantity,
-            dairy: dairy,
-            flavor: flavor,
-            sugar: sugar === 'yes',
-            size: size,
-            ice: ice,
-            creamCheese: creamCheese,
-            butter: butter,
-          }
-        : myBagItem,
+    // myBag: myBag.map(myBagItem =>
+    //   myBagItem.orderID === orderID
+    //     ? {
+    //         ...myBagItem,
+    //         quantity: quantity,
+    //         dairy: dairy,
+    //         flavor: flavor,
+    //         sugar: sugar === 'yes',
+    //         size: size,
+    //         ice: ice,
+    //         creamCheese: creamCheese,
+    //         butter: butter,
+    //       }
+    //     : myBagItem,
+    // ),
+    myBag: getUpdatedBag(
+      myBag,
+      orderID,
+      quantity,
+      dairy,
+      flavor,
+      sugar,
+      size,
+      ice,
+      creamCheese,
+      butter,
     ),
   },
 });
