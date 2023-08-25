@@ -8,8 +8,6 @@ import MyBagIcon from '../../morningDough/MyBag/components/MyBagIcon';
 
 import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderSearchIcon, HeaderTop } from './style';
 
-import HeaderImage from './assets/images/donutsImg.png';
-import HeaderOrderSVG from './assets/icons/donutSVG.svg';
 import Link from 'next/link';
 
 interface HeaderProps {
@@ -20,7 +18,6 @@ interface HeaderProps {
 }
 
 const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: HeaderProps) => {
-  // const navigate = useNavigate();
   const router = useRouter();
 
   return (
@@ -36,14 +33,14 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
             <Grid item xs={12}>
               <Grid container justifyContent='center'>
                 <Link href='/'>
-                  <HeaderLogo src={HeaderImage} />
+                  <HeaderLogo src='/donutsImg.png' />
                 </Link>
               </Grid>
             </Grid>
             <Grid item xs={12}>
               <Grid container justifyContent='center'>
                 <ActionButton
-                  startIcon={<SVG fill='#FFFFFF' height={20} src={HeaderOrderSVG} width={20} />}
+                  startIcon={<SVG fill='#FFFFFF' height={20} src='/donutsSVG.svg' width={20} />}
                   variant='contained'
                   buttonColor='#f2755f'
                   buttonHoverColor='#f59180'
@@ -104,7 +101,7 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
           <Grid container justifyContent={{ xs: 'space-around', lg: 'space-between' }}>
             <Grid item display={{ xs: 'none', lg: 'inline-flex' }}>
               <Link href='/'>
-                <HeaderLogo src={HeaderImage} />
+                <HeaderLogo src='/donutsImg.png' />
               </Link>
             </Grid>
             <Grid item>
@@ -157,7 +154,7 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                 <ActionButton
                   buttonColor='#f2755f'
                   buttonHoverColor='#f59180'
-                  startIcon={<SVG fill='#FFFFFF' height={20} src={HeaderOrderSVG} width={20} />}
+                  startIcon={<SVG fill='#FFFFFF' height={20} src='/donutsSVG.svg' width={20} />}
                   variant='contained'
                 >
                   Order Now

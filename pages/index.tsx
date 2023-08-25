@@ -4,15 +4,12 @@ import { Grid, Typography } from '@mui/material';
 
 import ActionButton from '../components/common/ActionButton/ActionButton';
 
-import homepageCoffee from '../assets/images/homepageCoffee.png';
-import homepageDonut from '../assets/images/homepageDonut.png';
-
 const Homepage = () => (
   <HomepageRoot container rowSpacing={6}>
     <Grid item xs={12}>
       <Grid container>
         <Grid item xs={2} display={{ xs: 'none', md: 'block' }}>
-          <HomepageImage src={homepageDonut} $isOnLeftSide />
+          <HomepageImage src='/homepageDonut.png' $isOnLeftSide />
         </Grid>
         <Grid item xs={12} md={8}>
           <Grid container justifyContent='center' rowGap={1}>
@@ -27,7 +24,7 @@ const Homepage = () => (
         </Grid>
         <Grid item xs={2} display={{ xs: 'none', md: 'block' }}>
           <Grid container justifyContent='flex-end'>
-            <HomepageImage src={homepageCoffee} $isOnRightSide />
+            <HomepageImage src='/homepageCoffee.png' $isOnRightSide />
           </Grid>
         </Grid>
       </Grid>
@@ -131,7 +128,7 @@ export const HomepageText = styled.h1<{
   $isSubtext?: boolean;
 }>(({ $fontColor, $fontSize, $isSubtext }) => ({
   color: $fontColor,
-  fontFamily: $isSubtext ? `'Josefin Sans', sans-serif` : `'Lilita One', cursive !important`,
+  fontFamily: 'serif',
   fontSize: $fontSize,
   margin: '15px 0',
   textAlign: 'center',
