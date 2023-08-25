@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullMenuHead unit tests renders as expected 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container sc-beqWaB hTrTut css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-1aljnjw-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-68owf2-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-12 MuiGrid-grid-lg-6 css-1079s95-MuiGrid-root"
+          >
+            <img
+              className="sc-eDDNvR gZzQUy"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-12 MuiGrid-grid-lg-6 css-1xf4ifq-MuiGrid-root"
+          >
+            <img
+              className="sc-eDDNvR gZzQUy"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 sc-gueYoa jmZJof css-mb590u-MuiGrid-root"
+      >
+        <h2
+          className="MuiTypography-root MuiTypography-h2 sc-hLseeU PzYec css-10sp2wv-MuiTypography-root"
+        >
+          FIRE UP THAT ORDER 🔥
+        </h2>
+        <h3
+          className="MuiTypography-root MuiTypography-h3 sc-hLseeU hJUVBK css-1pm15ke-MuiTypography-root"
+        >
+          We'll be ready 😎
+        </h3>
+        <h6
+          className="MuiTypography-root MuiTypography-h6 sc-hLseeU cHiVpT css-1u98osu-MuiTypography-root"
+        >
+          Special tasty treats just for you
+        </h6>
+        <p
+          className="MuiTypography-root MuiTypography-body2 sc-hLseeU bpCwal css-odxzrf-MuiTypography-root"
+        >
+          $1 croissants or FREE small coffee with the pruchase of an avacado toast. Price and participation may vary. Limited time offer. Terms apply.
+        </p>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-ax2l3g-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-sbmkh9-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-12 MuiGrid-grid-lg-6 css-1079s95-MuiGrid-root"
+          >
+            <img
+              className="sc-eDDNvR gZzQUy"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-12 MuiGrid-grid-lg-6 css-1xf4ifq-MuiGrid-root"
+          >
+            <img
+              className="sc-eDDNvR gZzQUy"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

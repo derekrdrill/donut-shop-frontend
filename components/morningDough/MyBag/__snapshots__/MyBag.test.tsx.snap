@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyBag unit tests renders as expected 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container sc-beqWaB cwMraW css-11lq3yg-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1xnaaoc-MuiGrid-root"
+    >
+      <h2
+        className="MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root"
+      >
+        Checkout
+      </h2>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7 MuiGrid-grid-md-5 sc-hLseeU hWZUsq css-doz332-MuiGrid-root"
+  >
+    <h6
+      className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+    >
+      My bag
+    </h6>
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-item css-1f064cs-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 sc-eDDNvR crpmXz css-1idn90j-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container sc-jTrPJq bkbSJV css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+          />
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <img
+              className="sc-gLDzan bOZWjX"
+              src="http://localhost:3000/chocolateDonut.png"
+            />
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              Chocolate
+            </h6>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                x
+                5
+              </h6>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <button
+                className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-colorInfo MuiSvgIcon-fontSizeMedium css-1yq1soz-MuiSvgIcon-root"
+                  data-testid="EditIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                  />
+                </svg>
+              </button>
+              <button
+                className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-colorError MuiSvgIcon-fontSizeMedium css-1wxstni-MuiSvgIcon-root"
+                  data-testid="DeleteForeverIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12 1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+          />
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-container sc-jTrPJq bkbSJV css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+          />
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <img
+              className="sc-gLDzan bOZWjX"
+              src="http://localhost:3000/hotCoffee.png"
+            />
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              Hot Coffee
+            </h6>
+            <p
+              className="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+              data-testid="dairy-text"
+            >
+              CREAM
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+              data-testid="flavor-text"
+            >
+              FRENCH VANILLA
+            </p>
+            <p
+              className="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+              data-testid="sugar-text"
+            >
+              SUGAR
+            </p>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                x
+                3
+              </h6>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <button
+                className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-colorInfo MuiSvgIcon-fontSizeMedium css-1yq1soz-MuiSvgIcon-root"
+                  data-testid="EditIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                  />
+                </svg>
+              </button>
+              <button
+                className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-colorError MuiSvgIcon-fontSizeMedium css-1wxstni-MuiSvgIcon-root"
+                  data-testid="DeleteForeverIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12 1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7 MuiGrid-grid-sm-5 sc-hLseeU hWZUsq css-pmp550-MuiGrid-root"
+  >
+    <h6
+      className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+    >
+      Payment details
+    </h6>
+    <div
+      className="MuiGrid-root sc-fsQiph dCoEro css-vj1n65-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

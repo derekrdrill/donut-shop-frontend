@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuickMenuPage unit tests renders as expected 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container sc-gueYoa dshuxz css-1lym95h-MuiGrid-root"
+          onClick={[Function]}
+        >
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+          >
+            Coffee, Tea & More
+          </h6>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container sc-gueYoa hJcBfV css-1lym95h-MuiGrid-root"
+          onClick={[Function]}
+        >
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+          >
+            Doughnuts
+          </h6>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container sc-gueYoa dshuxz css-1lym95h-MuiGrid-root"
+          onClick={[Function]}
+        >
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+          >
+            Bagels, Muffins & More
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container sc-hLseeU exfbdM css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Hot Coffee
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Iced Coffee
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Hot Latte
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Hot Tea
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Iced Tea
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Coca-Cola
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Sprite
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 sc-dmqHEX hfdwKv css-1o7apob-MuiGrid-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <img
+                className="sc-beqWaB ETGuZ"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container css-1lym95h-MuiGrid-root"
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                Water Bottle
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
