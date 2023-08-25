@@ -20,9 +20,6 @@ This is a fully adaptive/responsive application. The front-end infrastructure ut
     Axios
   </li>
   <li>
-    Webpack
-  </li>
-  <li>
     Jest
   </li>
   <li>
