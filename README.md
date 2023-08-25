@@ -1,6 +1,6 @@
 # Morning Dough 🍩
 
-This is the repository for the front-end Morning Dough, a donut shop prototype. 
+A <b>NextJS</b> revamp of the front-endof Morning Dough, a donut shop prototype. 
 
 This is a fully adaptive/responsive application. The front-end infrastructure utilizes the following:
 <ul>
