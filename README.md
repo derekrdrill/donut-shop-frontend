@@ -1,4 +1,4 @@
-# Morning Dough 🍩
+# Morning Dough 🍩 V2
 
 A <b>NextJS</b> revamp of the front-endof Morning Dough, a donut shop prototype. 
 
