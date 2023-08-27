@@ -66,7 +66,6 @@ const FullMenuBody = ({ fullMenuCategories, fullMenu }: FullMenuBodyProps) => {
                   setSelectedCategory(menuItem.key);
                   setSelectedCategoryName(menuItem.name);
                 } else {
-                  // navigate(`/menu/${selectedCategory}/${menuItem.key}`);
                   router.push(`/menu/${selectedCategory}/${menuItem.key}`);
                 }
               }

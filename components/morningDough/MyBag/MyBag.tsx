@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { useNavigate } from 'react-router-dom';
 import { useRouter } from 'next/router';
 import { IconButton, Grid, Typography } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
@@ -14,7 +13,7 @@ import MyBagItemFlavorText from './components/MyBagItemFlavorText';
 import MyBagItemIceText from './components/MyBagItemIceText';
 import MyBagItemSugarText from './components/MyBagItemSugarText';
 
-import { setModalItem } from '../../components/Modal/actions/ModalActions';
+import { setModalItem } from '../../common/Modal/actions/ModalActions';
 import { deleteFromMyBag } from './actions/MyBagActions';
 
 import {
@@ -27,8 +26,7 @@ import {
 } from './style';
 
 const MyBag = () => {
-  // const navigate = useNavigate();
-  const router = useRouter()
+  const router = useRouter();
 
   const {
     dispatch,
@@ -39,7 +37,6 @@ const MyBag = () => {
 
   React.useEffect(() => {
     if (myBag.length < 1) {
-      // navigate('/');
       router.push('/');
     }
   }, [myBag]);
