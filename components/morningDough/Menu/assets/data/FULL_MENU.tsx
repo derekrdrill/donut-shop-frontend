@@ -1,4 +1,4 @@
-export interface FullMenuItem {
+export type FullMenuItem = {
   key: string;
   name: string;
   image: string;
@@ -6,7 +6,7 @@ export interface FullMenuItem {
   subCategory: string;
   soda?: boolean;
   bottled?: boolean;
-}
+};
 
 const FULL_MENU: FullMenuItem[] = [
   {

@@ -3,9 +3,9 @@ import { GridProps } from '@mui/material';
 
 import { QuickMenuRoot } from './style';
 
-interface QuickMenuProps extends GridProps {
+type QuickMenuProps = GridProps & {
   isQuickMenuOpen: boolean;
-}
+};
 
 const QuickMenu = ({ children, isQuickMenuOpen }: QuickMenuProps) => {
   return (

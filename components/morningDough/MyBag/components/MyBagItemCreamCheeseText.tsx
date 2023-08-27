@@ -3,9 +3,9 @@ import { Typography } from '@mui/material';
 
 import { MyBagItem } from '../../../../context/types/MyBagItem';
 
-interface MyBagItemCreamCheeseTextProps {
+type MyBagItemCreamCheeseTextProps = {
   myBagItem: MyBagItem;
-}
+};
 
 const MyBagItemCreamCheeseText = ({ myBagItem }: MyBagItemCreamCheeseTextProps) =>
   myBagItem.subCategory === 'bagels' && myBagItem.creamCheese ? (

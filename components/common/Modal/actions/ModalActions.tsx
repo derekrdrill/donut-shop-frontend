@@ -1,10 +1,10 @@
 import { GlobalReducerActionEnum } from '../../../../context/GlobalReducer';
 import { ModalItem } from '../../../../context/types/ModalItem';
 
-export interface SetModalItemParams {
+export type SetModalItemParams = {
   type: GlobalReducerActionEnum.SET_MODAL_ITEM;
   payload: { modalItem: ModalItem };
-}
+};
 
 export const setModalItem = (
   handleSubmit: Function | null,

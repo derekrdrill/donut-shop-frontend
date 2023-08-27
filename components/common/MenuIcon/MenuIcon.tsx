@@ -2,10 +2,10 @@ import * as React from 'react';
 
 import { MenuIconContainer, MenuIconLine } from './style';
 
-interface MenuIconProps {
+type MenuIconProps = {
   isMenuIconActive: boolean;
   setIsMenuIconActive: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
 const MenuIcon = ({ isMenuIconActive, setIsMenuIconActive }: MenuIconProps) => (
   <MenuIconContainer

@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Grid, InputLabel, OutlinedInput, Select, MenuItem as SelectItem } from '@mui/material';
 
-interface MenuItemSelectProps {
+type MenuItemSelectProps = {
   placeholderText?: string;
   selectData: Array<{ value: string; text: string }>;
   setValue: React.Dispatch<React.SetStateAction<string>>;
   title: string;
   value: string;
-}
+};
 
 const MenuItemSelect = ({
   placeholderText,

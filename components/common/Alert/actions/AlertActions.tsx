@@ -1,10 +1,10 @@
 import { GlobalReducerActionEnum } from '../../../../context/GlobalReducer';
 import { AlertItem } from '../../../../context/types/AlertItem';
 
-export interface SetAlertItemParams {
+export type SetAlertItemParams = {
   type: GlobalReducerActionEnum.SET_ALERT_ITEM;
   payload: { alertItem: AlertItem };
-}
+};
 
 export const setAlertItem = async (
   alertMessage: string,

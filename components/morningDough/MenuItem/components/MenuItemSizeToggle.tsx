@@ -5,11 +5,11 @@ import { MenuItemToggleButton } from '../style';
 
 import { FullMenuItem } from '../../Menu/assets/data/FULL_MENU';
 
-interface MenuItemSizeToggleProps {
+type MenuItemSizeToggleProps = {
   menuItemData: FullMenuItem | null | undefined;
   selectedSize: string;
   setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
 const MenuItemSizeToggle = ({
   menuItemData,

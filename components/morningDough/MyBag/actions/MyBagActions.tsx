@@ -3,10 +3,10 @@ import { MyBagItem } from '../../../../context/types/MyBagItem';
 
 import { getMyBagAfterDelete } from '../utils/myBag.util';
 
-export interface DeleteFromMyBagParams {
+export type DeleteFromMyBagParams = {
   type: GlobalReducerActionEnum.SET_MY_BAG;
   payload: { myBag: Array<MyBagItem> };
-}
+};
 
 export const deleteFromMyBag = (
   orderID: string,

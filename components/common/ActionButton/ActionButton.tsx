@@ -2,13 +2,13 @@ import * as React from 'react';
 import { ButtonProps } from '@mui/material';
 import { ActionButtonRoot } from './style';
 
-interface ActionButtonProps extends ButtonProps {
+type ActionButtonProps = ButtonProps & {
   borderRadius?: number;
   buttonColor?: string;
   buttonHoverColor?: string;
   buttonWidth?: string | number;
   marginTop?: number;
-}
+};
 
 const ActionButton = ({
   borderRadius,
