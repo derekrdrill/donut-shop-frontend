@@ -1,9 +1,5 @@
 import * as React from 'react';
+import FullMenuComponent from '../components/morningDough/Menu/components/FullMenu/FullMenu';
 
-import FullMenu from '../components/morningDough/Menu/components/FullMenu/FullMenu';
-
-const fullMenu = () => {
-  return <FullMenu />;
-};
-
-export default fullMenu;
+const FullMenu = () => <FullMenuComponent />;
+export default FullMenu;
