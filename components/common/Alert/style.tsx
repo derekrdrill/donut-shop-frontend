@@ -16,7 +16,7 @@ export const AlertContainer = styled(Grid)<{
   $isAlertHidden?: boolean | undefined;
   $isAlertFading?: boolean | undefined;
 }>(({ $isAlertHidden, $isAlertFading }) => ({
-  display: `${$isAlertHidden ? 'none' : 'inline-block'} !important`,
+  display: `${$isAlertHidden ? 'none' : 'inline-flex'} !important`,
   opacity: $isAlertHidden || $isAlertFading ? 0 : 1,
   position: 'fixed',
   top: 125,
