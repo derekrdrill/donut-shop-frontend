@@ -3,7 +3,7 @@ import { MyBagItem } from './types/MyBagItem';
 import { ModalItem } from './types/ModalItem';
 
 export type GlobalStateType = {
-  myBag?: Array<MyBagItem> | undefined;
+  myBag?: Array<MyBagItem> | undefined | null;
   modalItem?: ModalItem;
   alertItem?: AlertItem;
 };

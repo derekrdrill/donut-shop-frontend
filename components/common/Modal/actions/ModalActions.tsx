@@ -7,7 +7,7 @@ export interface SetModalItemParams {
 }
 
 export const setModalItem = (
-  handleSubmit: Function,
+  handleSubmit: Function | null,
   isModalOpen: boolean,
   modalBody: React.ReactNode,
   modalTitle: string,

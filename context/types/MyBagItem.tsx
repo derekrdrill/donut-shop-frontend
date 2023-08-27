@@ -5,13 +5,13 @@ export type MyBagItem = {
   category: string;
   subCategory: string;
   quantity: number;
-  dairy: string | null;
-  flavor: string | null;
+  dairy: string | null | undefined;
+  flavor: string | null | undefined;
   sugar: boolean;
   size: string;
-  ice: string | null;
-  creamCheese: string | null;
-  butter: string | null;
+  ice: string | null | undefined;
+  creamCheese: string | null | undefined;
+  butter: string | null | undefined;
   bottled: boolean;
   soda: boolean;
   menuItemImage: string;
