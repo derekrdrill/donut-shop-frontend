@@ -128,7 +128,7 @@ export const HomepageText = styled.h1<{
   $isSubtext?: boolean;
 }>(({ $fontColor, $fontSize, $isSubtext }) => ({
   color: $fontColor,
-  fontFamily: 'serif',
+  fontFamily: $isSubtext ? `'Josefin Sans', sans-serif` : `'Lilita One', cursive !important`,
   fontSize: $fontSize,
   margin: '15px 0',
   textAlign: 'center',

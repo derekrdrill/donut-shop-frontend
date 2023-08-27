@@ -1,7 +1,5 @@
 import * as React from 'react';
-
 import { ButtonProps } from '@mui/material';
-
 import { ActionButtonRoot } from './style';
 
 interface ActionButtonProps extends ButtonProps {

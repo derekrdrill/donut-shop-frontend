@@ -17,7 +17,7 @@ export const SidebarRoot = styled(Grid)<{ $isSidebarOpen: boolean }>(({ $isSideb
 }));
 
 export const SidebarMenuText = styled.h1({
-  ':hover': {
+  '&:hover': {
     backgroundPositionX: '0%',
     backgroundSize: '100% 0.1em',
   },

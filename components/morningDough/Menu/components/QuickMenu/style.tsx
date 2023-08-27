@@ -7,15 +7,15 @@ export const QuickMenuImage = styled.img({
   width: 100,
 });
 
-export const QuickMenuTabContainer = styled(Grid)<{ $isMenuTabActive: boolean }>(
+export const QuickMenuTabContainer = styled(Grid)<{ $isMenuTabActive?: boolean }>(
   ({ $isMenuTabActive }) => ({
-    ':hover': {
+    '&:hover': {
       backgroundColor: '#bb00e0',
       color: '#FFFFFF',
-      opacity: !$isMenuTabActive && 0.6,
+      opacity: !$isMenuTabActive ? 0.6 : 1,
     },
-    backgroundColor: $isMenuTabActive && '#bb00e0',
-    color: $isMenuTabActive && '#FFFFFF',
+    backgroundColor: $isMenuTabActive ? '#bb00e0' : 'inherit',
+    color: $isMenuTabActive ? '#FFFFFF' : 'inherit',
     cursor: 'pointer',
     opacity: 0.8,
     padding: 8,
@@ -23,7 +23,7 @@ export const QuickMenuTabContainer = styled(Grid)<{ $isMenuTabActive: boolean }>
 );
 
 export const QuickMenuItemContainer = styled(Grid)({
-  ':hover': {
+  '&:hover': {
     img: {
       opacity: 0.8,
     },

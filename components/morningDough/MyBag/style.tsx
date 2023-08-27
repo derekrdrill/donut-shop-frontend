@@ -45,7 +45,7 @@ export const MyBagItemImage = styled.img({
 });
 
 export const MyBagIconContainer = styled(Grid)({
-  ':hover': {
+  '&:hover': {
     '.MuiSvgIcon-root': {
       color: '#a501c6',
       transform: 'scale(1.6)',
