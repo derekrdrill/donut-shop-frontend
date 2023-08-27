@@ -19,7 +19,7 @@ export const ActionButtonRoot = styled(Button)<{
     disabled,
     variant,
   }) => ({
-    ':hover': {
+    '&:hover': {
       backgroundColor: `${$buttonHoverColor} !important`,
       color: `#FFFFFF !important`,
     },

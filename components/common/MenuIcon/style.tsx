@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 export const MenuIconContainer = styled(Grid)<{
   $isMenuIconActive: boolean;
 }>(({ $isMenuIconActive }) => ({
-  ':hover': {
+  '&:hover': {
     '.menu-icon-line': {
       backgroundColor: '#a501c6',
     },

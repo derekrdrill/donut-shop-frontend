@@ -16,7 +16,7 @@ export const HeaderTop = styled(Grid)({
 });
 
 export const HeaderLogo = styled.img({
-  ':hover': {
+  '&:hover': {
     opacity: 0.8,
   },
   cursor: 'pointer',
@@ -25,7 +25,7 @@ export const HeaderLogo = styled.img({
 });
 
 export const HeaderMenuText = styled.h4({
-  ':hover': {
+  '&:hover': {
     backgroundPositionX: '0%',
     backgroundSize: '100% 0.1em',
   },
@@ -44,7 +44,7 @@ export const HeaderMenuText = styled.h4({
 });
 
 export const HeaderSearchIcon = styled(SearchIcon)({
-  ':hover': {
+  '&:hover': {
     color: '#a501c6',
     transform: 'scale(1.6)',
   },

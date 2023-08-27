@@ -36,7 +36,7 @@ export const FullMenuItemRoot = styled(Grid)({
 });
 
 export const FullMenuItemContainer = styled(Grid)({
-  ':hover': {
+  '&:hover': {
     backgroundColor: '#f8d7ff',
   },
   border: '1px solid #ababab',
