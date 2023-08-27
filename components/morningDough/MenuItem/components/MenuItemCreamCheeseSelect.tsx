@@ -5,18 +5,18 @@ import MenuItemSelect from './MenuItemSelect';
 
 import { FullMenuItem } from '../../Menu/assets/data/FULL_MENU';
 
-interface MenuItemSugarSelectProps {
+type MenuItemCreamCheeseSelectProps = {
   menuItemData: FullMenuItem;
   selectedCreamCheese: string;
   setSelectedCreamCheese: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
 const MenuItemCreamCheeseSelect = ({
   menuItemData,
   selectedCreamCheese,
   setSelectedCreamCheese,
-}: MenuItemSugarSelectProps) =>
-  menuItemData.subCategory === 'bagels' ? (
+}: MenuItemCreamCheeseSelectProps) =>
+  menuItemData?.subCategory === 'bagels' ? (
     <Grid data-testid='cream-cheese-select' item xs={12} md={6} lg={4}>
       <MenuItemSelect
         placeholderText='Select your cream cheese'

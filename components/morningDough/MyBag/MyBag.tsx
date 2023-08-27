@@ -80,7 +80,9 @@ const MyBag = () => {
                         /* istanbul ignore next */
                         () =>
                           router.push(
-                            `/menu/${myBagItem.category}/${myBagItem.menuItemID}/${myBagItem.orderID}`,
+                            `/menu/${myBagItem?.category ?? 'hotDrinks'}/${
+                              myBagItem?.menuItemID ?? 'hotCoffee'
+                            }/${myBagItem?.orderID}`,
                           )
                       }
                     >

@@ -6,10 +6,10 @@ import ActionButton from '../ActionButton/ActionButton';
 import { SidebarRoot, SidebarMenuText } from './style';
 import Link from 'next/link';
 
-interface SidebarProps {
+type SidebarProps = {
   isSidebarOpen: boolean;
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
   return (

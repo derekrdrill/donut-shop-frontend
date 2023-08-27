@@ -24,21 +24,21 @@ const FullMenuHead = () => (
         </Grid>
         <FullMenuHeadTextItem item xs={12} md={6} order={{ xs: 0, lg: 1 }}>
           <FullMenuText textAlign={{ xs: 'left', lg: 'center' }} variant='h2' $fontColor='#f2755f'>
-            FIRE UP THAT ORDER 🔥
+            {`FIRE UP THAT ORDER 🔥`}
           </FullMenuText>
           <FullMenuText textAlign={{ xs: 'left', lg: 'center' }} variant='h3' $fontColor='#6a017f'>
-            We'll be ready 😎
+            {`We'll be ready 😎`}
           </FullMenuText>
           <FullMenuText textAlign={{ xs: 'left', lg: 'center' }} variant='h6' $fontColor='#1c1c1c'>
-            Special tasty treats just for you
+            {`Special tasty treats just for you`}
           </FullMenuText>
           <FullMenuText
             textAlign={{ xs: 'left', lg: 'center' }}
             variant='body2'
             $fontColor='#5e5e5e'
           >
-            $1 croissants or FREE small coffee with the pruchase of an avacado toast. Price and
-            participation may vary. Limited time offer. Terms apply.
+            {`$1 croissants or FREE small coffee with the pruchase of an avacado toast. Price and
+            participation may vary. Limited time offer. Terms apply.`}
           </FullMenuText>
         </FullMenuHeadTextItem>
         <Grid item xs={12} sm={6} md={3} order={2}>

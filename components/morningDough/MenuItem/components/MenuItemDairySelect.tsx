@@ -5,18 +5,18 @@ import MenuItemSelect from './MenuItemSelect';
 
 import { FullMenuItem } from '../../Menu/assets/data/FULL_MENU';
 
-interface MenuItemDairySelectProps {
+type MenuItemDairySelectProps = {
   menuItemData: FullMenuItem;
   selectedDairy: string;
   setSelectedDairy: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
 const MenuItemDairySelect = ({
   menuItemData,
   selectedDairy,
   setSelectedDairy,
 }: MenuItemDairySelectProps) =>
-  menuItemData.category === 'drink' && !menuItemData.soda && !menuItemData.bottled ? (
+  menuItemData?.category === 'drink' && !menuItemData?.soda && !menuItemData?.bottled ? (
     <Grid data-testid='dairy-select' item xs={12} md={6} lg={4}>
       <MenuItemSelect
         placeholderText='Select your dairy'

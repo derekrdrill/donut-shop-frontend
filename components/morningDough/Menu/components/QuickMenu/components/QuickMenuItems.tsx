@@ -6,10 +6,10 @@ import { QuickMenuImage, QuickMenuItemContainer, QuickViewMenuItemsRoot } from '
 
 import { FullMenuItem } from '../../../assets/data/FULL_MENU';
 
-interface QuickMenuItemsProps {
+type QuickMenuItemsProps = {
   quickMenuData: FullMenuItem[];
   setIsQuickMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
 const QuickMenuItems = ({ quickMenuData, setIsQuickMenuOpen }: QuickMenuItemsProps) => {
   const router = useRouter()
@@ -24,7 +24,9 @@ const QuickMenuItems = ({ quickMenuData, setIsQuickMenuOpen }: QuickMenuItemsPro
             /* istanbul ignore next */
             () => {
               setIsQuickMenuOpen(false);
-              router.push(`/menu/${menuItem.subCategory}/${menuItem.key}`);
+              router.push(
+                `/menu/${menuItem?.subCategory ?? 'hotDrinks'}/${menuItem?.key ?? 'hotCoffee'}`,
+              );
             }
           }
           xs={2}

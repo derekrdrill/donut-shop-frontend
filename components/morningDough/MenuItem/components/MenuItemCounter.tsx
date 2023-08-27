@@ -5,10 +5,10 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 import ActionButton from '../../../../components/common/ActionButton/ActionButton';
 
-interface MenuItemCounterProps {
+type MenuItemCounterProps = {
   count: number;
   setCount: React.Dispatch<React.SetStateAction<number>>;
-}
+};
 
 const MenuItemCounter = ({ count, setCount }: MenuItemCounterProps) => (
   <Grid container rowSpacing={1}>

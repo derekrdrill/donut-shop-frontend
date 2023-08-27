@@ -10,12 +10,12 @@ import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderSearchIcon, HeaderTop } f
 
 import Link from 'next/link';
 
-interface HeaderProps {
+type HeaderProps = {
   isMenuOpen: boolean;
   isRetailOpen: boolean;
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
   setIsRetailOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
 const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: HeaderProps) => {
   const router = useRouter();

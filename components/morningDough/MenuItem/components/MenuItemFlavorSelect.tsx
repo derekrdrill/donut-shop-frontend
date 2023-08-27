@@ -5,21 +5,21 @@ import MenuItemSelect from './MenuItemSelect';
 
 import { FullMenuItem } from '../../Menu/assets/data/FULL_MENU';
 
-interface MenuItemFlavorSelectProps {
+type MenuItemFlavorSelectProps = {
   menuItemData: FullMenuItem;
   selectedFlavor: string;
   setSelectedFlavor: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
 const MenuItemFlavorSelect = ({
   menuItemData,
   selectedFlavor,
   setSelectedFlavor,
 }: MenuItemFlavorSelectProps) =>
-  menuItemData.category === 'drink' &&
-  menuItemData.key !== 'hotTea' &&
-  !menuItemData.soda &&
-  !menuItemData.bottled ? (
+  menuItemData?.category === 'drink' &&
+  menuItemData?.key !== 'hotTea' &&
+  !menuItemData?.soda &&
+  !menuItemData?.bottled ? (
     <Grid data-testid='flavor-select' item xs={12} md={6} lg={4}>
       <MenuItemSelect
         placeholderText='Select your flavor'

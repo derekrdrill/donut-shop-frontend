@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Button, Grid } from '@mui/material';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
-interface FullMenuBackButtonProps {
+type FullMenuBackButtonProps = {
   selectedCategory: string | null;
   setSelectedCategory: React.Dispatch<React.SetStateAction<string | null>>;
   setSelectedCategoryName: React.Dispatch<React.SetStateAction<string | null>>;
-}
+};
 
 const FullMenuBackButton = ({
   selectedCategory,

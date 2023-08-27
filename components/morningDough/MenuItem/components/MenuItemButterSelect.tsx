@@ -5,18 +5,18 @@ import MenuItemSelect from './MenuItemSelect';
 
 import { FullMenuItem } from '../../Menu/assets/data/FULL_MENU';
 
-interface MenuItemButterSelectProps {
+type MenuItemButterSelectProps = {
   menuItemData: FullMenuItem;
   selectedButter: string;
   setSelectedButter: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
 const MenuItemButterSelect = ({
   menuItemData,
   selectedButter,
   setSelectedButter,
 }: MenuItemButterSelectProps) =>
-  menuItemData.category === 'bread' && menuItemData.key !== 'avocadoToast' ? (
+  menuItemData?.category === 'bread' && menuItemData?.key !== 'avocadoToast' ? (
     <Grid data-testid='butter-select' item xs={12} md={6} lg={4}>
       <MenuItemSelect
         placeholderText='Select your butter'

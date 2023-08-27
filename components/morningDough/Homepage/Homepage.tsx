@@ -20,7 +20,7 @@ const Homepage = () => (
               <HomePageTextSpan $fontColor='#6a017f'>Rewards</HomePageTextSpan>
             </HomepageText>
             <HomepageText $fontColor='#404040' $fontSize={35}>
-              Don't fumble the bag 💰 Get what's yours 😤
+              {`Don't fumble the bag 💰 Get what's yours 😤`}
             </HomepageText>
           </Grid>
         </Grid>

@@ -66,7 +66,9 @@ const FullMenuBody = ({ fullMenuCategories, fullMenu }: FullMenuBodyProps) => {
                   setSelectedCategory(menuItem.key);
                   setSelectedCategoryName(menuItem.name);
                 } else {
-                  router.push(`/menu/${selectedCategory}/${menuItem.key}`);
+                  router.push(
+                    `/menu/${menuItem?.category ?? 'hotDrinks'}/${menuItem?.key ?? 'hotCoffee'}`,
+                  );
                 }
               }
             }

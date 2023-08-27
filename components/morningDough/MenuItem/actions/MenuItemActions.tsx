@@ -8,10 +8,10 @@ import {
   isSugarExistingOrNull,
 } from '../utils/menuItem.util';
 
-export interface SetMyBagParams {
+export type SetMyBagParams = {
   type: GlobalReducerActionEnum.SET_MY_BAG;
   payload: { myBag: Array<MyBagItem> };
-}
+};
 
 export const setMyBagHelper = async (
   menuItemID: string,

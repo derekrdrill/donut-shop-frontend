@@ -5,14 +5,18 @@ import MenuItemSelect from './MenuItemSelect';
 
 import { FullMenuItem } from '../../Menu/assets/data/FULL_MENU';
 
-interface MenuItemIceSelectProps {
+type MenuItemIceSelectProps = {
   menuItemData: FullMenuItem;
   selectedIce: string;
   setSelectedIce: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
-const MenuItemIceSelect = ({ menuItemData, selectedIce, setSelectedIce }: MenuItemIceSelectProps) =>
-  menuItemData.subCategory === 'coldDrinks' && !menuItemData.bottled ? (
+const MenuItemIceSelect = ({
+  menuItemData,
+  selectedIce,
+  setSelectedIce,
+}: MenuItemIceSelectProps) =>
+  menuItemData?.subCategory === 'coldDrinks' && !menuItemData?.bottled ? (
     <Grid data-testid='ice-select' item xs={12} md={6} lg={4}>
       <MenuItemSelect
         placeholderText='Select your ice amount'

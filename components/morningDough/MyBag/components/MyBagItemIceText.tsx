@@ -3,9 +3,9 @@ import { Typography } from '@mui/material';
 
 import { MyBagItem } from '../../../../context/types/MyBagItem';
 
-interface MyBagItemIceTextProps {
+type MyBagItemIceTextProps = {
   myBagItem: MyBagItem;
-}
+};
 
 const MyBagItemIceText = ({ myBagItem }: MyBagItemIceTextProps) =>
   myBagItem.subCategory === 'coldDrinks' && !myBagItem.bottled && myBagItem.ice ? (

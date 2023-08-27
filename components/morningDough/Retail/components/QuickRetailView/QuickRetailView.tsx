@@ -1,7 +1,9 @@
 import * as React from 'react';
 
-type QuickRetailViewProps = {};
+// type QuickRetailViewProps = {};
 
-export default function QuickRetailView({}: QuickRetailViewProps) {
+export const QuickRetailView = () => {
   return <div>QuickRetailView</div>;
-}
+};
+
+export default QuickRetailView;
