@@ -12,7 +12,7 @@ type QuickMenuItemsProps = {
 };
 
 const QuickMenuItems = ({ quickMenuData, setIsQuickMenuOpen }: QuickMenuItemsProps) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <QuickViewMenuItemsRoot container>

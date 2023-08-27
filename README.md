@@ -1,8 +1,9 @@
 # Morning Dough 🍩 V2
 
-A <b>NextJS</b> revamp of the front-endof Morning Dough, a donut shop prototype. 
+A <b>NextJS</b> revamp of the front-endof Morning Dough, a donut shop prototype.
 
 This is a fully adaptive/responsive application. The front-end infrastructure utilizes the following:
+
 <ul>
   <li>
     React Typescript
@@ -28,11 +29,13 @@ This is a fully adaptive/responsive application. The front-end infrastructure ut
 </ul>
 
 ## Application Status
+
 There is fair bit of infrastructure and functionality built into the front-end, and it can be cloned/downloaded and ran locally or you can visit my dev deployment at <a href='https://morning-dough.vercel.app'>https://morning-dough.vercel.app</a>. There is enough functionality to open this app as a user, explore the menu, and add items to 'My Bag'. The plan is the add much more functionality, such as authentication, POS, and overall full-stack functionality with a backend. The Java Sprint Boot backend is currently under development, and a Postgresql database is built.
 
 A list of the status of key tasks is below:
 
 #### <i>Complete</i>
+
 <ul>
   <li>
     Navigation/Routing infrastructure 
@@ -63,6 +66,7 @@ A list of the status of key tasks is below:
 </ul>
 
 #### <i>Planned</i>
+
 <ul>
   <li>
     Build 'Retail' menu and integrate with 'My Bag'

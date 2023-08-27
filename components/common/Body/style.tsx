@@ -4,4 +4,3 @@ import { Grid } from '@mui/material';
 export const BodyRoot = styled(Grid)({
   zIndex: 0,
 });
-
