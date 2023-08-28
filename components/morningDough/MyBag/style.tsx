@@ -3,7 +3,7 @@ import { Badge, Grid } from '@mui/material';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 export const MyBagRoot = styled(Grid)({
-  marginTop: 40,
+  marginTop: 45,
 });
 
 export const MyBagIconSVG = styled(ShoppingBagIcon)({
@@ -21,15 +21,16 @@ export const MyBagIconBadge = styled(Badge)({
   },
 });
 
-export const MyBagCard = styled(Grid)({
+export const MyBagCard = styled(Grid)<{ $maxHeight?: number }>(({ $maxHeight }) => ({
   border: '1px solid gainsboro',
   borderRadius: 5,
   margin: '0px 10px !important',
   padding: 20,
-});
+  maxHeight: $maxHeight ?? 500,
+}));
 
 export const MyBagItemContainer = styled(Grid)({
-  height: 350,
+  height: 270,
   overflowY: 'auto',
 });
 
