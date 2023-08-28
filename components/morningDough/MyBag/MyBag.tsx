@@ -8,11 +8,20 @@ import {
   IconButton,
   Radio,
   RadioGroup,
+  Tooltip,
   Typography,
 } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import EditIcon from '@mui/icons-material/Edit';
-import { ApplePay, Ach, CreditCard, GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
+import Info from '@mui/icons-material/Info';
+import {
+  ApplePay,
+  Ach,
+  CashAppPay,
+  CreditCard,
+  GooglePay,
+  PaymentForm,
+} from 'react-square-web-payments-sdk';
 
 import GlobalContext from '../../../context/GlobalContext';
 
@@ -158,9 +167,86 @@ const MyBag = () => {
                   value={paymentType}
                   onChange={e => setPaymentType(e.currentTarget.value)}
                 >
-                  <FormControlLabel value='cc' control={<Radio />} label='Credit Card' />
-                  <FormControlLabel value='google' control={<Radio />} label='Google Pay' />
-                  <FormControlLabel value='apple' control={<Radio />} label='Apple Pay' />
+                  <FormControlLabel
+                    value='cc'
+                    control={<Radio />}
+                    label={
+                      <Grid container justifyContent='space-between'>
+                        <Typography variant='subtitle2'>Credit Card</Typography>
+                        <Tooltip
+                          placement='right'
+                          title={
+                            <>
+                              <Typography fontWeight='bold' variant='subtitle2'>
+                                Use the following <em>(from Square sandbox)</em>:
+                              </Typography>
+                              <br />
+                              <Typography variant='subtitle2'>
+                                <strong>Card number:</strong> 4111 1111 1111 1111
+                              </Typography>
+                              <Typography variant='subtitle2'>
+                                <strong>Security code:</strong> 111
+                              </Typography>
+                              <Typography variant='subtitle2'>
+                                <strong>Expiration:</strong> Any future date
+                              </Typography>
+                            </>
+                          }
+                        >
+                          <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                        </Tooltip>
+                      </Grid>
+                    }
+                  />
+                  <FormControlLabel
+                    value='ach'
+                    control={<Radio />}
+                    label={
+                      <Grid container justifyContent='space-between'>
+                        <Typography variant='subtitle2'>Bank Account</Typography>
+                        <Tooltip
+                          placement='right'
+                          title={
+                            <>
+                              <Typography fontWeight='bold' variant='subtitle2'>
+                                Use the following <em>(from Square sandbox)</em>:
+                              </Typography>
+                              <br />
+                              <Typography variant='subtitle2'>
+                                <strong>Bank user name:</strong> good_user
+                              </Typography>
+                              <Typography variant='subtitle2'>
+                                <strong>Bank password:</strong> good_pass
+                              </Typography>
+                            </>
+                          }
+                        >
+                          <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                        </Tooltip>
+                      </Grid>
+                    }
+                  />
+                  <FormControlLabel
+                    value='google'
+                    control={<Radio />}
+                    label={
+                      <Grid container justifyContent='space-between'>
+                        <Typography variant='subtitle2'>Google Pay</Typography>
+                        <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                      </Grid>
+                    }
+                  />
+                  {/* <FormControlLabel value='apple' control={<Radio />} label='Apple Pay' /> */}
+                  <FormControlLabel
+                    value='cashApp'
+                    control={<Radio />}
+                    label={
+                      <Grid container justifyContent='space-between'>
+                        <Typography variant='subtitle2'>Cash App</Typography>
+                        <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                      </Grid>
+                    }
+                  />
                 </RadioGroup>
               </FormControl>
             </Grid>
@@ -176,15 +262,27 @@ const MyBag = () => {
                 countryCode: 'US',
                 currencyCode: 'USD',
                 total: {
-                  amount: '0.00',
+                  amount: '1.00',
                   label: 'Total',
                 },
               })}
               locationId={process.env.NEXT_PUBLIC_SQUARE_LOCATION_ID ?? ''}
             >
-              {paymentType === 'apple' && <ApplePay />}
-              {paymentType === 'google' && <GooglePay />}
-              {paymentType === 'cc' && <CreditCard />}
+              <ApplePay style={{ display: paymentType === 'apple' ? 'inline-block' : 'none' }} />
+              <GooglePay style={{ display: paymentType === 'google' ? 'inline-block' : 'none' }} />
+              <CashAppPay
+                style={{ display: paymentType === 'cashApp' ? 'inline-block' : 'none' }}
+              />
+              <Grid container sx={{ display: paymentType === 'cc' ? 'inline-block' : 'none' }}>
+                <CreditCard />
+              </Grid>
+              <Grid container sx={{ display: paymentType === 'ach' ? 'inline-block' : 'none' }}>
+                <Ach
+                  accountHolderName='Guest User'
+                  redirectURI='www.morning-dough.com'
+                  transactionId='123'
+                />
+              </Grid>
             </PaymentForm>
           </Grid>
         </MyBagPaymentContainer>
