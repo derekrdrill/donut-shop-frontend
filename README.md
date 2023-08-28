@@ -1,6 +1,6 @@
 # Morning Dough 🍩
 
-## An ecommerce site for a donut shop
+### An ecommerce site for a donut shop
 
 This is a fully adaptive/responsive application. The front-end infrastructure utilizes the following:
 
@@ -64,7 +64,7 @@ A list of the status of key tasks is below:
     Credit card POS solution in 'My Bag' page
   </li>
   <li>
-    Morning Dough Java Spring Boot Backend
+    Morning Dough Backend
   </li>
 </ul>
 
