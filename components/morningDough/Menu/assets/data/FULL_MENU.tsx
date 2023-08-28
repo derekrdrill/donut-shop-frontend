@@ -6,6 +6,7 @@ export type FullMenuItem = {
   subCategory: string;
   soda?: boolean;
   bottled?: boolean;
+  price?: number;
 };
 
 const FULL_MENU: FullMenuItem[] = [
@@ -15,6 +16,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/chocolateDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 0.99,
   },
   {
     key: 'glazedDonut',
@@ -22,6 +24,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/glazedDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 0.99,
   },
   {
     key: 'powderedDonut',
@@ -29,6 +32,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/powderedDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 0.99,
   },
   {
     key: 'sprinkleDonut',
@@ -36,6 +40,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/sprinkleDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 1.29,
   },
   {
     key: 'chocolateFrostingDonut',
@@ -43,6 +48,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/chocolateFrostingDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 0.99,
   },
   {
     key: 'chocolateFrostingSprinklesDonut',
@@ -50,6 +56,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/chocolateFrostingSprinklesDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 1.29,
   },
   {
     key: 'jellyFilledDonut',
@@ -57,6 +64,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/jellyFilledDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 1.49,
   },
   {
     key: 'bostonCreamDonut',
@@ -64,6 +72,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/bostonCreamDonut.png',
     category: 'donuts',
     subCategory: 'donuts',
+    price: 1.49,
   },
   {
     key: 'plainBagel',
@@ -71,6 +80,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/plainBagel.png',
     category: 'bread',
     subCategory: 'bagels',
+    price: 1.79,
   },
   {
     key: 'poppyBagel',
@@ -78,6 +88,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/poppyBagel.png',
     category: 'bread',
     subCategory: 'bagels',
+    price: 1.99,
   },
   {
     key: 'everythingBagel',
@@ -85,6 +96,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/everythingBagel.png',
     category: 'bread',
     subCategory: 'bagels',
+    price: 2.09,
   },
   {
     key: 'raisinBagel',
@@ -92,6 +104,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/raisinBagel.png',
     category: 'bread',
     subCategory: 'bagels',
+    price: 2.09,
   },
   {
     key: 'blueberryMuffin',
@@ -99,6 +112,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/blueberryMuffin.png',
     category: 'bread',
     subCategory: 'muffins',
+    price: 1.79,
   },
   {
     key: 'chocolateMuffin',
@@ -106,6 +120,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/chocolateMuffin.png',
     category: 'bread',
     subCategory: 'muffins',
+    price: 1.79,
   },
   {
     key: 'croissant',
@@ -113,6 +128,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/croissant.png',
     category: 'bread',
     subCategory: 'croissants',
+    price: 1.29,
   },
   {
     key: 'avocadoToast',
@@ -120,6 +136,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/avocadoToast.png',
     category: 'bread',
     subCategory: 'toast',
+    price: 3.29,
   },
   {
     key: 'hotCoffee',
@@ -127,6 +144,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/hotCoffee.png',
     category: 'drink',
     subCategory: 'hotDrinks',
+    price: 0.75,
   },
   {
     key: 'icedCoffee',
@@ -134,6 +152,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/icedCoffee.png',
     category: 'drink',
     subCategory: 'coldDrinks',
+    price: 1.25,
   },
   {
     key: 'hotLatte',
@@ -141,6 +160,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/hotLatte.png',
     category: 'drink',
     subCategory: 'hotDrinks',
+    price: 1.45,
   },
   {
     key: 'hotTea',
@@ -148,6 +168,7 @@ const FULL_MENU: FullMenuItem[] = [
     image: '/hotTea.png',
     category: 'drink',
     subCategory: 'hotDrinks',
+    price: 1.45,
   },
   {
     key: 'icedTea',
@@ -156,6 +177,7 @@ const FULL_MENU: FullMenuItem[] = [
     category: 'drink',
     subCategory: 'coldDrinks',
     soda: true,
+    price: 1.55,
   },
   {
     key: 'cocaCola',
@@ -164,6 +186,7 @@ const FULL_MENU: FullMenuItem[] = [
     category: 'drink',
     subCategory: 'coldDrinks',
     soda: true,
+    price: 1.75,
   },
   {
     key: 'sprite',
@@ -172,6 +195,7 @@ const FULL_MENU: FullMenuItem[] = [
     category: 'drink',
     subCategory: 'coldDrinks',
     soda: true,
+    price: 1.75,
   },
   {
     key: 'waterBottle',
@@ -180,6 +204,7 @@ const FULL_MENU: FullMenuItem[] = [
     category: 'drink',
     subCategory: 'coldDrinks',
     bottled: true,
+    price: 1.75,
   },
 ];
 

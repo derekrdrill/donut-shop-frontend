@@ -24,6 +24,7 @@ export const getUpdatedBag = (
   ice: string | null,
   creamCheese: string | null,
   butter: string | null,
+  price: number,
 ) =>
   myBag.map(myBagItem =>
     myBagItem.orderID === orderID
@@ -37,6 +38,7 @@ export const getUpdatedBag = (
           ice: ice,
           creamCheese: creamCheese,
           butter: butter,
+          price: price * (quantity ?? 0),
         }
       : myBagItem,
   );

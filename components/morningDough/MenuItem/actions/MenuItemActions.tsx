@@ -31,6 +31,7 @@ export const setMyBagHelper = async (
   subCategory: string,
   menuItemImage: string,
   orderID: string,
+  menuItemPrice: number,
 ): Promise<SetMyBagParams> => ({
   type: GlobalReducerActionEnum.SET_MY_BAG,
   payload: {
@@ -52,6 +53,7 @@ export const setMyBagHelper = async (
       subCategory,
       menuItemImage,
       orderID,
+      menuItemPrice,
     ),
   },
 });
@@ -74,6 +76,7 @@ export const addToMyBag = (
   subCategory: string,
   menuItemImage: string,
   orderID: string,
+  menuItemPrice: number,
 ) => {
   const existingBagItem = myBag.find(
     myBagItem =>
@@ -118,6 +121,7 @@ export const addToMyBag = (
           soda: soda,
           subCategory: subCategory,
           menuItemImage: menuItemImage,
+          price: quantity * menuItemPrice,
         },
       ],
     ];
@@ -137,6 +141,7 @@ export const updateCurrentMyBag = async (
   butter: string | null,
   myBag: Array<MyBagItem>,
   orderID: string,
+  menuItemPrice: number,
 ): Promise<SetMyBagParams> => ({
   type: GlobalReducerActionEnum.SET_MY_BAG,
   payload: {
@@ -166,6 +171,7 @@ export const updateCurrentMyBag = async (
       ice,
       creamCheese,
       butter,
+      menuItemPrice,
     ),
   },
 });
