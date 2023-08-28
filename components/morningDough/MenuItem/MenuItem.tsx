@@ -191,6 +191,7 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
                             selectedButter,
                             myBag,
                             orderID,
+                            menuItemData?.price,
                           ),
                         );
 
@@ -221,6 +222,7 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
                             menuItemData?.subCategory,
                             menuItemData?.image,
                             `${new Date().getTime()}-${menuItemID}`,
+                            menuItemData?.price,
                           ),
                         );
 

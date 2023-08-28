@@ -15,4 +15,5 @@ export type MyBagItem = {
   bottled: boolean;
   soda: boolean;
   menuItemImage: string;
+  price: number;
 };

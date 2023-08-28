@@ -29,7 +29,7 @@ export const MyBagCard = styled(Grid)({
 });
 
 export const MyBagItemContainer = styled(Grid)({
-  height: 400,
+  height: 390,
   overflowY: 'auto',
 });
 
