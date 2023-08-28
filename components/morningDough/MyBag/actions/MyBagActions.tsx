@@ -10,7 +10,7 @@ export type DeleteFromMyBagParams = {
 
 export const deleteFromMyBag = (
   orderID: string,
-  myBag: Array<MyBagItem>,
+  myBag: Array<MyBagItem> | [],
 ): DeleteFromMyBagParams => ({
   type: GlobalReducerActionEnum.SET_MY_BAG,
   payload: {
