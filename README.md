@@ -1,5 +1,7 @@
 # Morning Dough 🍩
 
+## An ecommerce site for a donut shop
+
 This is a fully adaptive/responsive application. The front-end infrastructure utilizes the following:
 
 <ul>
