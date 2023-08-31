@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, Tooltip } from '@mui/material';
 
 import ActionButton from '../ActionButton/ActionButton';
+import ComingSoon from '../../morningDough/ComingSoon/ComingSoon';
 
-import { SidebarRoot, SidebarMenuText } from './style';
-import Link from 'next/link';
+import { SidebarMenuLink, SidebarRoot, SidebarMenuText } from './style';
 
 type SidebarProps = {
   isSidebarOpen: boolean;
@@ -16,40 +16,48 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
     <SidebarRoot display={{ xs: 'block', lg: 'none' }} $isSidebarOpen={isSidebarOpen}>
       <Grid container rowSpacing={2}>
         <Grid item xs={12}>
-          <Link href='/menu'>
+          <SidebarMenuLink href='/menu'>
             <SidebarMenuText>Menu</SidebarMenuText>
-          </Link>
+          </SidebarMenuLink>
         </Grid>
-        <Grid item xs={12}>
-          <SidebarMenuText>Rewards</SidebarMenuText>
-        </Grid>
-        <Grid item xs={12}>
-          <SidebarMenuText>Retail</SidebarMenuText>
-        </Grid>
+        <Tooltip title={<ComingSoon />} placement='right'>
+          <Grid item xs={12}>
+            <SidebarMenuText>Rewards</SidebarMenuText>
+          </Grid>
+        </Tooltip>
+        <Tooltip title={<ComingSoon />} placement='right'>
+          <Grid item xs={12}>
+            <SidebarMenuText>Retail</SidebarMenuText>
+          </Grid>
+        </Tooltip>
         <Grid item xs={12}>
           <Grid container rowSpacing={2}>
-            <Grid item xs={12}>
-              <ActionButton
-                buttonColor='#6a017f'
-                buttonHoverColor='#a501c6'
-                buttonWidth={'100%'}
-                size='large'
-                variant='contained'
-              >
-                Join Rewards
-              </ActionButton>
-            </Grid>
-            <Grid item xs={12}>
-              <ActionButton
-                buttonColor='#6a017f'
-                buttonHoverColor='#a501c6'
-                buttonWidth={'100%'}
-                size='large'
-                variant='outlined'
-              >
-                Sign In
-              </ActionButton>
-            </Grid>
+            <Tooltip title={<ComingSoon />} placement='right'>
+              <Grid item xs={12}>
+                <ActionButton
+                  buttonColor='#6a017f'
+                  buttonHoverColor='#a501c6'
+                  buttonWidth={'100%'}
+                  size='large'
+                  variant='contained'
+                >
+                  Join Rewards
+                </ActionButton>
+              </Grid>
+            </Tooltip>
+            <Tooltip title={<ComingSoon />} placement='right'>
+              <Grid item xs={12}>
+                <ActionButton
+                  buttonColor='#6a017f'
+                  buttonHoverColor='#a501c6'
+                  buttonWidth={'100%'}
+                  size='large'
+                  variant='outlined'
+                >
+                  Sign In
+                </ActionButton>
+              </Grid>
+            </Tooltip>
           </Grid>
         </Grid>
       </Grid>

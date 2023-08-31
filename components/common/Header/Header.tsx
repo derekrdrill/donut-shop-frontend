@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import SVG from 'react-inlinesvg';
-import { Grid } from '@mui/material';
+import { Grid, Tooltip } from '@mui/material';
 
 import ActionButton from '../ActionButton/ActionButton';
+import ComingSoon from '../../morningDough/ComingSoon/ComingSoon';
 import MyBagIcon from '../../morningDough/MyBag/components/MyBagIcon';
 
 import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderSearchIcon, HeaderTop } from './style';
@@ -37,19 +38,21 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                 </Link>
               </Grid>
             </Grid>
-            <Grid item xs={12}>
-              <Grid container justifyContent='center'>
-                <ActionButton
-                  startIcon={<SVG fill='#FFFFFF' height={20} src='/donutsSVG.svg' width={20} />}
-                  variant='contained'
-                  buttonColor='#f2755f'
-                  buttonHoverColor='#f59180'
-                  buttonWidth={175}
-                >
-                  Order Now
-                </ActionButton>
+            <Tooltip title={<ComingSoon />}>
+              <Grid item xs={12}>
+                <Grid container justifyContent='center'>
+                  <ActionButton
+                    startIcon={<SVG fill='#FFFFFF' height={20} src='/donutsSVG.svg' width={20} />}
+                    variant='contained'
+                    buttonColor='#f2755f'
+                    buttonHoverColor='#f59180'
+                    buttonWidth={175}
+                  >
+                    Order Now
+                  </ActionButton>
+                </Grid>
               </Grid>
-            </Grid>
+            </Tooltip>
           </Grid>
         </Grid>
         <Grid item xs={4} lg={10} xl={8}>
@@ -61,26 +64,30 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
           >
             <Grid item display={{ xs: 'none', lg: 'inline-flex' }}>
               <Grid container justifyContent='space-around' spacing={2}>
-                <Grid item>
-                  <ActionButton
-                    buttonColor='#6a017f'
-                    buttonHoverColor='#a501c6'
-                    size='small'
-                    variant='contained'
-                  >
-                    Join Rewards
-                  </ActionButton>
-                </Grid>
-                <Grid item>
-                  <ActionButton
-                    buttonColor='#6a017f'
-                    buttonHoverColor='#a501c6'
-                    size='small'
-                    variant='outlined'
-                  >
-                    Sign In
-                  </ActionButton>
-                </Grid>
+                <Tooltip title={<ComingSoon />}>
+                  <Grid item>
+                    <ActionButton
+                      buttonColor='#6a017f'
+                      buttonHoverColor='#a501c6'
+                      size='small'
+                      variant='contained'
+                    >
+                      Join Rewards
+                    </ActionButton>
+                  </Grid>
+                </Tooltip>
+                <Tooltip title={<ComingSoon />}>
+                  <Grid item>
+                    <ActionButton
+                      buttonColor='#6a017f'
+                      buttonHoverColor='#a501c6'
+                      size='small'
+                      variant='outlined'
+                    >
+                      Sign In
+                    </ActionButton>
+                  </Grid>
+                </Tooltip>
               </Grid>
             </Grid>
             <Grid item>
@@ -133,34 +140,40 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                     Menu
                   </HeaderMenuText>
                 </Grid>
-                <Grid item>
-                  <HeaderMenuText color='textPrimary'>Reward</HeaderMenuText>
-                </Grid>
-                <Grid item>
-                  <HeaderMenuText
-                    color='textPrimary'
-                    onClick={
-                      /* istanbul ignore next */
-                      () => setIsRetailOpen(!isRetailOpen)
-                    }
+                <Tooltip title={<ComingSoon />} placement='right'>
+                  <Grid item>
+                    <HeaderMenuText color='textPrimary'>Reward</HeaderMenuText>
+                  </Grid>
+                </Tooltip>
+                <Tooltip title={<ComingSoon />} placement='right'>
+                  <Grid item>
+                    <HeaderMenuText
+                      color='textPrimary'
+                      onClick={
+                        /* istanbul ignore next */
+                        () => setIsRetailOpen(!isRetailOpen)
+                      }
+                    >
+                      Retail
+                    </HeaderMenuText>
+                  </Grid>
+                </Tooltip>
+              </Grid>
+            </Grid>
+            <Tooltip title={<ComingSoon />} placement='left'>
+              <Grid item display={{ xs: 'none', lg: 'inline-block' }}>
+                <Grid container sx={{ marginTop: 2 }}>
+                  <ActionButton
+                    buttonColor='#f2755f'
+                    buttonHoverColor='#f59180'
+                    startIcon={<SVG fill='#FFFFFF' height={20} src='/donutsSVG.svg' width={20} />}
+                    variant='contained'
                   >
-                    Retail
-                  </HeaderMenuText>
+                    Order Now
+                  </ActionButton>
                 </Grid>
               </Grid>
-            </Grid>
-            <Grid item display={{ xs: 'none', lg: 'inline-block' }}>
-              <Grid container sx={{ marginTop: 2 }}>
-                <ActionButton
-                  buttonColor='#f2755f'
-                  buttonHoverColor='#f59180'
-                  startIcon={<SVG fill='#FFFFFF' height={20} src='/donutsSVG.svg' width={20} />}
-                  variant='contained'
-                >
-                  Order Now
-                </ActionButton>
-              </Grid>
-            </Grid>
+            </Tooltip>
           </Grid>
         </Grid>
       </Grid>
