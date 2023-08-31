@@ -14,6 +14,7 @@ import Sidebar from '../components/common/Sidebar/Sidebar';
 
 import QuickMenuPage from '../components/morningDough/Menu/components/QuickMenu/QuickMenuPage';
 import QuickRetailView from '../components/morningDough/Retail/components/QuickRetailView/QuickRetailView';
+import ComingSoon from '../components/morningDough/ComingSoon/ComingSoon';
 
 const App = ({ Component, pageProps }) => {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState<boolean>(false);
@@ -36,7 +37,8 @@ const App = ({ Component, pageProps }) => {
           <QuickMenuPage setIsQuickMenuOpen={setIsMenuOpen} />
         </QuickMenu>
         <QuickMenu isQuickMenuOpen={isRetailOpen && !isMenuOpen}>
-          <QuickRetailView />
+          {/* <QuickRetailView /> */}
+          <ComingSoon />
         </QuickMenu>
         <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
         <Alert />

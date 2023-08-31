@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Grid } from '@mui/material';
+import Link from 'next/link';
 
 export const SidebarRoot = styled(Grid)<{ $isSidebarOpen: boolean }>(({ $isSidebarOpen }) => ({
   backgroundColor: '#f5f5f5',
@@ -33,4 +34,8 @@ export const SidebarMenuText = styled.h1({
   textDecoration: 'none',
   textTransform: 'uppercase',
   transition: 'background-size 0.2s ease-in-out',
+});
+
+export const SidebarMenuLink = styled(Link)({
+  textDecoration: 'none',
 });
