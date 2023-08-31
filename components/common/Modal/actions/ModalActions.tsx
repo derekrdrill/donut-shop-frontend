@@ -13,6 +13,8 @@ export const setModalItem = (
   modalTitle: string,
   submitButtonColor?: 'success' | 'error' | 'info' | 'primary',
   submitButtonText?: string,
+  isCancelHidden?: boolean,
+  submitButtonVariant?: 'contained' | 'outlined' | 'text',
 ): SetModalItemParams => ({
   type: GlobalReducerActionEnum.SET_MODAL_ITEM,
   payload: {
@@ -23,6 +25,8 @@ export const setModalItem = (
       modalTitle: modalTitle,
       submitButtonColor: submitButtonColor ?? 'primary',
       submitButtonText: submitButtonText ?? 'Submit',
+      isCancelHidden: isCancelHidden ?? false,
+      submitButtonVariant: submitButtonVariant ?? 'outlined',
     },
   },
 });

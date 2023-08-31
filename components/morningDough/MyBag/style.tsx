@@ -21,13 +21,16 @@ export const MyBagIconBadge = styled(Badge)({
   },
 });
 
-export const MyBagCard = styled(Grid)<{ $maxHeight?: number }>(({ $maxHeight }) => ({
-  border: '1px solid gainsboro',
-  borderRadius: 5,
-  margin: '0px 10px !important',
-  padding: 20,
-  maxHeight: $maxHeight ?? 500,
-}));
+export const MyBagCard = styled(Grid)<{ $isAuthenticated?: boolean; $maxHeight?: number }>(
+  ({ $isAuthenticated, $maxHeight }) => ({
+    border: '1px solid gainsboro',
+    borderRadius: 5,
+    margin: '0px 10px !important',
+    overflowY: 'auto',
+    padding: 20,
+    maxHeight: $maxHeight ?? (!$isAuthenticated ? 332 : 500),
+  }),
+);
 
 export const MyBagItemContainer = styled(Grid)({
   height: 270,

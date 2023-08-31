@@ -6,9 +6,11 @@ export type GlobalStateType = {
   myBag?: Array<MyBagItem> | undefined | null;
   modalItem?: ModalItem;
   alertItem?: AlertItem;
+  authenticatedUser?: object | null;
 };
 
 const GlobalState: GlobalStateType = {
+  authenticatedUser: null,
   myBag: [],
   modalItem: {
     isModalOpen: false,
