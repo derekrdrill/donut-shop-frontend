@@ -7,6 +7,7 @@ import {
   FormLabel,
   Grid,
   IconButton,
+  TextField,
   Radio,
   RadioGroup,
   Tooltip,
@@ -51,9 +52,10 @@ const MyBag = () => {
 
   const {
     dispatch,
-    state: { myBag },
+    state: { authenticatedUser, myBag },
   } = React.useContext(GlobalContext);
 
+  const [email, setEmail] = React.useState<string | null>(null);
   const [paymentType, setPaymentType] = React.useState<string>('cc');
 
   React.useEffect(() => {
@@ -105,7 +107,7 @@ const MyBag = () => {
                             setModalItem(
                               () => {
                                 dispatch(deleteFromMyBag(myBagItem.orderID, myBag));
-                                dispatch(setModalItem(null, false, null, null));
+                                dispatch(setModalItem(null, false, null, ''));
                               },
                               true,
                               <Typography variant='h6'>{`Are you sure you want to delete ${
@@ -158,166 +160,212 @@ const MyBag = () => {
         </Typography>
       </MyBagCard>
       <br />
-      <MyBagCard item xs={12} md={5} lg={3}>
-        <Typography variant='h6'>Payment details</Typography>
-        <Grid container justifyContent='flex-start'>
-          <Typography variant='subtitle1'>Powered by:</Typography>
-          <Image alt='square-logo' src='/squareLogo.png' height={32} width={75} />
-        </Grid>
-        <MyBagPaymentContainer>
-          <Grid container>
-            <Grid item xs={12}>
-              <FormControl>
-                <FormLabel>Select a payment type</FormLabel>
-                <RadioGroup
-                  value={paymentType}
-                  onChange={e => setPaymentType(e.currentTarget.value)}
-                >
-                  <FormControlLabel
-                    value='cc'
-                    control={<Radio />}
-                    label={
-                      <Tooltip
-                        placement='right'
-                        title={
-                          <>
-                            <Typography fontStyle='italic' variant='subtitle2'>
-                              This is a development environment (no real transactions)
-                            </Typography>
-                            <Typography fontWeight='bold' variant='subtitle2'>
-                              Use the following <em>(from Square sandbox)</em>:
-                            </Typography>
-                            <br />
-                            <Typography variant='subtitle2'>
-                              <strong>Card number:</strong> 4111 1111 1111 1111
-                            </Typography>
-                            <Typography variant='subtitle2'>
-                              <strong>Security code:</strong> 111
-                            </Typography>
-                            <Typography variant='subtitle2'>
-                              <strong>Expiration:</strong> Any future date
-                            </Typography>
-                            <Typography variant='subtitle2'>
-                              <strong>Zip code:</strong> Any zip code
-                            </Typography>
-                          </>
-                        }
-                      >
-                        <Grid container justifyContent='space-between'>
-                          <Typography variant='subtitle2'>Credit Card</Typography>
-                          <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
-                        </Grid>
-                      </Tooltip>
-                    }
-                  />
-                  <FormControlLabel
-                    value='ach'
-                    control={<Radio />}
-                    label={
-                      <Tooltip
-                        placement='right'
-                        title={
-                          <>
-                            <Typography fontStyle='italic' variant='subtitle2'>
-                              This is a development environment (no real transactions)
-                            </Typography>
-                            <Typography fontWeight='bold' variant='subtitle2'>
-                              Use the following <em>(from Square sandbox)</em>:
-                            </Typography>
-                            <br />
-                            <Typography variant='subtitle2'>
-                              <strong>Bank user name:</strong> user_good
-                            </Typography>
-                            <Typography variant='subtitle2'>
-                              <strong>Bank password:</strong> pass_good
-                            </Typography>
-                          </>
-                        }
-                      >
-                        <Grid container justifyContent='space-between'>
-                          <Typography variant='subtitle2'>Bank Account</Typography>
-                          <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
-                        </Grid>
-                      </Tooltip>
-                    }
-                  />
-                  <FormControlLabel
-                    value='google'
-                    control={<Radio />}
-                    label={
-                      <Tooltip
-                        placement='right'
-                        title={
-                          <>
-                            <Typography fontStyle='italic' variant='subtitle2'>
-                              This is a development environment (no real transactions)
-                            </Typography>
-                            <Typography fontWeight='bold' variant='subtitle2'>
-                              You will need a real Google Pay account, but no transaction will occur
-                            </Typography>
-                          </>
-                        }
-                      >
-                        <Grid container justifyContent='space-between'>
-                          <Typography variant='subtitle2'>Google Pay</Typography>
-                          <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
-                        </Grid>
-                      </Tooltip>
-                    }
-                  />
-                  {/* <FormControlLabel value='apple' control={<Radio />} label='Apple Pay' /> */}
-                  <FormControlLabel
-                    value='cashApp'
-                    control={<Radio />}
-                    label={
-                      <Grid container justifyContent='space-between'>
-                        <Typography variant='subtitle2'>Cash App</Typography>
-                        <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
-                      </Grid>
-                    }
-                  />
-                </RadioGroup>
-              </FormControl>
-            </Grid>
-          </Grid>
-          <Grid container>
-            <PaymentForm
-              applicationId={process.env.NEXT_PUBLIC_SQUARE_APP_ID ?? ''}
-              cardTokenizeResponseReceived={async (token, verifiedBuyer) => {
-                if (token.status === 'OK') {
-                  dispatch(deleteFromMyBag('', []));
-                  dispatch(await setAlertItem('Order placed!', true, 'success'));
-                }
-              }}
-              createPaymentRequest={() => ({
-                countryCode: 'US',
-                currencyCode: 'USD',
-                total: {
-                  amount: '1.00',
-                  label: 'Total',
-                },
-              })}
-              locationId={process.env.NEXT_PUBLIC_SQUARE_LOCATION_ID ?? ''}
-            >
-              <ApplePay style={{ display: paymentType === 'apple' ? 'inline-block' : 'none' }} />
-              <GooglePay style={{ display: paymentType === 'google' ? 'inline-block' : 'none' }} />
-              <CashAppPay
-                style={{ display: paymentType === 'cashApp' ? 'inline-block' : 'none' }}
-              />
-              <Grid container sx={{ display: paymentType === 'cc' ? 'inline-block' : 'none' }}>
-                <CreditCard />
+      <Grid item xs={12} md={5} lg={3}>
+        <Grid container>
+          {!authenticatedUser && (
+            <>
+              <Grid item xs={12} display={{ xs: 'inline-flex', md: 'none' }}>
+                <br />
               </Grid>
-              <Grid container sx={{ display: paymentType === 'ach' ? 'inline-block' : 'none' }}>
-                <Ach
-                  accountHolderName='Guest User'
-                  redirectURI='www.morning-dough.com'
-                  transactionId='123'
+              <MyBagCard item xs={12} $maxHeight={155}>
+                <TextField
+                  fullWidth
+                  onChange={e => {
+                    const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    if (emailReg.test(e.currentTarget.value.toLowerCase())) {
+                      setEmail(e.currentTarget.value);
+                    } else {
+                      setEmail(null);
+                    }
+                  }}
+                  placeholder='Enter email...'
                 />
+              </MyBagCard>
+            </>
+          )}
+          <br />
+          <MyBagCard
+            item
+            xs={12}
+            sx={{
+              opacity: email ? 1 : 0.4,
+              pointerEvents: email ? 'inherit' : 'none',
+            }}
+          >
+            <Typography variant='h6'>Payment details</Typography>
+            <Grid container justifyContent='flex-start'>
+              <Typography variant='subtitle1'>Powered by:</Typography>
+              <Image alt='square-logo' src='/squareLogo.png' height={32} width={75} />
+            </Grid>
+            <MyBagPaymentContainer>
+              <Grid container>
+                <Grid item xs={12}>
+                  <FormControl>
+                    <FormLabel>Select a payment type</FormLabel>
+                    <RadioGroup
+                      value={paymentType}
+                      onChange={e => setPaymentType(e.currentTarget.value)}
+                    >
+                      <FormControlLabel
+                        value='cc'
+                        control={<Radio />}
+                        label={
+                          <Tooltip
+                            placement='right'
+                            title={
+                              <>
+                                <Typography fontStyle='italic' variant='subtitle2'>
+                                  This is a development environment (no real transactions)
+                                </Typography>
+                                <Typography fontWeight='bold' variant='subtitle2'>
+                                  Use the following <em>(from Square sandbox)</em>:
+                                </Typography>
+                                <br />
+                                <Typography variant='subtitle2'>
+                                  <strong>Card number:</strong> 4111 1111 1111 1111
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                  <strong>Security code:</strong> 111
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                  <strong>Expiration:</strong> Any future date
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                  <strong>Zip code:</strong> Any zip code
+                                </Typography>
+                              </>
+                            }
+                          >
+                            <Grid container justifyContent='space-between'>
+                              <Typography variant='subtitle2'>Credit Card</Typography>
+                              <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                            </Grid>
+                          </Tooltip>
+                        }
+                      />
+                      <FormControlLabel
+                        value='ach'
+                        control={<Radio />}
+                        label={
+                          <Tooltip
+                            placement='right'
+                            title={
+                              <>
+                                <Typography fontStyle='italic' variant='subtitle2'>
+                                  This is a development environment (no real transactions)
+                                </Typography>
+                                <Typography fontWeight='bold' variant='subtitle2'>
+                                  Use the following <em>(from Square sandbox)</em>:
+                                </Typography>
+                                <br />
+                                <Typography variant='subtitle2'>
+                                  <strong>Bank user name:</strong> user_good
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                  <strong>Bank password:</strong> pass_good
+                                </Typography>
+                              </>
+                            }
+                          >
+                            <Grid container justifyContent='space-between'>
+                              <Typography variant='subtitle2'>Bank Account</Typography>
+                              <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                            </Grid>
+                          </Tooltip>
+                        }
+                      />
+                      <FormControlLabel
+                        value='google'
+                        control={<Radio />}
+                        label={
+                          <Tooltip
+                            placement='right'
+                            title={
+                              <>
+                                <Typography fontStyle='italic' variant='subtitle2'>
+                                  This is a development environment (no real transactions)
+                                </Typography>
+                                <Typography fontWeight='bold' variant='subtitle2'>
+                                  You will need a real Google Pay account, but no transaction will
+                                  occur
+                                </Typography>
+                              </>
+                            }
+                          >
+                            <Grid container justifyContent='space-between'>
+                              <Typography variant='subtitle2'>Google Pay</Typography>
+                              <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                            </Grid>
+                          </Tooltip>
+                        }
+                      />
+                      {/* <FormControlLabel value='apple' control={<Radio />} label='Apple Pay' /> */}
+                      <FormControlLabel
+                        value='cashApp'
+                        control={<Radio />}
+                        label={
+                          <Grid container justifyContent='space-between'>
+                            <Typography variant='subtitle2'>Cash App</Typography>
+                            <Info sx={{ height: 17, paddingLeft: 1, width: 17 }} />
+                          </Grid>
+                        }
+                      />
+                    </RadioGroup>
+                  </FormControl>
+                </Grid>
               </Grid>
-            </PaymentForm>
-          </Grid>
-        </MyBagPaymentContainer>
-      </MyBagCard>
+              <Grid container>
+                <PaymentForm
+                  applicationId={process.env.NEXT_PUBLIC_SQUARE_APP_ID ?? ''}
+                  cardTokenizeResponseReceived={async (token, verifiedBuyer) => {
+                    if (token.status === 'OK') {
+                      dispatch(deleteFromMyBag('', []));
+                      dispatch(await setAlertItem('Order placed!', true, 'success'));
+                    }
+                  }}
+                  createPaymentRequest={() => ({
+                    countryCode: 'US',
+                    currencyCode: 'USD',
+                    total: {
+                      amount: '1.00',
+                      label: 'Total',
+                    },
+                  })}
+                  locationId={process.env.NEXT_PUBLIC_SQUARE_LOCATION_ID ?? ''}
+                >
+                  <ApplePay
+                    style={{
+                      display: paymentType === 'apple' ? 'inline-block' : 'none',
+                    }}
+                  />
+                  <GooglePay
+                    style={{ display: paymentType === 'google' ? 'inline-block' : 'none' }}
+                  />
+                  <CashAppPay
+                    style={{ display: paymentType === 'cashApp' ? 'inline-block' : 'none' }}
+                  />
+                  <Grid
+                    container
+                    sx={{
+                      display: paymentType === 'cc' ? 'inline-block' : 'none',
+                    }}
+                  >
+                    <CreditCard />
+                  </Grid>
+                  <Grid container sx={{ display: paymentType === 'ach' ? 'inline-block' : 'none' }}>
+                    <Ach
+                      accountHolderName='Guest User'
+                      redirectURI='www.morning-dough.com'
+                      transactionId='123'
+                    />
+                  </Grid>
+                </PaymentForm>
+              </Grid>
+            </MyBagPaymentContainer>
+          </MyBagCard>
+        </Grid>
+      </Grid>
     </MyBagRoot>
   );
 };

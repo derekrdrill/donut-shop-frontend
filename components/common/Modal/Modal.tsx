@@ -17,6 +17,8 @@ const Modal = () => {
         handleSubmit,
         submitButtonColor,
         submitButtonText,
+        isCancelHidden,
+        submitButtonVariant,
       },
     },
     dispatch,
@@ -35,17 +37,19 @@ const Modal = () => {
                 </Grid>
                 <Grid item xs={1}>
                   <Grid container justifyContent='flex-end'>
-                    <Button
-                      color='error'
-                      variant='contained'
-                      onClick={
-                        /* istanbul ignore next */
-                        () => dispatch(setModalItem(null, false, null, null))
-                      }
-                      size='small'
-                    >
-                      x
-                    </Button>
+                    {!isCancelHidden && (
+                      <Button
+                        color='error'
+                        variant='contained'
+                        onClick={
+                          /* istanbul ignore next */
+                          () => dispatch(setModalItem(null, false, null, ''))
+                        }
+                        size='small'
+                      >
+                        x
+                      </Button>
+                    )}
                   </Grid>
                 </Grid>
               </ModalRow>
@@ -56,21 +60,23 @@ const Modal = () => {
               </ModalRow>
               <ModalRow columnSpacing={2} container isBottom justifyContent='flex-end'>
                 <Grid item>
-                  <Button
-                    color='info'
-                    variant='contained'
-                    onClick={
-                      /* istanbul ignore next */
-                      () => dispatch(setModalItem(null, false, null, null))
-                    }
-                  >
-                    Cancel
-                  </Button>
+                  {!isCancelHidden && (
+                    <Button
+                      color='info'
+                      variant='contained'
+                      onClick={
+                        /* istanbul ignore next */
+                        () => dispatch(setModalItem(null, false, null, ''))
+                      }
+                    >
+                      Cancel
+                    </Button>
+                  )}
                 </Grid>
                 <Grid item>
                   <Button
                     color={submitButtonColor}
-                    variant='outlined'
+                    variant={submitButtonVariant}
                     onClick={
                       /* istanbul ignore next */
                       () => handleSubmit()
