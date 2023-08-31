@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import SVG from 'react-inlinesvg';
-import { Grid, Tooltip } from '@mui/material';
+import { Grid } from '@mui/material';
 
 import ActionButton from '../ActionButton/ActionButton';
 import ComingSoon from '../../morningDough/ComingSoon/ComingSoon';
 import MyBagIcon from '../../morningDough/MyBag/components/MyBagIcon';
+import Tooltip from '../Tooltip/Tooltip';
 
 import { HeaderLogo, HeaderMenuText, HeaderRoot, HeaderSearchIcon, HeaderTop } from './style';
 
@@ -38,7 +39,7 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                 </Link>
               </Grid>
             </Grid>
-            <Tooltip title={<ComingSoon />}>
+            <Tooltip tooltipTitle={<ComingSoon />}>
               <Grid item xs={12}>
                 <Grid container justifyContent='center'>
                   <ActionButton
@@ -64,7 +65,7 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
           >
             <Grid item display={{ xs: 'none', lg: 'inline-flex' }}>
               <Grid container justifyContent='space-around' spacing={2}>
-                <Tooltip title={<ComingSoon />}>
+                <Tooltip tooltipTitle={<ComingSoon />}>
                   <Grid item>
                     <ActionButton
                       buttonColor='#6a017f'
@@ -76,7 +77,7 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                     </ActionButton>
                   </Grid>
                 </Tooltip>
-                <Tooltip title={<ComingSoon />}>
+                <Tooltip tooltipTitle={<ComingSoon />}>
                   <Grid item>
                     <ActionButton
                       buttonColor='#6a017f'
@@ -140,12 +141,12 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                     Menu
                   </HeaderMenuText>
                 </Grid>
-                <Tooltip title={<ComingSoon />} placement='right'>
+                <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='right'>
                   <Grid item>
                     <HeaderMenuText color='textPrimary'>Reward</HeaderMenuText>
                   </Grid>
                 </Tooltip>
-                <Tooltip title={<ComingSoon />} placement='right'>
+                <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='right'>
                   <Grid item>
                     <HeaderMenuText
                       color='textPrimary'
@@ -160,7 +161,7 @@ const Header = ({ isMenuOpen, isRetailOpen, setIsMenuOpen, setIsRetailOpen }: He
                 </Tooltip>
               </Grid>
             </Grid>
-            <Tooltip title={<ComingSoon />} placement='left'>
+            <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='left'>
               <Grid item display={{ xs: 'none', lg: 'inline-block' }}>
                 <Grid container sx={{ marginTop: 2 }}>
                   <ActionButton

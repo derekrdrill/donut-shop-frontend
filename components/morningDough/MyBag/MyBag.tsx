@@ -10,7 +10,6 @@ import {
   TextField,
   Radio,
   RadioGroup,
-  Tooltip,
   Typography,
 } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
@@ -33,6 +32,8 @@ import MyBagItemDairyText from './components/MyBagItemDairyText';
 import MyBagItemFlavorText from './components/MyBagItemFlavorText';
 import MyBagItemIceText from './components/MyBagItemIceText';
 import MyBagItemSugarText from './components/MyBagItemSugarText';
+
+import Tooltip from '../../common/Tooltip/Tooltip';
 
 import { setAlertItem } from '../../common/Alert/actions/AlertActions';
 import { setModalItem } from '../../common/Modal/actions/ModalActions';
@@ -212,8 +213,8 @@ const MyBag = () => {
                         control={<Radio />}
                         label={
                           <Tooltip
-                            placement='right'
-                            title={
+                            tooltipPlacement='right'
+                            tooltipTitle={
                               <>
                                 <Typography fontStyle='italic' variant='subtitle2'>
                                   This is a development environment (no real transactions)
@@ -249,8 +250,8 @@ const MyBag = () => {
                         control={<Radio />}
                         label={
                           <Tooltip
-                            placement='right'
-                            title={
+                            tooltipPlacement='right'
+                            tooltipTitle={
                               <>
                                 <Typography fontStyle='italic' variant='subtitle2'>
                                   This is a development environment (no real transactions)
@@ -280,8 +281,8 @@ const MyBag = () => {
                         control={<Radio />}
                         label={
                           <Tooltip
-                            placement='right'
-                            title={
+                            tooltipPlacement='right'
+                            tooltipTitle={
                               <>
                                 <Typography fontStyle='italic' variant='subtitle2'>
                                   This is a development environment (no real transactions)
