@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Grid, Tooltip } from '@mui/material';
+import { Grid } from '@mui/material';
 
 import ActionButton from '../ActionButton/ActionButton';
 import ComingSoon from '../../morningDough/ComingSoon/ComingSoon';
+import Tooltip from '../Tooltip/Tooltip';
 
 import { SidebarMenuLink, SidebarRoot, SidebarMenuText } from './style';
 
@@ -20,19 +21,19 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
             <SidebarMenuText>Menu</SidebarMenuText>
           </SidebarMenuLink>
         </Grid>
-        <Tooltip title={<ComingSoon />} placement='right'>
+        <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='right'>
           <Grid item xs={12}>
             <SidebarMenuText>Rewards</SidebarMenuText>
           </Grid>
         </Tooltip>
-        <Tooltip title={<ComingSoon />} placement='right'>
+        <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='right'>
           <Grid item xs={12}>
             <SidebarMenuText>Retail</SidebarMenuText>
           </Grid>
         </Tooltip>
         <Grid item xs={12}>
           <Grid container rowSpacing={2}>
-            <Tooltip title={<ComingSoon />} placement='right'>
+            <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='right'>
               <Grid item xs={12}>
                 <ActionButton
                   buttonColor='#6a017f'
@@ -45,7 +46,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
                 </ActionButton>
               </Grid>
             </Tooltip>
-            <Tooltip title={<ComingSoon />} placement='right'>
+            <Tooltip tooltipTitle={<ComingSoon />} tooltipPlacement='right'>
               <Grid item xs={12}>
                 <ActionButton
                   buttonColor='#6a017f'
