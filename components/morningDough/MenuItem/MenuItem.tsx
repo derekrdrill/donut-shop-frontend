@@ -50,6 +50,7 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
   );
 
   console.log(fullMenu);
+  console.log(menuItemID);
   console.log(menuItemData);
 
   const [selectedCount, setSelectedCount] = React.useState<number>(1);
@@ -66,6 +67,9 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
   };
 
   React.useEffect(() => {
+    console.log(fullMenu);
+    console.log(menuItemID);
+    console.log(menuItemData);
     setMenuItemData(fullMenu.filter(menuItem => menuItem.key === menuItemID)[0]);
     setSelectedCount(1);
     setSelectedDairy('');
