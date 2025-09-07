@@ -49,6 +49,9 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
     fullMenu.filter(menuItem => menuItem.key === menuItemID)[0],
   );
 
+  console.log(fullMenu);
+  console.log(menuItemData);
+
   const [selectedCount, setSelectedCount] = React.useState<number>(1);
   const [selectedDairy, setSelectedDairy] = React.useState<string>('');
   const [selectedFlavor, setSelectedFlavor] = React.useState<string>('');
