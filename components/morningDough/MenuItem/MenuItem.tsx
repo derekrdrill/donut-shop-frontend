@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 import { Button, Grid } from '@mui/material';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -36,9 +35,8 @@ interface MenuItemProps {
 
 const MenuItem = ({ fullMenu }: MenuItemProps) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const menuItemID = searchParams.get('menuItem');
-  const orderID = searchParams.get('orderID');
+  const menuItemID = router.query.menuItem;
+  const orderID = router.query.orderID;
 
   const {
     state: { myBag },
