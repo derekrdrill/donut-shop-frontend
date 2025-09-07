@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 import { Button, Grid } from '@mui/material';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -36,9 +35,8 @@ interface MenuItemProps {
 
 const MenuItem = ({ fullMenu }: MenuItemProps) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const menuItemID = searchParams.get('menuItem');
-  const orderID = searchParams.get('orderID');
+  const menuItemID = router.query.menuItem;
+  const orderID = router.query.orderID;
 
   const {
     state: { myBag },
@@ -48,11 +46,6 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
   const [menuItemData, setMenuItemData] = React.useState<FullMenuItem>(
     fullMenu.filter(menuItem => menuItem.key === menuItemID)[0],
   );
-
-  console.log(searchParams);
-  console.log(fullMenu);
-  console.log(menuItemID);
-  console.log(menuItemData);
 
   const [selectedCount, setSelectedCount] = React.useState<number>(1);
   const [selectedDairy, setSelectedDairy] = React.useState<string>('');
@@ -68,9 +61,6 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
   };
 
   React.useEffect(() => {
-    console.log(fullMenu);
-    console.log(menuItemID);
-    console.log(menuItemData);
     setMenuItemData(fullMenu.filter(menuItem => menuItem.key === menuItemID)[0]);
     setSelectedCount(1);
     setSelectedDairy('');
