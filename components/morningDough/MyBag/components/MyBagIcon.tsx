@@ -14,8 +14,8 @@ type MyBagIconProps = {
   color: string;
 };
 
-export const getMyBagQuantity = (myBag: Array<MyBagItem>) =>
-  myBag.map(myBagItem => myBagItem.quantity).reduce((partialSum, a) => partialSum + a, 0);
+export const getMyBagQuantity = (myBag?: Array<MyBagItem> | null) =>
+  myBag?.map(myBagItem => myBagItem.quantity).reduce((partialSum, a) => partialSum + a, 0);
 
 const MyBagIcon = ({ color }: MyBagIconProps) => {
   const router = useRouter();
@@ -31,7 +31,7 @@ const MyBagIcon = ({ color }: MyBagIconProps) => {
       onClick={
         /* istanbul ignore next */
         async () => {
-          myBag.length === 0
+          myBag?.length === 0
             ? dispatch(await setAlertItem('No items in your bag', true, 'warning'))
             : router.push('/myBag');
         }
