@@ -36,6 +36,7 @@ export const ActionButtonRoot = styled(Button)<{
     fontWeight: '600 !important',
     fontSize: '12px !important',
     marginTop: `${$marginTop ?? 4}px !important`,
+    maxHeight: 45,
     paddingBottom: '4px !important',
     paddingLeft: '20px !important',
     paddingRight: '20px !important',

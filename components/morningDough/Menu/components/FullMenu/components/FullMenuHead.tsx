@@ -12,24 +12,43 @@ const FullMenuHead = () => (
   <Grid container>
     <Grid item xs={12}>
       <FullMenuHeadContainer container>
-        <Grid item xs={12} sm={6} md={3} order={{ xs: 1, lg: 0 }}>
-          <Grid container justifyContent={{ xs: 'center', lg: 'flex-start' }}>
+        <Grid item xs={6} sm={6} md={3} order={{ xs: 1, lg: 0 }}>
+          <Grid
+            container
+            display={{ xs: 'none', md: 'flex' }}
+            justifyContent={{ xs: 'center', lg: 'flex-start' }}
+          >
             <Grid item xs={6} md={12} lg={6}>
               <FullMenuHeadImage src='/icedCoffee.png' />
             </Grid>
-            <Grid item xs={6} md={12} lg={6} display={{ xs: 'block', lg: 'none' }}>
+            <Grid item xs={6} md={12} lg={6} display={{ xs: 'none', md: 'flex', lg: 'none' }}>
               <FullMenuHeadImage src='/everythingBagel.png' />
             </Grid>
           </Grid>
         </Grid>
         <FullMenuHeadTextItem item xs={12} md={6} order={{ xs: 0, lg: 1 }}>
-          <FullMenuText textAlign={{ xs: 'left', lg: 'center' }} variant='h2' $fontColor='#f2755f'>
+          <FullMenuText
+            sx={{ fontSize: { xs: 24, lg: 36 } }}
+            textAlign={{ xs: 'left', lg: 'center' }}
+            variant='body1'
+            $fontColor='#f2755f'
+          >
             {`FIRE UP THAT ORDER 🔥`}
           </FullMenuText>
-          <FullMenuText textAlign={{ xs: 'left', lg: 'center' }} variant='h3' $fontColor='#6a017f'>
+          <FullMenuText
+            sx={{ fontSize: { xs: 18, lg: 32 } }}
+            textAlign={{ xs: 'left', lg: 'center' }}
+            variant='body1'
+            $fontColor='#6a017f'
+          >
             {`We'll be ready 😎`}
           </FullMenuText>
-          <FullMenuText textAlign={{ xs: 'left', lg: 'center' }} variant='h6' $fontColor='#1c1c1c'>
+          <FullMenuText
+            sx={{ fontSize: { xs: 16, lg: 24 } }}
+            textAlign={{ xs: 'left', lg: 'center' }}
+            variant='body1'
+            $fontColor='#1c1c1c'
+          >
             {`Special tasty treats just for you`}
           </FullMenuText>
           <FullMenuText
@@ -41,12 +60,12 @@ const FullMenuHead = () => (
             participation may vary. Limited time offer. Terms apply.`}
           </FullMenuText>
         </FullMenuHeadTextItem>
-        <Grid item xs={12} sm={6} md={3} order={2}>
-          <Grid container justifyContent={{ lg: 'center' }}>
+        <Grid item xs={6} sm={6} md={3} order={2}>
+          <Grid container display={{ xs: 'none', md: 'flex' }} justifyContent={{ lg: 'center' }}>
             <Grid item xs={6} md={12} lg={6}>
               <FullMenuHeadImage src='/chocolateFrostingSprinklesDonut.png' />
             </Grid>
-            <Grid item xs={6} md={12} lg={6} display={{ xs: 'block', lg: 'none' }}>
+            <Grid item xs={6} md={12} lg={6} display={{ xs: 'none', md: 'flex', lg: 'none' }}>
               <FullMenuHeadImage src='/hotLatte.png' />
             </Grid>
           </Grid>
