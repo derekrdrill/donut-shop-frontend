@@ -60,7 +60,7 @@ const MyBag = () => {
   const [paymentType, setPaymentType] = React.useState<string>('cc');
 
   React.useEffect(() => {
-    if (myBag.length < 1) {
+    if (myBag && myBag?.length < 1) {
       router.push('/');
     }
   }, [myBag]);
@@ -83,7 +83,7 @@ const MyBag = () => {
         <Typography variant='h6'>My bag</Typography>
         <Grid item container>
           <MyBagItemContainer item xs={12}>
-            {myBag.map(myBagItem => (
+            {myBag?.map(myBagItem => (
               <MyBagItemRow container key={myBagItem.orderID}>
                 <Grid item xs={2}>
                   <Grid container justifyContent='center'>
