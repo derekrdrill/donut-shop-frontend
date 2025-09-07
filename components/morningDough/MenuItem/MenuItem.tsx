@@ -49,6 +49,7 @@ const MenuItem = ({ fullMenu }: MenuItemProps) => {
     fullMenu.filter(menuItem => menuItem.key === menuItemID)[0],
   );
 
+  console.log(searchParams);
   console.log(fullMenu);
   console.log(menuItemID);
   console.log(menuItemData);
